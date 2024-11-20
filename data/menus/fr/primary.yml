@@ -5,6 +5,10 @@ items:
   target: "/projets/"
   kind: page
   children: []
+- title: Curriculum Vitæ
+  target: "/curriculum-vitae/"
+  kind: page
+  children: []
 - title: Organisations
   target: "/organisations/"
   kind: page
