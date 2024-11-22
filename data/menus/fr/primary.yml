@@ -13,20 +13,20 @@ items:
   target: "/evenements/"
   kind: page
   children: []
+- title: À propos
+  target: "/a-propos/"
+  kind: page
+  children:
+  - title: Expertise
+    target: "/a-propos/expertise/"
+    kind: page
+    children: []
 - title: Portrait
   target: "/portrait/"
   kind: page
   children:
-  - title: Expertise
-    target: "/portrait/expertise/"
-    kind: page
-    children: []
   - title: Parcours
     target: "/portrait/parcours/"
     kind: page
     children: []
-- title: À propos
-  target: "/a-propos/"
-  kind: page
-  children: []
 
