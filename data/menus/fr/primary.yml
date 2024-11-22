@@ -17,8 +17,8 @@ items:
   target: "/a-propos/"
   kind: page
   children:
-  - title: Pratiques
-    target: "/a-propos/pratiques/"
+  - title: Expertise
+    target: "/a-propos/expertise/"
     kind: page
     children: []
   - title: Parcours
