@@ -17,12 +17,12 @@ items:
   target: "/a-propos/"
   kind: page
   children: []
-- title: Curriculum vitæ
-  target: "/curriculum-vitae/"
-  kind: page
-  children: []
 - title: Expertise
   target: "/expertise/"
+  kind: page
+  children: []
+- title: Curriculum vitæ
+  target: "/curriculum-vitae/"
   kind: page
   children: []
 
