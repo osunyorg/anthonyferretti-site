@@ -25,4 +25,8 @@ items:
     target: "/portrait/parcours/"
     kind: page
     children: []
+- title: À propos
+  target: "/a-propos/"
+  kind: page
+  children: []
 
