@@ -21,8 +21,8 @@ items:
     target: "/a-propos/pratiques/"
     kind: page
     children: []
-  - title: Curriculum vitæ
-    target: "/a-propos/curriculum-vitae/"
+  - title: Parcours
+    target: "/a-propos/parcours/"
     kind: page
     children: []
 
