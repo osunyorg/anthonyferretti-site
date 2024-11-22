@@ -17,16 +17,16 @@ items:
   target: "/a-propos/"
   kind: page
   children:
-  - title: Expertise
-    target: "/a-propos/expertise/"
+  - title: Portrait
+    target: "/a-propos/portrait/"
     kind: page
     children: []
-- title: Portrait
-  target: "/portrait/"
-  kind: page
-  children:
   - title: Parcours
-    target: "/portrait/parcours/"
+    target: "/a-propos/parcours/"
+    kind: page
+    children: []
+  - title: Expertise
+    target: "/a-propos/expertise/"
     kind: page
     children: []
 
