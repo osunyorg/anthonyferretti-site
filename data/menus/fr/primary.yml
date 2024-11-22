@@ -13,16 +13,16 @@ items:
   target: "/evenements/"
   kind: page
   children: []
-- title: À propos
-  target: "/a-propos/"
+- title: Portrait
+  target: "/portrait/"
   kind: page
   children:
   - title: Expertise
-    target: "/a-propos/expertise/"
+    target: "/portrait/expertise/"
     kind: page
     children: []
   - title: Parcours
-    target: "/a-propos/parcours/"
+    target: "/portrait/parcours/"
     kind: page
     children: []
 
