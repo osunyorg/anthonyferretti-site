@@ -13,6 +13,10 @@ items:
   target: "/curriculum-vitae/"
   kind: page
   children: []
+- title: Agenda
+  target: "/agenda/"
+  kind: page
+  children: []
 - title: Évènements
   target: "/evenements/"
   kind: page
