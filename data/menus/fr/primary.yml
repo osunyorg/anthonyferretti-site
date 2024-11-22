@@ -17,8 +17,4 @@ items:
   target: "/agenda/"
   kind: page
   children: []
-- title: Évènements
-  target: "/evenements/"
-  kind: page
-  children: []
 
