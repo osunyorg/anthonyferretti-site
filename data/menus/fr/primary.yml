@@ -21,24 +21,24 @@ items:
     target: "/a-propos/parcours/"
     kind: page
     children: []
-  - title: Expertise
-    target: "/a-propos/expertise/"
+- title: Expertise
+  target: "/expertise/"
+  kind: page
+  children:
+  - title: Design stratégique
+    target: "/expertise/design-strategique/"
     kind: page
-    children:
-    - title: Design stratégique
-      target: "/a-propos/expertise/design-strategique/"
-      kind: page
-      children: []
-    - title: Design numérique
-      target: "/a-propos/expertise/design-numerique/"
-      kind: page
-      children: []
-    - title: Design graphique
-      target: "/a-propos/expertise/design-graphique/"
-      kind: page
-      children: []
-    - title: Design volumique
-      target: "/a-propos/expertise/design-volumique/"
-      kind: page
-      children: []
+    children: []
+  - title: Design numérique
+    target: "/expertise/design-numerique/"
+    kind: page
+    children: []
+  - title: Design graphique
+    target: "/expertise/design-graphique/"
+    kind: page
+    children: []
+  - title: Design volumique
+    target: "/expertise/design-volumique/"
+    kind: page
+    children: []
 
