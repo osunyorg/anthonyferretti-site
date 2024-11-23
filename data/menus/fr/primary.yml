@@ -37,4 +37,8 @@ items:
       target: "/a-propos/pratique/design-graphique/"
       kind: page
       children: []
+    - title: Design volumique
+      target: "/a-propos/pratique/design-volumique/"
+      kind: page
+      children: []
 
