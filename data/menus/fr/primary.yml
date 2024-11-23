@@ -24,19 +24,19 @@ items:
 - title: Expertise
   target: "/expertise/"
   kind: page
-  children:
-  - title: Design stratégique
-    target: "/expertise/design-strategique/"
-    kind: page
-    children: []
-  - title: Design numérique
-    target: "/expertise/design-numerique/"
-    kind: page
-    children: []
-  - title: Design graphique
-    target: "/expertise/design-graphique/"
-    kind: page
-    children: []
+  children: []
+- title: Design stratégique
+  target: "/design-strategique/"
+  kind: page
+  children: []
+- title: Design numérique
+  target: "/design-numerique/"
+  kind: page
+  children: []
+- title: Design graphique
+  target: "/design-graphique/"
+  kind: page
+  children: []
 - title: Design volumique
   target: "/design-volumique/"
   kind: page
