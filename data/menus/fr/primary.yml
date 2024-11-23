@@ -24,5 +24,17 @@ items:
   - title: Pratique
     target: "/a-propos/pratique/"
     kind: page
-    children: []
+    children:
+    - title: Design stratégique
+      target: "/a-propos/pratique/design-strategique/"
+      kind: page
+      children: []
+    - title: Design numérique
+      target: "/a-propos/pratique/design-numerique/"
+      kind: page
+      children: []
+    - title: Design graphique
+      target: "/a-propos/pratique/design-graphique/"
+      kind: page
+      children: []
 
