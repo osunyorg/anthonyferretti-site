@@ -29,4 +29,8 @@ items:
       target: "/a-propos/pratique/design-strategique/"
       kind: page
       children: []
+- title: Design numérique
+  target: "/design-numerique/"
+  kind: page
+  children: []
 
