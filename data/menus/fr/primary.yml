@@ -25,10 +25,6 @@ items:
     target: "/a-propos/expertise/"
     kind: page
     children:
-    - title: Design stratégique
-      target: "/a-propos/expertise/design-strategique/"
-      kind: page
-      children: []
     - title: Design numérique
       target: "/a-propos/expertise/design-numerique/"
       kind: page
@@ -41,4 +37,8 @@ items:
       target: "/a-propos/expertise/design-volumique/"
       kind: page
       children: []
+- title: Design stratégique
+  target: "/design-strategique/"
+  kind: page
+  children: []
 
