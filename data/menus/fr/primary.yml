@@ -33,4 +33,8 @@ items:
       target: "/a-propos/pratique/design-numerique/"
       kind: page
       children: []
+- title: Design graphique
+  target: "/design-graphique/"
+  kind: page
+  children: []
 
