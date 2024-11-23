@@ -29,10 +29,6 @@ items:
       target: "/a-propos/expertise/design-strategique/"
       kind: page
       children: []
-    - title: Design numérique
-      target: "/a-propos/expertise/design-numerique/"
-      kind: page
-      children: []
     - title: Design graphique
       target: "/a-propos/expertise/design-graphique/"
       kind: page
@@ -41,4 +37,8 @@ items:
       target: "/a-propos/expertise/design-volumique/"
       kind: page
       children: []
+- title: Design numérique
+  target: "/design-numerique/"
+  kind: page
+  children: []
 
