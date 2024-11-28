@@ -29,13 +29,13 @@ items:
 - title: Expertise
   target: "/expertise/"
   kind: page
-  children: []
+  children:
+  - title: Design stratégique
+    target: "/expertise/design-strategique/"
+    kind: page
+    children: []
+    file: content/fr/pages/expertise/design-strategique/_index.html
   file: content/fr/pages/expertise/_index.html
-- title: Design stratégique
-  target: "/design-strategique/"
-  kind: page
-  children: []
-  file: content/fr/pages/design-strategique/_index.html
 - title: Design numérique
   target: "/design-numerique/"
   kind: page
