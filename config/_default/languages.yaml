@@ -13,8 +13,8 @@ fr:
     projects_categories: /projets/:slug/
     posts: /actualites/:year-:month-:day-:slug/
     posts_categories: /actualites/:slug/
-    persons: /reseau/:slug/
-    persons_categories: /reseau/categories/:slug/
+    persons: /reseau/personnes/:slug/
+    persons_categories: /reseau/personnes/categories/:slug/
   taxonomies:
     administrator: administrators
     author: authors
