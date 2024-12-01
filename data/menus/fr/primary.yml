@@ -11,6 +11,11 @@ items:
   kind: page
   children: []
   file: content/fr/posts/_index.html
+- title: Réseau
+  target: "/reseau/"
+  kind: page
+  children: []
+  file: content/fr/pages/reseau/_index.html
 - title: À propos
   target: "/a-propos/"
   kind: page
