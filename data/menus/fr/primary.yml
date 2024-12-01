@@ -14,7 +14,17 @@ items:
 - title: Réseau
   target: "/reseau/"
   kind: page
-  children: []
+  children:
+  - title: Personnes
+    target: "/reseau/personnes/"
+    kind: page
+    children: []
+    file: content/fr/persons/_index.html
+  - title: Organisations
+    target: "/reseau/organisations/"
+    kind: page
+    children: []
+    file: content/fr/organizations/_index.html
   file: content/fr/pages/reseau/_index.html
 - title: À propos
   target: "/a-propos/"
