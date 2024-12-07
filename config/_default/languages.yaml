@@ -17,6 +17,7 @@ fr:
     organizations_categories: /reseau/organisations/categories/:slug/
     persons: /reseau/personnes/:slug/
     persons_categories: /reseau/personnes/categories/:slug/
+    authors: /reseau/personnes/:slug/actualites/
   taxonomies:
     administrator: administrators
     author: authors
