@@ -35,11 +35,11 @@ items:
     kind: page
     children: []
     file: content/fr/pages/a-propos/portrait/_index.html
-  - title: Parcours
-    target: "/a-propos/parcours/"
+  - title: Curriculum vitæ
+    target: "/a-propos/curriculum-vitae/"
     kind: page
     children: []
-    file: content/fr/pages/a-propos/parcours/_index.html
+    file: content/fr/pages/a-propos/curriculum-vitae/_index.html
   - title: Expertise
     target: "/a-propos/expertise/"
     kind: page
