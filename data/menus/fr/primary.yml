@@ -5,11 +5,13 @@ items:
   target: "/projets/"
   kind: page
   children: []
+  path: "/projects"
   file: content/fr/projects/_index.html
 - title: Actualités
   target: "/actualites/"
   kind: page
   children: []
+  path: "/posts"
   file: content/fr/posts/_index.html
 - title: Réseau
   target: "/reseau/"
@@ -19,12 +21,15 @@ items:
     target: "/reseau/personnes/"
     kind: page
     children: []
+    path: "/persons"
     file: content/fr/persons/_index.html
   - title: Organisations
     target: "/reseau/organisations/"
     kind: page
     children: []
+    path: "/organizations"
     file: content/fr/organizations/_index.html
+  path: "/pages/reseau"
   file: content/fr/pages/reseau/_index.html
 - title: À propos
   target: "/a-propos/"
@@ -34,11 +39,13 @@ items:
     target: "/a-propos/portrait/"
     kind: page
     children: []
+    path: "/pages/a-propos/portrait"
     file: content/fr/pages/a-propos/portrait/_index.html
   - title: Curriculum vitæ
     target: "/a-propos/curriculum-vitae/"
     kind: page
     children: []
+    path: "/pages/a-propos/curriculum-vitae"
     file: content/fr/pages/a-propos/curriculum-vitae/_index.html
   - title: Expertise
     target: "/a-propos/expertise/"
@@ -48,22 +55,28 @@ items:
       target: "/a-propos/expertise/design-strategique/"
       kind: page
       children: []
+      path: "/pages/a-propos/expertise/design-strategique"
       file: content/fr/pages/a-propos/expertise/design-strategique/_index.html
     - title: Design numérique
       target: "/a-propos/expertise/design-numerique/"
       kind: page
       children: []
+      path: "/pages/a-propos/expertise/design-numerique"
       file: content/fr/pages/a-propos/expertise/design-numerique/_index.html
     - title: Design graphique
       target: "/a-propos/expertise/design-graphique/"
       kind: page
       children: []
+      path: "/pages/a-propos/expertise/design-graphique"
       file: content/fr/pages/a-propos/expertise/design-graphique/_index.html
     - title: Design volumique
       target: "/a-propos/expertise/design-volumique/"
       kind: page
       children: []
+      path: "/pages/a-propos/expertise/design-volumique"
       file: content/fr/pages/a-propos/expertise/design-volumique/_index.html
+    path: "/pages/a-propos/expertise"
     file: content/fr/pages/a-propos/expertise/_index.html
+  path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
 
