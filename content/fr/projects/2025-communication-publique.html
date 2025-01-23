@@ -69,7 +69,7 @@ taxonomies:
 free_categories:
 
 contents_reading_time:
-  seconds: 0
+  seconds: 1
   text: >-
     moins d'une minute
 contents:
@@ -104,13 +104,19 @@ contents:
   - kind: block
     template: organizations
     title: >-
-      
+      Partenaire
     slug: >-
-      
+      partenaire
     ranks:
       base: 2
+      self: 2
+      children: 3
     top:
-      active: false
+      active: true
+      title: 
+        value: >-
+          Partenaire
+        heading: 2
     data:
       layout: grid
       description: >-
@@ -119,9 +125,13 @@ contents:
       options:
         link: true
         logo: true
-        summary: false
+        summary: true
 
       organizations:
+        - permalink: "/reseau/organisations/noesya/"
+          path: "/organizations/noesya"
+          slug: "noesya"
+          file: "content/fr/organizations/noesya.html"
 
 
 
