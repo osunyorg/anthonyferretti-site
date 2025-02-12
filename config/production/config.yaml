@@ -2,6 +2,11 @@
 
 baseURL: https://site.anthonyferretti.osuny.site
 
+## OSUNY
+osuny:
+  website:
+    id: 14b5e6b1-50d2-4577-b822-054b7130d7f5
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
