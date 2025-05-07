@@ -1,7 +1,71 @@
+# variable disponible sur https://github.com/osunyorg/theme/blob/main/hugo.yaml
+
 theme: osuny
 _merge: deep
 params:
   summary:
     position: hero
   search:
-    active: false  
+    active: true
+  seo:
+    title:
+      separator: "-"
+
+  # SECTIONS
+  default:
+    single:
+      taxonomies:
+        display: true
+        position: content
+  categories:
+    index:
+      layout: list # alternate | cards | grid | large | list
+      options:
+        image: true
+        summary: true
+  projects:
+    default_image: false
+    date_format: "2006"
+    index:
+      layout: list # alternate | grid | large | list
+      options:
+        categories: true
+        image: true
+        subtitle: true
+        summary: true
+        year: true
+      taxonomies: true
+      truncate_description: 200 # Set to 0 to disable truncate
+    # share_links: # Optional
+    #   enabled: true
+    #   email: false
+    #   facebook: true
+    #   linkedin: true
+    #   mastodon: false
+    #   telegram: false
+    #   twitter: true
+    #   whatsapp: false
+
+  # BLOCKS
+  blocks:
+      gallery:
+        slider:
+          arrows: true
+          progression: true
+      key_figures:
+        animated: true
+      pages:
+        alternate:
+          more: false
+      posts:
+        slider:
+          arrows: true
+      testimonials:
+        slider:
+          pagination: true
+          autoplay: true
+          interval: 5000
+      timeline:
+        slider:
+          arrows: true
+          progression: true
