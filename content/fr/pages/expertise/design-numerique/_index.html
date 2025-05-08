@@ -12,7 +12,7 @@ aliases:
   - /design-numerique/
   - /a-propos/expertise/design-numerique/
 date: 2024-11-23T11:40:52+01:00
-lastmod: 2025-05-08T14:47:14+02:00
+lastmod: 2025-05-08T14:50:11+02:00
 meta:
   hugo:
     permalink: "/expertise/design-numerique/"
@@ -21,7 +21,7 @@ meta:
     slug: "design-numerique"
   dates:
     created_at: 2024-11-23T11:38:44+01:00
-    updated_at: 2025-05-08T14:47:14+02:00
+    updated_at: 2025-05-08T14:50:11+02:00
     published_at: 2024-11-23T11:40:52+01:00
 search:
   id: "43b54600-8542-486f-95a3-8fda9e409a5e"
@@ -33,7 +33,7 @@ search:
   summary: >-
     <p>Design d'interface (UI design, product design), prototypage, UI Kit, design system, responsive design (desktop, tablette, mobile), développement front-end, UX Writting, suivi de développement, tests utilisateurs.</p>
   body: >-
-    <p>Prestations  <br>Design d’interface (UI design, product design), prototypage, UI Kit, design system, responsive design (desktop, tablette, mobile), développement front-end, UX Writting, suivi de développement, tests utilisateurs.</p>  <p> Livrables finaux  <br>Sites web, outils numériques, Saas, wiki, applications.</p>  <p> Livrables intermédiaires  <br>Plan de site (sitemap), flux utilisateur (userflow), esquisses de pages (wireframes), composants, styles, variables et documentation (UI Kit, design system), prototype basse ou haute-fidélité, maquette HTML/CSS, tests utilisateurs (AB testing), liste de tickets (backlog).</p>  <p> Outils  <br>Figma, FigJam, Penpot, Miro, Whimsical, Affinity suite, Adobe suite, Notion, Gitlab, Jira, VS code, HTML/CSS, Chat GPT, Dall·e.</p>  <p> Derniers projets </p>
+    <p>Prestations  <br> Prestations  <br>Design d’interface (UI design, product design), prototypage, UI Kit, design system, responsive design (desktop, tablette, mobile), développement front-end, UX Writting, suivi de développement, tests utilisateurs.</p>  <p> Livrables & outils  <br> Livrables finaux  <br>Sites web, outils numériques, Saas, wiki, applications.</p>  <p> Livrables intermédiaires  <br>Plan de site (sitemap), flux utilisateur (userflow), esquisses de pages (wireframes), composants, styles, variables et documentation (UI Kit, design system), prototype basse ou haute-fidélité, maquette HTML/CSS, tests utilisateurs (AB testing), liste de tickets (backlog).</p>  <p> Outils  <br>Figma, FigJam, Penpot, Miro, Whimsical, Affinity suite, Adobe suite, Notion, Gitlab, Jira, VS code, HTML/CSS, Chat GPT, Dall·e.</p>  <p> Derniers projets </p>
 
 breadcrumbs:
   - title: >-
@@ -48,7 +48,7 @@ breadcrumbs:
 design:
   full_width: false
   toc:
-    present: false
+    present: true
     offcanvas: false
 
 position: 2
@@ -74,12 +74,12 @@ header_cta:
   external: false
 
 contents_reading_time:
-  seconds: 25
+  seconds: 26
   text: >-
     moins d'une minute
 contents:
   - kind: block
-    template: chapter
+    template: title
     title: >-
       Prestations
     slug: >-
@@ -93,6 +93,25 @@ contents:
         value: >-
           Prestations
         heading: 2
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      Prestations
+    slug: >-
+      prestations
+    ranks:
+      base: 3
+      self: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Prestations
+        heading: 3
     data:
       layout: no_background
       text: >-
@@ -111,11 +130,11 @@ contents:
 
 
   - kind: block
-    template: chapter
+    template: title
     title: >-
-      Livrables finaux
+      Livrables & outils
     slug: >-
-      livrables-finaux
+      livrables-outils
     ranks:
       base: 2
       self: 2
@@ -123,8 +142,27 @@ contents:
       active: true
       title: 
         value: >-
-          Livrables finaux
+          Livrables & outils
         heading: 2
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      Livrables finaux
+    slug: >-
+      livrables-finaux
+    ranks:
+      base: 3
+      self: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Livrables finaux
+        heading: 3
     data:
       layout: no_background
       text: >-
@@ -149,14 +187,14 @@ contents:
     slug: >-
       livrables-intermediaires
     ranks:
-      base: 2
-      self: 2
+      base: 3
+      self: 3
     top:
       active: true
       title: 
         value: >-
           Livrables intermédiaires
-        heading: 2
+        heading: 3
     data:
       layout: no_background
       text: >-
@@ -181,14 +219,14 @@ contents:
     slug: >-
       outils
     ranks:
-      base: 2
-      self: 2
+      base: 3
+      self: 3
     top:
       active: true
       title: 
         value: >-
           Outils
-        heading: 2
+        heading: 3
     data:
       layout: no_background
       text: >-
@@ -213,15 +251,15 @@ contents:
     slug: >-
       derniers-projets
     ranks:
-      base: 2
-      self: 2
-      children: 3
+      base: 3
+      self: 3
+      children: 4
     top:
       active: true
       title: 
         value: >-
           Derniers projets
-        heading: 2
+        heading: 3
         link: "/projets/expertise/design-numerique/"
     data:
       mode: category
