@@ -15,13 +15,6 @@ items:
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
-- title: Expertise
-  target: "/expertise/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/expertise"
-  file: content/fr/pages/expertise/_index.html
 - title: Portrait
   target: "/a-propos/portrait/"
   kind: page
