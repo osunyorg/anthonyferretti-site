@@ -12,7 +12,7 @@ aliases:
   - /a-propos/pratique/design-volumique/
   - /a-propos/expertise/design-volumique/
 date: 2024-11-23T11:49:23+01:00
-lastmod: 2025-05-08T14:46:49+02:00
+lastmod: 2025-05-08T14:52:21+02:00
 meta:
   hugo:
     permalink: "/expertise/design-volumique/"
@@ -21,7 +21,7 @@ meta:
     slug: "design-volumique"
   dates:
     created_at: 2024-11-23T11:47:38+01:00
-    updated_at: 2025-05-08T14:46:49+02:00
+    updated_at: 2025-05-08T14:52:21+02:00
     published_at: 2024-11-23T11:49:23+01:00
 search:
   id: "3515b00d-7c76-4548-afab-1ac6483a6cfc"
@@ -33,7 +33,7 @@ search:
   summary: >-
     <p>Design de produit, design d'espace (aménagement d'intérieur), prototypage, fabrication (numérique et lowtech), suivi de chantier.</p>
   body: >-
-    <p>Prestations  <br>Design de produit, design d’espace (aménagement d’intérieur), prototypage, fabrication (numérique et lowtech), suivi de chantier.</p>  <p> Livrables finaux  <br>Mobiliers, espaces d’exposition, scénographies, outils de médiation physique, visualisations tangibles de données, outils physiques d’atelier, objets connectés.</p>  <p> Livrables intermédiaires  <br>Veille, planches tendances (moodboard), cahier d'idées, scénarios d’usages, plans d'aménagement, plans techniques, modélisation 3D, imagerie de synthèse, intégration PSD, maquette et prototype.</p>  <p> Outils  <br>Rhinoceros, Cinema 4D, Affinity suite, Adobe suite, fabrication numérique (découpeuse laser, imprimante 3D), fabrication traditionnelle (découpe, assemblage bois et métal, peinture).</p>  <p> Derniers projets </p>
+    <p>Prestations  <br> Prestations  <br>Design de produit, design d’espace (aménagement d’intérieur), prototypage, fabrication (numérique et lowtech), suivi de chantier.</p>  <p> Livrables & outils  <br> Livrables finaux  <br>Mobiliers, espaces d’exposition, scénographies, outils de médiation physique, visualisations tangibles de données, outils physiques d’atelier, objets connectés.</p>  <p> Livrables intermédiaires  <br>Veille, planches tendances (moodboard), cahier d'idées, scénarios d’usages, plans d'aménagement, plans techniques, modélisation 3D, imagerie de synthèse, intégration PSD, maquette et prototype.</p>  <p> Outils  <br>Rhinoceros, Cinema 4D, Affinity suite, Adobe suite, fabrication numérique (découpeuse laser, imprimante 3D), fabrication traditionnelle (découpe, assemblage bois et métal, peinture).</p>  <p> Derniers projets </p>  <p> Projets  </p>
 
 breadcrumbs:
   - title: >-
@@ -48,7 +48,7 @@ breadcrumbs:
 design:
   full_width: false
   toc:
-    present: false
+    present: true
     offcanvas: false
 
 position: 4
@@ -74,12 +74,12 @@ header_cta:
   external: false
 
 contents_reading_time:
-  seconds: 27
+  seconds: 28
   text: >-
     moins d'une minute
 contents:
   - kind: block
-    template: chapter
+    template: title
     title: >-
       Prestations
     slug: >-
@@ -93,6 +93,25 @@ contents:
         value: >-
           Prestations
         heading: 2
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      Prestations
+    slug: >-
+      prestations
+    ranks:
+      base: 3
+      self: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Prestations
+        heading: 3
     data:
       layout: no_background
       text: >-
@@ -111,11 +130,11 @@ contents:
 
 
   - kind: block
-    template: chapter
+    template: title
     title: >-
-      Livrables finaux
+      Livrables & outils
     slug: >-
-      livrables-finaux
+      livrables-outils
     ranks:
       base: 2
       self: 2
@@ -123,8 +142,27 @@ contents:
       active: true
       title: 
         value: >-
-          Livrables finaux
+          Livrables & outils
         heading: 2
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      Livrables finaux
+    slug: >-
+      livrables-finaux
+    ranks:
+      base: 3
+      self: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Livrables finaux
+        heading: 3
     data:
       layout: no_background
       text: >-
@@ -149,14 +187,14 @@ contents:
     slug: >-
       livrables-intermediaires
     ranks:
-      base: 2
-      self: 2
+      base: 3
+      self: 3
     top:
       active: true
       title: 
         value: >-
           Livrables intermédiaires
-        heading: 2
+        heading: 3
     data:
       layout: no_background
       text: >-
@@ -181,14 +219,14 @@ contents:
     slug: >-
       outils
     ranks:
-      base: 2
-      self: 2
+      base: 3
+      self: 3
     top:
       active: true
       title: 
         value: >-
           Outils
-        heading: 2
+        heading: 3
     data:
       layout: no_background
       text: >-
@@ -213,15 +251,15 @@ contents:
     slug: >-
       derniers-projets
     ranks:
-      base: 2
-      self: 2
-      children: 3
+      base: 3
+      self: 3
+      children: 4
     top:
       active: true
       title: 
         value: >-
           Derniers projets
-        heading: 2
+        heading: 3
         link: "/projets/expertise/design-volumique/"
     data:
       mode: category
@@ -247,6 +285,25 @@ contents:
           path: "/projects/2014-smart-grids"
           slug: "smart-grids"
           file: "content/fr/projects/2014-smart-grids.html"
+
+
+  - kind: block
+    template: title
+    title: >-
+      Projets
+    slug: >-
+      projets
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Projets
+        heading: 2
+    data:
+      layout: classic
 
 
 
