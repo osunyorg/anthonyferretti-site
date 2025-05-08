@@ -31,7 +31,7 @@ items:
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Actualités
-  target: "/actualites/"
+  target: "/activites/"
   kind: page
   new_tab: false
   children: []
