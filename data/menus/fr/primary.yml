@@ -55,41 +55,6 @@ items:
     children: []
     path: "/pages/a-propos/curriculum-vitae"
     file: content/fr/pages/a-propos/curriculum-vitae/_index.html
-  - title: Expertise
-    target: "/a-propos/expertise/"
-    kind: page
-    new_tab: false
-    children:
-    - title: Design stratégique
-      target: "/a-propos/expertise/design-strategique/"
-      kind: page
-      new_tab: false
-      children: []
-      path: "/pages/a-propos/expertise/design-strategique"
-      file: content/fr/pages/a-propos/expertise/design-strategique/_index.html
-    - title: Design numérique
-      target: "/a-propos/expertise/design-numerique/"
-      kind: page
-      new_tab: false
-      children: []
-      path: "/pages/a-propos/expertise/design-numerique"
-      file: content/fr/pages/a-propos/expertise/design-numerique/_index.html
-    - title: Design graphique
-      target: "/a-propos/expertise/design-graphique/"
-      kind: page
-      new_tab: false
-      children: []
-      path: "/pages/a-propos/expertise/design-graphique"
-      file: content/fr/pages/a-propos/expertise/design-graphique/_index.html
-    - title: Design volumique
-      target: "/a-propos/expertise/design-volumique/"
-      kind: page
-      new_tab: false
-      children: []
-      path: "/pages/a-propos/expertise/design-volumique"
-      file: content/fr/pages/a-propos/expertise/design-volumique/_index.html
-    path: "/pages/a-propos/expertise"
-    file: content/fr/pages/a-propos/expertise/_index.html
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
 
