@@ -57,4 +57,9 @@ items:
     file: content/fr/pages/a-propos/curriculum-vitae/_index.html
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
+- title: Expertise
+  target: "/projets/expertise/"
+  kind: url
+  new_tab: false
+  children: []
 
