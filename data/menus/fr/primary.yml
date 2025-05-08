@@ -57,4 +57,9 @@ items:
     file: content/fr/organizations/_index.html
   path: "/pages/reseau"
   file: content/fr/pages/reseau/_index.html
+- title: Design stratégique
+  target: "/projets/expertise/design-strategique/"
+  kind: url
+  new_tab: false
+  children: []
 
