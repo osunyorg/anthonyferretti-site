@@ -5,32 +5,10 @@ items:
   target: "/projets/"
   kind: page
   new_tab: false
-  children:
-  - title: Design stratégique
-    target: "/projets/expertise/design-strategique/"
-    kind: url
-    new_tab: false
-    children: []
-  - title: Design numérique
-    target: "/projets/expertise/design-numerique/"
-    kind: url
-    new_tab: false
-    children: []
-  - title: Design graphique
-    target: "/projets/expertise/design-graphique/"
-    kind: url
-    new_tab: false
-    children: []
-  - title: Design volumique
-    target: "/projets/expertise/design-volumique/"
-    kind: url
-    new_tab: false
-    children: []
-    path: "/pages/expertise/design-volumique"
-    file: content/fr/pages/expertise/design-volumique/_index.html
+  children: []
   path: "/projects"
   file: content/fr/projects/_index.html
-- title: Actualités
+- title: Activités
   target: "/activites/"
   kind: page
   new_tab: false
