@@ -23,17 +23,17 @@ items:
   path: "/pages/expertise"
   file: content/fr/pages/expertise/_index.html
 - title: Portrait
-  target: "/a-propos/portrait/"
+  target: "/portrait/"
   kind: page
   new_tab: false
   children: []
-  path: "/pages/a-propos/portrait"
-  file: content/fr/pages/a-propos/portrait/_index.html
+  path: "/pages/portrait"
+  file: content/fr/pages/portrait/_index.html
 - title: CV
-  target: "/a-propos/curriculum-vitae/"
+  target: "/curriculum-vitae/"
   kind: page
   new_tab: false
   children: []
-  path: "/pages/a-propos/curriculum-vitae"
-  file: content/fr/pages/a-propos/curriculum-vitae/_index.html
+  path: "/pages/curriculum-vitae"
+  file: content/fr/pages/curriculum-vitae/_index.html
 
