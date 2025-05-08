@@ -29,7 +29,7 @@ items:
   children: []
   path: "/pages/a-propos/portrait"
   file: content/fr/pages/a-propos/portrait/_index.html
-- title: Curriculum vitæ
+- title: CV
   target: "/a-propos/curriculum-vitae/"
   kind: page
   new_tab: false
