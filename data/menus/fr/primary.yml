@@ -15,6 +15,11 @@ items:
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
+- title: Expertise
+  target: "/projets/expertise/"
+  kind: url
+  new_tab: false
+  children: []
 - title: Réseau
   target: "/reseau/"
   kind: page
@@ -57,9 +62,4 @@ items:
     file: content/fr/pages/a-propos/curriculum-vitae/_index.html
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
-- title: Expertise
-  target: "/projets/expertise/"
-  kind: url
-  new_tab: false
-  children: []
 
