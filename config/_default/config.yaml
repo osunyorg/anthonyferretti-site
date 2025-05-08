@@ -10,6 +10,8 @@ params:
   seo:
     title:
       separator: "-"
+  design:
+    force_full_width: false
 
   # SECTIONS
   default:
@@ -19,7 +21,7 @@ params:
         position: content
   categories:
     index:
-      layout: list # alternate | cards | grid | large | list
+      layout: grid # alternate | cards | grid | large | list
       options:
         image: true
         summary: true
