@@ -36,25 +36,4 @@ items:
   children: []
   path: "/pages/a-propos/curriculum-vitae"
   file: content/fr/pages/a-propos/curriculum-vitae/_index.html
-- title: Réseau
-  target: "/reseau/"
-  kind: page
-  new_tab: false
-  children:
-  - title: Personnes
-    target: "/reseau/personnes/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/persons"
-    file: content/fr/persons/_index.html
-  - title: Organisations
-    target: "/reseau/organisations/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/organizations"
-    file: content/fr/organizations/_index.html
-  path: "/pages/reseau"
-  file: content/fr/pages/reseau/_index.html
 
