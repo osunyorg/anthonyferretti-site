@@ -22,8 +22,8 @@ items:
     new_tab: false
     children: []
   - title: Design volumique
-    target: "/expertise/design-volumique/"
-    kind: page
+    target: "/projets/expertise/design-volumique/"
+    kind: url
     new_tab: false
     children: []
     path: "/pages/expertise/design-volumique"
