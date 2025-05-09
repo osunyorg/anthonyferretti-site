@@ -47,6 +47,13 @@ items:
     children: []
     path: "/posts_categories/enseignements"
     file: content/fr/posts_categories/enseignements/_index.html
+  - title: Recherches
+    target: "/activites/recherches/"
+    kind: category
+    new_tab: false
+    children: []
+    path: "/posts_categories/recherches"
+    file: content/fr/posts_categories/recherches/_index.html
   path: "/posts"
   file: content/fr/posts/_index.html
 - title: Expertise
