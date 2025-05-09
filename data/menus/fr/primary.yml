@@ -11,6 +11,11 @@ items:
     kind: url
     new_tab: false
     children: []
+  - title: Design numérique
+    target: "/projets/expertise/design-numerique/"
+    kind: url
+    new_tab: false
+    children: []
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Activités
