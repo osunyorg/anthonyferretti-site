@@ -40,6 +40,13 @@ items:
     children: []
     path: "/posts_categories/experiences-professionnelles"
     file: content/fr/posts_categories/experiences-professionnelles/_index.html
+  - title: Enseignements
+    target: "/activites/enseignements/"
+    kind: category
+    new_tab: false
+    children: []
+    path: "/posts_categories/enseignements"
+    file: content/fr/posts_categories/enseignements/_index.html
   path: "/posts"
   file: content/fr/posts/_index.html
 - title: Expertise
