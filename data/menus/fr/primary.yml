@@ -32,7 +32,14 @@ items:
   target: "/activites/"
   kind: page
   new_tab: false
-  children: []
+  children:
+  - title: Expériences professionnelles
+    target: "/activites/experiences-professionnelles/"
+    kind: category
+    new_tab: false
+    children: []
+    path: "/posts_categories/experiences-professionnelles"
+    file: content/fr/posts_categories/experiences-professionnelles/_index.html
   path: "/posts"
   file: content/fr/posts/_index.html
 - title: Expertise
