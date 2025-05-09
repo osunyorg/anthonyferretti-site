@@ -54,7 +54,7 @@ items:
     children: []
     path: "/posts_categories/recherche"
     file: content/fr/posts_categories/recherche/_index.html
-  - title: Interventions
+  - title: Intervention
     target: "/activites/intervention/"
     kind: category
     new_tab: false
