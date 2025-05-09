@@ -40,9 +40,9 @@ fr:
     posts_categories: /activites/:slug/
     organizations: /organisations/:slug/
     organizations_categories: /organisations/categories/:slug/
-    persons: /personnes/:slug/
-    persons_categories: /personnes/categories/:slug/
-    authors: /personnes/:slug/activites/
+    persons: /a-propos/reseau/personnes/:slug/
+    persons_categories: /a-propos/reseau/personnes/categories/:slug/
+    authors: /a-propos/reseau/personnes/:slug/activites/
   taxonomies:
     administrator: administrators
     author: authors
