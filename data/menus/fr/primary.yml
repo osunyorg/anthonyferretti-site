@@ -41,12 +41,12 @@ items:
     path: "/posts_categories/experience-professionnelle"
     file: content/fr/posts_categories/experience-professionnelle/_index.html
   - title: Enseignements
-    target: "/activites/enseignements/"
+    target: "/activites/enseignement/"
     kind: category
     new_tab: false
     children: []
-    path: "/posts_categories/enseignements"
-    file: content/fr/posts_categories/enseignements/_index.html
+    path: "/posts_categories/enseignement"
+    file: content/fr/posts_categories/enseignement/_index.html
   - title: Recherches
     target: "/activites/recherches/"
     kind: category
