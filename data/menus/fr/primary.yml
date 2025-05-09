@@ -82,13 +82,6 @@ items:
     children: []
     path: "/pages/a-propos/portrait"
     file: content/fr/pages/a-propos/portrait/_index.html
-  - title: Curriculum vitæ
-    target: "/a-propos/curriculum-vitae/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/a-propos/curriculum-vitae"
-    file: content/fr/pages/a-propos/curriculum-vitae/_index.html
   - title: Expertise
     target: "/a-propos/expertise/"
     kind: page
@@ -103,6 +96,13 @@ items:
     children: []
     path: "/pages/a-propos/reseau"
     file: content/fr/pages/a-propos/reseau/_index.html
+  - title: Curriculum vitæ
+    target: "/a-propos/curriculum-vitae/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/a-propos/curriculum-vitae"
+    file: content/fr/pages/a-propos/curriculum-vitae/_index.html
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
 
