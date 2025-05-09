@@ -33,7 +33,7 @@ items:
   kind: page
   new_tab: false
   children:
-  - title: Expériences professionnelles
+  - title: Expérience professionnelle
     target: "/activites/experience-professionnelle/"
     kind: category
     new_tab: false
