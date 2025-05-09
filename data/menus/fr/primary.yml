@@ -61,7 +61,7 @@ items:
     children: []
     path: "/posts_categories/intervention"
     file: content/fr/posts_categories/intervention/_index.html
-  - title: Expositions
+  - title: Exposition
     target: "/activites/exposition/"
     kind: category
     new_tab: false
