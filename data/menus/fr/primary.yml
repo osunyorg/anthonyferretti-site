@@ -82,7 +82,7 @@ items:
     children: []
     path: "/pages/a-propos/portrait"
     file: content/fr/pages/a-propos/portrait/_index.html
-  - title: CV
+  - title: Curriculum vitæ
     target: "/a-propos/curriculum-vitae/"
     kind: page
     new_tab: false
