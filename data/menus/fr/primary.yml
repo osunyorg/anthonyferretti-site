@@ -16,12 +16,12 @@ items:
   path: "/posts"
   file: content/fr/posts/_index.html
 - title: Expertise
-  target: "/expertise/"
+  target: "/a-propos/expertise/"
   kind: page
   new_tab: false
   children: []
-  path: "/pages/expertise"
-  file: content/fr/pages/expertise/_index.html
+  path: "/pages/a-propos/expertise"
+  file: content/fr/pages/a-propos/expertise/_index.html
 - title: Portrait
   target: "/a-propos/portrait/"
   kind: page
@@ -30,10 +30,10 @@ items:
   path: "/pages/a-propos/portrait"
   file: content/fr/pages/a-propos/portrait/_index.html
 - title: CV
-  target: "/curriculum-vitae/"
+  target: "/a-propos/curriculum-vitae/"
   kind: page
   new_tab: false
   children: []
-  path: "/pages/curriculum-vitae"
-  file: content/fr/pages/curriculum-vitae/_index.html
+  path: "/pages/a-propos/curriculum-vitae"
+  file: content/fr/pages/a-propos/curriculum-vitae/_index.html
 
