@@ -38,11 +38,11 @@ fr:
     projects_categories: /projets/:slug/
     posts: /activites/:year-:month-:day-:slug/
     posts_categories: /activites/:slug/
-    organizations: /reseau/organisations/:slug/
-    organizations_categories: /reseau/organisations/categories/:slug/
-    persons: /reseau/personnes/:slug/
-    persons_categories: /reseau/personnes/categories/:slug/
-    authors: /reseau/personnes/:slug/activites/
+    organizations: /organisations/:slug/
+    organizations_categories: /organisations/categories/:slug/
+    persons: /personnes/:slug/
+    persons_categories: /personnes/categories/:slug/
+    authors: /personnes/:slug/activites/
   taxonomies:
     administrator: administrators
     author: authors
