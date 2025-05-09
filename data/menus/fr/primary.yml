@@ -5,7 +5,12 @@ items:
   target: "/projets/"
   kind: page
   new_tab: false
-  children: []
+  children:
+  - title: Design stratégique
+    target: "/projets/expertise/design-strategique/"
+    kind: url
+    new_tab: false
+    children: []
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Activités
