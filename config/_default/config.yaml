@@ -10,8 +10,16 @@ params:
   seo:
     title:
       separator: "-"
-  design:
-    force_full_width: false
+
+  # DESIGN SYSTEM
+  logo:
+    header: ''
+    footer: ''
+  menu:
+    primary:
+      level_2:
+        title:
+          active: true
 
   # SECTIONS
   default:
