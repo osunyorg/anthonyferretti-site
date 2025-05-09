@@ -47,7 +47,7 @@ items:
     children: []
     path: "/posts_categories/enseignement"
     file: content/fr/posts_categories/enseignement/_index.html
-  - title: Recherches
+  - title: Recherche
     target: "/activites/recherche/"
     kind: category
     new_tab: false
