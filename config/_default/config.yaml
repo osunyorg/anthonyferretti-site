@@ -17,9 +17,27 @@ params:
     footer: ''
   menu:
     primary:
+      level_1:
+        summary:
+          active: false
+          source: "Summary" # "Summary" | "meta_description"
+          truncate: 125
       level_2:
+        summary:
+          active: false
+          source: "Summary" # "Summary" | "meta_description"
+          truncate: 125
         title:
           active: true
+          summary:
+            active: false
+            source: "Summary" # "Summary" | "meta_description"
+            truncate: 125
+      level_3:
+        summary:
+          active: false
+          source: "Summary" # "Summary" | "meta_description"
+          truncate: 125
 
   # SECTIONS
   default:
