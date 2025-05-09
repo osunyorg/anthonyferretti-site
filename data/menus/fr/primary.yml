@@ -16,6 +16,11 @@ items:
     kind: url
     new_tab: false
     children: []
+  - title: Design graphique
+    target: "/projets/expertise/design-graphique/"
+    kind: url
+    new_tab: false
+    children: []
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Activités
