@@ -40,7 +40,7 @@ items:
     children: []
     path: "/posts_categories/experience-professionnelle"
     file: content/fr/posts_categories/experience-professionnelle/_index.html
-  - title: Enseignements
+  - title: Enseignement
     target: "/activites/enseignement/"
     kind: category
     new_tab: false
