@@ -54,6 +54,13 @@ items:
     children: []
     path: "/posts_categories/recherches"
     file: content/fr/posts_categories/recherches/_index.html
+  - title: Interventions
+    target: "/activites/interventions/"
+    kind: category
+    new_tab: false
+    children: []
+    path: "/posts_categories/interventions"
+    file: content/fr/posts_categories/interventions/_index.html
   path: "/posts"
   file: content/fr/posts/_index.html
 - title: Expertise
