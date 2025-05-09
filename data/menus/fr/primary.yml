@@ -78,12 +78,12 @@ items:
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
 - title: Expertise
-  target: "/a-propos/expertise/"
+  target: "/a-propos/"
   kind: page
   new_tab: false
   children: []
-  path: "/pages/a-propos/expertise"
-  file: content/fr/pages/a-propos/expertise/_index.html
+  path: "/pages/a-propos"
+  file: content/fr/pages/a-propos/_index.html
 - title: Portrait
   target: "/a-propos/portrait/"
   kind: page
