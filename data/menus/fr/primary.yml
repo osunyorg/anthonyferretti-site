@@ -89,13 +89,13 @@ items:
     children: []
     path: "/pages/a-propos/expertise"
     file: content/fr/pages/a-propos/expertise/_index.html
+  - title: CV
+    target: "/a-propos/curriculum-vitae/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/pages/a-propos/curriculum-vitae"
+    file: content/fr/pages/a-propos/curriculum-vitae/_index.html
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
-- title: CV
-  target: "/a-propos/curriculum-vitae/"
-  kind: page
-  new_tab: false
-  children: []
-  path: "/pages/a-propos/curriculum-vitae"
-  file: content/fr/pages/a-propos/curriculum-vitae/_index.html
 
