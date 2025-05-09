@@ -48,12 +48,12 @@ items:
     path: "/posts_categories/enseignement"
     file: content/fr/posts_categories/enseignement/_index.html
   - title: Recherches
-    target: "/activites/recherches/"
+    target: "/activites/recherche/"
     kind: category
     new_tab: false
     children: []
-    path: "/posts_categories/recherches"
-    file: content/fr/posts_categories/recherches/_index.html
+    path: "/posts_categories/recherche"
+    file: content/fr/posts_categories/recherche/_index.html
   - title: Interventions
     target: "/activites/interventions/"
     kind: category
