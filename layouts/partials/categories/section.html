@@ -13,14 +13,16 @@
 
   {{ partial "contents/list.html" . }}
 
-  {{ if eq .Type "posts_categories" }}
-    <div class="container">
+  <div class="container">
+    {{ if eq .Type "posts_categories" }}
       {{ $section_type := strings.TrimSuffix "_categories" .Type }}
       {{ $list_partial := printf "%s/partials/%s.html" $section_type $section_type }}
       {{ if templates.Exists ( printf "partials/%s" $list_partial ) }}
         {{ partial $list_partial . }}
       {{ end }}
       {{ partial "commons/pagination.html" . }}
-    </div>
-  {{ end }}
+    {{ else }}
+      {{ partial "categories/section/categories.html" . }}
+    {{ end }}
+  </div>
 </div>
