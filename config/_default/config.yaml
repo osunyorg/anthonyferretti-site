@@ -73,6 +73,18 @@ params:
     #   telegram: false
     #   twitter: true
     #   whatsapp: false
+  organizations:
+    dark_logo_background: false
+    map_marker_icon: '/assets/images/map-marker.svg'
+    prefer_image_over_logo: true
+    index:
+      options:
+        link: true
+        logo: true
+        summary: false
+      taxonomies: true
+    single:
+      backlinks: true
 
   # BLOCKS
   blocks:
