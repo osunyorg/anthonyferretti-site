@@ -54,13 +54,6 @@ items:
     children: []
     path: "/posts_categories/intervention"
     file: content/fr/posts_categories/intervention/_index.html
-  - title: Exposition
-    target: "/activites/exposition/"
-    kind: category
-    new_tab: false
-    children: []
-    path: "/posts_categories/exposition"
-    file: content/fr/posts_categories/exposition/_index.html
   path: "/posts"
   file: content/fr/posts/_index.html
 - title: À propos
