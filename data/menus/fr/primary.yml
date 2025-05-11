@@ -33,13 +33,6 @@ items:
   kind: page
   new_tab: false
   children:
-  - title: Expérience professionnelle
-    target: "/activites/experience-professionnelle/"
-    kind: category
-    new_tab: false
-    children: []
-    path: "/posts_categories/experience-professionnelle"
-    file: content/fr/posts_categories/experience-professionnelle/_index.html
   - title: Enseignement
     target: "/activites/enseignement/"
     kind: category
