@@ -9,7 +9,7 @@
         {{ partial "header/button.html" }}
         <div class="menu" id="navigation">
           {{ if $primary.items }}
-          <div class="menu-items-primary">
+          <div class="menu-primary">
             {{ partial "commons/menu.html" (dict
                 "kind" "primary"
                 "dropdown" true
@@ -19,7 +19,7 @@
             </div>
           {{ end }}
           {{ if $secondary.items }}
-            <div class="menu-items-secondary">
+            <div class="menu-secondary">
               {{ partial "commons/menu.html" (dict
                 "kind" "secondary-menu"
                 "level" 1

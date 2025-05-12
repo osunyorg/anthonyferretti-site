@@ -1,19 +1,9 @@
-// Header
-header#document-header nav.primary-menu
-    @include media-breakpoint-up(desktop)
-    > .container
-        justify-content: start
-        gap: $grid-gutter
+// // Header
 
-#navigation
-  display: flex
-  justify-content: space-between
-  align-items: center
-  gap: $grid-gutter
-
-// .menu-items-primary
-//     display: flex
-
-// .menu-items-secondary
-//     display: flex
-//     align-items: center
+@include media-breakpoint-up(desktop)
+  .primary-menu > .container,
+  #navigation,
+  .menu-primary
+    display: flex
+    flex: auto
+    gap: $grid-gutter
