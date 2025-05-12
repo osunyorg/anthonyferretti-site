@@ -1,0 +1,78 @@
+{{ $primary := partial "GetMenu" "primary" }}
+{{ $upper_menu := partial "GetMenu" "upper-menu" }}
+
+<header id="document-header" role="banner"
+  {{ if $upper_menu.items }}
+    class="has-upper-menu"
+  {{ end }}>
+  {{ if $upper_menu.items }}
+    <nav class="upper-menu" aria-label="{{ i18n "commons.menu.upper" }}">
+      <div class="container">
+        {{ partial "commons/menu.html" (dict
+            "context" .
+            "ignore_externals" true
+            "kind" "upper-menu"
+            "level" 1
+            "stop" 1
+          )}}
+      </div>
+    </nav>
+  {{ end }}
+  <nav class="primary-menu" aria-label="{{ i18n "commons.menu.main" }}">
+    <div class="container">
+      {{ partial "header/logo.html" }}
+      {{ if $primary.items }}
+        {{ partial "header/button.html" }}
+        <div class="menu" id="navigation">
+          {{ partial "commons/menu.html"
+              (dict
+                "kind" "primary"
+                "dropdown" true
+                "level" 1
+                "context" .
+            )}}
+        </div>
+      {{ end }}
+      {{ partial "hooks/before-primary-menu-end.html" . }}
+    </div>
+  </nav>
+  {{ partial "hooks/before-header-end.html" . }}
+</header>
+
+
+<!-- {{ $primary := partial "GetMenu" "primary" }}
+{{ $secondary := partial "GetMenu" "secondary-menu" }}
+
+<header id="document-header" role="banner">
+  <nav class="primary-menu" aria-label="{{ i18n "commons.menu.main" }}">
+    <div class="container">
+        {{ partial "header/logo.html" }}
+            <div class="menu" id="navigation">
+                {{ partial "header/button.html" }}
+                    <div class="navigatinon-primary">
+                        {{ if $primary.items }}
+                            <div class="navigatinon-items-primary">
+                                {{ partial "commons/menu.html" (dict
+                                    "kind" "primary"
+                                    "dropdown" true
+                                    "level" 1
+                                    "context" .
+                                ) }}
+                            </div>
+                    {{ end }}
+                </div>
+                <div class="navigation-secondary">
+                    {{ if $secondary.items }}
+                        <div class="navigatinon-items-secondary">
+                        {{ partial "commons/menu.html" (dict
+                            "kind" "secondary-menu"
+                            "level" 1
+                            "context" .
+                        ) }}
+                        </div>
+                    {{ end }}
+                </div>
+        </div>
+    </div>
+  </nav>
+</header> -->
