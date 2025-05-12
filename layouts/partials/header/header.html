@@ -1,35 +1,30 @@
 {{ $primary := partial "GetMenu" "primary" }}
-{{ $secondary_menu := partial "GetMenu" "secondary-menu" }}
+{{ $secondary := partial "GetMenu" "secondary-menu" }}
 
 <header id="document-header" role="banner">
-<!-- Primary menu -->
   <nav class="primary-menu" aria-label="{{ i18n "commons.menu.main" }}">
     <div class="container">
       {{ partial "header/logo.html" }}
-      {{ if $primary.items }}
+      {{ if or $primary.items $secondary.items }}
         {{ partial "header/button.html" }}
         <div class="menu" id="navigation">
-          {{ partial "commons/menu.html"
-              (dict
+          {{ if $primary.items }}
+            {{ partial "commons/menu.html" (dict
                 "kind" "primary"
                 "dropdown" true
                 "level" 1
                 "context" .
-            )}}
+            ) }}
+          {{ end }}
+          {{ if $secondary.items }}
+            {{ partial "commons/menu.html" (dict
+                "kind" "secondary-menu"
+                "level" 1
+                "context" .
+            ) }}
+          {{ end }}
         </div>
       {{ end }}
     </div>
   </nav>
-<!-- Secondary menu -->
-  {{ if $secondary_menu.items }}
-    <nav class="secondary-menu" aria-label="{{ i18n "commons.menu.secondary" }}">
-      <div class="container">
-        {{ partial "commons/menu.html" (dict
-            "context" .
-            "kind" "secondary-menu"
-            "level" 1
-          ) }}
-      </div>
-    </nav>
-  {{ end }}
 </header>
