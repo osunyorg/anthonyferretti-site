@@ -7,6 +7,7 @@ params:
     position: hero
   search:
     active: true
+    positions: secondary-menu
   seo:
     title:
       separator: "-"
