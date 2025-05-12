@@ -9,19 +9,23 @@
         {{ partial "header/button.html" }}
         <div class="menu" id="navigation">
           {{ if $primary.items }}
+          <div class="menu-items-primary">
             {{ partial "commons/menu.html" (dict
                 "kind" "primary"
                 "dropdown" true
                 "level" 1
                 "context" .
             ) }}
+            </div>
           {{ end }}
           {{ if $secondary.items }}
-            {{ partial "commons/menu.html" (dict
+            <div class="menu-items-secondary">
+              {{ partial "commons/menu.html" (dict
                 "kind" "secondary-menu"
                 "level" 1
                 "context" .
-            ) }}
+              ) }}
+            </div>
           {{ end }}
         </div>
       {{ end }}
