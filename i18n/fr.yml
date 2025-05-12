@@ -13,7 +13,7 @@ persons:
     posts: Activités mentionnant
   posts:
     recent: Dernières activités
-    all: Voir toutes les activités de {{ .author }}
+    all: Voir toutes les activités avec {{ .author }}
 posts:
   count:
     see_all: Voir toutes les activités
