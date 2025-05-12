@@ -1,0 +1,26 @@
+commons:
+  credit: Un site éco-conçu par <a href="https://anthonyferretti.fr" title="Anthony Feretti - lien externe" target="_blank" rel="noreferrer">Anthony Feretti</a> et <a href="https://www.noesya.coop/" title="noesya - lien externe" target="_blank" rel="noreferrer">noesya</a> avec <a href="https://www.osuny.org/" title="Osuny - lien externe" target="_blank" rel="noreferrer">Osuny</a>
+blocks:
+  posts:
+    title: Activités
+categories:
+  type:
+    posts_categories: Catégories des activités
+pages:
+  posts: Activités
+persons:
+  backlinks:
+    posts: Activités mentionnant
+  posts:
+    recent: Dernières activités
+    all: Voir toutes les activités de {{ .author }}
+posts:
+  count:
+    see_all: Voir toutes les activités
+    see_all_in_program: Voir toutes les activités liées à la formation
+    see_all_in_category: Voir toutes les activités “{{ .Title }}”
+    title: Activités
+programs:
+  posts: Activités
+  toc:
+    related: Activités
