@@ -18,27 +18,11 @@ params:
     footer: ''
   menu:
     primary:
-      level_1:
-        summary:
-          active: false
-          source: "Summary" # "Summary" | "meta_description"
-          truncate: 125
       level_2:
         summary:
           active: false
-          source: "Summary" # "Summary" | "meta_description"
-          truncate: 125
         title:
           active: true
-          summary:
-            active: false
-            source: "Summary" # "Summary" | "meta_description"
-            truncate: 125
-      level_3:
-        summary:
-          active: false
-          source: "Summary" # "Summary" | "meta_description"
-          truncate: 125
 
   # SECTIONS
   default:
@@ -81,7 +65,7 @@ params:
       backlinks: true
   posts:
     default_image: false
-    date_format: "2006"
+    date_format: "02/01/2006"
     index:
       layout: list # grid | list
       options:
