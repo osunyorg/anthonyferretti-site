@@ -8,7 +8,7 @@ bodyclass: >-
 url: "/"
 slug: ""
 date: 2024-03-21T16:27:55+01:00
-lastmod: 2025-05-13T15:22:10+02:00
+lastmod: 2025-05-13T15:49:05+02:00
 meta:
   hugo:
     permalink: "/"
@@ -17,7 +17,7 @@ meta:
     slug: ""
   dates:
     created_at: 2024-03-21T16:27:55+01:00
-    updated_at: 2025-05-13T15:22:10+02:00
+    updated_at: 2025-05-13T15:49:05+02:00
     published_at: 2024-03-21T16:27:55+01:00
 search:
   id: "bb4ea08a-6a7c-441e-bd21-980acb7048c9"
@@ -29,7 +29,7 @@ search:
   summary: >-
     <p>Je suis designer d'interface (UX/UI designer senior). En 2013, j'ai cofondé le collectif de design numérique <a href="https://praticable.fr/">Praticable</a>, anciennement <a href="https://collectifbam.fr/home.html">Collectif Bam</a>. Aujourd'hui, je travaille en free-lance et j'enseigne mon métier dans différentes écoles.</p>
   body: >-
-    <p>Derniers projets </p>  <p> Dernières activités </p>
+    <p>Derniers projets </p>  <p> Dernières activités </p>  <p> À propos </p>
 
 breadcrumbs:
   - title: >-
@@ -170,6 +170,41 @@ contents:
   - kind: block
     template: pages
     title: >-
+      À propos
+    slug: >-
+      a-propos
+    ranks:
+      base: 2
+      self: 2
+      children: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          À propos
+        heading: 2
+    data:
+      options:
+        image: true
+        main_summary: true
+        summary: true
+
+      layout: grid
+      pages:
+        - permalink: "/a-propos/portrait/"
+          path: "/pages/a-propos/portrait"
+          slug: "portrait"
+          file: "content/fr/pages/a-propos/portrait/_index.html"
+        - permalink: "/a-propos/curriculum-vitae/"
+          path: "/pages/a-propos/curriculum-vitae"
+          slug: "curriculum-vitae"
+          file: "content/fr/pages/a-propos/curriculum-vitae/_index.html"
+
+
+
+  - kind: block
+    template: pages
+    title: >-
       
     slug: >-
       
@@ -214,6 +249,27 @@ contents:
           path: "/pages/a-propos/expertise/design-volumique"
           slug: "design-volumique"
           file: "content/fr/pages/a-propos/expertise/design-volumique/_index.html"
+
+
+
+  - kind: block
+    template: pages
+    title: >-
+      
+    slug: >-
+      
+    ranks:
+      base: 2
+    top:
+      active: false
+    data:
+      options:
+        image: true
+        main_summary: true
+        summary: true
+
+      layout: grid
+      pages:
 
 
 
