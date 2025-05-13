@@ -18,7 +18,7 @@
 .search-button--secondary-menu
   @include icon(search-line, after)
 
-// Button hero categories
+// Button hero categories (temporaire)
 
 .projects_categories__term hgroup.has-lead > p:last-child
   margin-top: $spacing-3
@@ -57,3 +57,7 @@
       border: $btn-border-desktop
       border-radius: $btn-border-radius-desktop
       min-width: $btn-min-width-desktop
+
+// Ne pas afficher le bouton présent dans le texte dans un bloc catégorie (temporaire)
+.categories .rich-text > p:last-child
+  display: none
