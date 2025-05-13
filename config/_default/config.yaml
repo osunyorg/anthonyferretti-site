@@ -3,11 +3,9 @@
 theme: osuny
 _merge: deep
 params:
-  summary:
-    position: hero
   search:
     active: true
-    positions: secondary-menu
+    positions: secondary-menu #config custom pour afficher l'icone search dans le menu secondaire
   seo:
     title:
       separator: "-"
@@ -25,85 +23,37 @@ params:
           active: true
 
   # SECTIONS
-  default:
-    single:
-      taxonomies:
-        display: true
-        position: content
-  categories:
-    index:
-      layout: grid # alternate | cards | grid | large | list
-      options:
-        image: true
-        summary: true
-  projects:
-    default_image: false
-    date_format: "2006"
-    index:
-      layout: list # alternate | grid | large | list
-      options:
-        categories: true
-        image: true
-        subtitle: true
-        summary: true
-        year: true
-      taxonomies: true
-      truncate_description: 200 # Set to 0 to disable truncate
-    taxonomies_to_hide: #config custom pour masquer certaines taxonomies
-      - "Studio"
   organizations:
-    dark_logo_background: false
-    map_marker_icon: '/assets/images/map-marker.svg'
-    prefer_image_over_logo: true
     index:
-      options:
-        link: true
-        logo: true
-        summary: false
       taxonomies: true
     single:
       backlinks: true
+  persons:
+    index:
+      layout: grid # grid | list
+      taxonomies: true
+    single:
+      backlinks: true #activé mais author désactivé en attendant MAJ Osuny pour avoir les auteurs dans les projets
+      taxonomies:
+        position: content # content | hero | none
   posts:
-    default_image: false
+    default_image: true
     date_format: "02/01/2006"
     index:
       layout: list # grid | list
-      options:
-        author: false
-        categories: true
-        date: true
-        image: true
-        reading_time: false
-        summary: true
-        subtitle: true
-      truncate_description: 200 # Set to 0 to disable truncate
-      taxonomies: true
     taxonomies_to_hide: #config custom pour masquer certaines taxonomies
     - "Niveau de diplôme"
     - "Mention"
-    single:
-      author_signature: false
+  projects:
+    default_image: true
+    date_format: "2006"
+    index:
+      layout: list # alternate | grid | large | lists
+    taxonomies_to_hide: #config custom pour masquer certaines taxonomies
+      - "Studio"
 
   # BLOCKS
   blocks:
-      gallery:
-        slider:
-          arrows: true
-          progression: true
-      key_figures:
-        animated: true
-      pages:
-        alternate:
-          more: false
-      posts:
-        slider:
-          arrows: true
-      testimonials:
-        slider:
-          pagination: true
-          autoplay: true
-          interval: 5000
-      timeline:
-        slider:
-          arrows: true
-          progression: true
+    pages:
+      alternate:
+        more: false
