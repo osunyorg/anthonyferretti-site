@@ -4,6 +4,7 @@ blocks:
   posts:
     title: Activités
 categories:
+  no_post: Aucune activité dans cette catégorie
   type:
     posts_categories: Catégories des activités
 pages:
@@ -15,11 +16,10 @@ persons:
     recent: Dernières activités
     all: Voir toutes les activités avec {{ .author }}
 posts:
-  count:
-    see_all: Voir toutes les activités
-    see_all_in_program: Voir toutes les activités liées à la formation
-    see_all_in_category: Voir toutes les activités “{{ .Title }}”
-    title: Activités
+  see_all: Voir toutes les activités
+  see_all_in_program: Voir toutes les activités liées à la formation
+  see_all_in_category: Voir toutes les activités “{{ .Title }}”
+  title: Activités
 programs:
   posts: Activités
   toc:
