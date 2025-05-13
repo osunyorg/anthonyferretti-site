@@ -11,7 +11,9 @@ pages:
   posts: Activités
 persons:
   backlinks:
-    posts: Activités mentionnant
+    events: Événements avec
+    posts: Activités avec
+    projects: Projets avec
   posts:
     recent: Dernières activités
     all: Voir toutes les activités avec {{ .author }}
