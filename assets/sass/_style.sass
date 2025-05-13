@@ -7,3 +7,11 @@
     display: flex
     flex: auto
     gap: $grid-gutter
+
+// Search
+
+.search-button--secondary-menu span
+  @extend .sr-only
+
+.search-button--secondary-menu
+  @include icon(search-line, after)
