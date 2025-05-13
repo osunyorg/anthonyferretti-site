@@ -8,7 +8,7 @@ bodyclass: >-
 url: "/"
 slug: ""
 date: 2024-03-21T16:27:55+01:00
-lastmod: 2025-05-13T15:49:05+02:00
+lastmod: 2025-05-13T16:00:53+02:00
 meta:
   hugo:
     permalink: "/"
@@ -17,7 +17,7 @@ meta:
     slug: ""
   dates:
     created_at: 2024-03-21T16:27:55+01:00
-    updated_at: 2025-05-13T15:49:05+02:00
+    updated_at: 2025-05-13T16:00:53+02:00
     published_at: 2024-03-21T16:27:55+01:00
 search:
   id: "bb4ea08a-6a7c-441e-bd21-980acb7048c9"
@@ -29,7 +29,7 @@ search:
   summary: >-
     <p>Je suis designer d'interface (UX/UI designer senior). En 2013, j'ai cofondé le collectif de design numérique <a href="https://praticable.fr/">Praticable</a>, anciennement <a href="https://collectifbam.fr/home.html">Collectif Bam</a>. Aujourd'hui, je travaille en free-lance et j'enseigne mon métier dans différentes écoles.</p>
   body: >-
-    <p>Derniers projets </p>  <p> Dernières activités </p>  <p> À propos </p>
+    <p>Derniers projets </p>  <p> Dernières activités </p>  <p> À propos </p>  <p> Réseau </p>  <p> Contact  <br>Je travaille avec des associations, institutions et organisations à impact. N'hésitez pas à me contacter pour discuter de votre projet.</p>  <p>Me contacter <br>/contact/</p>
 
 breadcrumbs:
   - title: >-
@@ -74,7 +74,7 @@ header_cta:
   external: false
 
 contents_reading_time:
-  seconds: 2
+  seconds: 8
   text: >-
     moins d'une minute
 contents:
@@ -229,7 +229,7 @@ contents:
       options:
         image: false
         main_summary: true
-        summary: true
+        summary: false
 
       layout: list
       pages:
@@ -255,13 +255,19 @@ contents:
   - kind: block
     template: pages
     title: >-
-      
+      Réseau
     slug: >-
-      
+      reseau
     ranks:
       base: 2
+      self: 2
+      children: 3
     top:
-      active: false
+      active: true
+      title: 
+        value: >-
+          Réseau
+        heading: 2
     data:
       options:
         image: true
@@ -270,7 +276,54 @@ contents:
 
       layout: grid
       pages:
+        - permalink: "/a-propos/reseau/personnes/"
+          path: "/persons"
+          slug: "personnes"
+          file: "content/fr/persons/_index.html"
+        - permalink: "/a-propos/reseau/organisations/"
+          path: "/organizations"
+          slug: "organisations"
+          file: "content/fr/organizations/_index.html"
 
+
+
+  - kind: block
+    template: call_to_action
+    title: >-
+      Contact
+    slug: >-
+      contact
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Contact
+        heading: 2
+      description: >-
+        <p>Je travaille avec des associations, institutions et organisations à impact. N'hésitez pas à me contacter pour discuter de votre projet.</p>
+    data:
+      layout: accent_background
+      text: >-
+        <p>Je travaille avec des associations, institutions et organisations à impact. N'hésitez pas à me contacter pour discuter de votre projet.</p>
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+      buttons:
+        - title: >-
+            Me contacter
+
+          url: >-
+            /contact/
+
+          target_blank: false
 
 
 
