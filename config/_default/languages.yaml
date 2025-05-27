@@ -38,10 +38,10 @@ fr:
     projects_categories: /projets/:slug/
     posts: /activites/:year-:month-:day-:slug/
     posts_categories: /activites/:slug/
-    organizations: /a-propos/reseau/organisations/:slug/
-    organizations_categories: /a-propos/reseau/organisations/categories/:slug/
-    persons: /a-propos/reseau/personnes/:slug/
-    persons_categories: /a-propos/reseau/personnes/categories/:slug/
+    organizations: /organisations/:slug/
+    organizations_categories: /organisations/categories/:slug/
+    persons: /personnes/:slug/
+    persons_categories: /personnes/categories/:slug/
   taxonomies:
     administrator: administrators
     author: authors

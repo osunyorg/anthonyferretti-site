@@ -68,13 +68,6 @@ items:
     children: []
     path: "/pages/a-propos/expertise"
     file: content/fr/pages/a-propos/expertise/_index.html
-  - title: Réseau
-    target: "/a-propos/reseau/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/a-propos/reseau"
-    file: content/fr/pages/a-propos/reseau/_index.html
   - title: Curriculum vitæ
     target: "/a-propos/curriculum-vitae/"
     kind: page
