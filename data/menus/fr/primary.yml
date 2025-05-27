@@ -6,23 +6,23 @@ items:
   kind: page
   new_tab: false
   children:
-  - title: Design stratégique
-    target: "/projets/expertise/design-strategique/"
+  - title: Stratégie
+    target: "/projets/expertise/strategie/"
     kind: url
     new_tab: false
     children: []
-  - title: Design numérique
-    target: "/projets/expertise/design-numerique/"
+  - title: Interface
+    target: "/projets/expertise/interface/"
     kind: url
     new_tab: false
     children: []
-  - title: Design graphique
-    target: "/projets/expertise/design-graphique/"
+  - title: Identité
+    target: "/projets/expertise/identite/"
     kind: url
     new_tab: false
     children: []
-  - title: Design volumique
-    target: "/projets/expertise/design-volumique/"
+  - title: Objet
+    target: "/projets/expertise/objet/"
     kind: url
     new_tab: false
     children: []
@@ -68,6 +68,13 @@ items:
     children: []
     path: "/pages/a-propos/expertise"
     file: content/fr/pages/a-propos/expertise/_index.html
+  - title: Clients & partenaires
+    target: "/a-propos/clients-partenaires/"
+    kind: page
+    new_tab: false
+    children: []
+    path: "/organizations"
+    file: content/fr/organizations/_index.html
   - title: Curriculum vitæ
     target: "/a-propos/curriculum-vitae/"
     kind: page
