@@ -61,13 +61,6 @@ items:
   kind: page
   new_tab: false
   children:
-  - title: Portrait
-    target: "/a-propos/portrait/"
-    kind: page
-    new_tab: false
-    children: []
-    path: "/pages/a-propos/portrait"
-    file: content/fr/pages/a-propos/portrait/_index.html
   - title: Expertise
     target: "/a-propos/expertise/"
     kind: page
