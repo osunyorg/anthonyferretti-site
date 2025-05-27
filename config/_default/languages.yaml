@@ -38,8 +38,8 @@ fr:
     projects_categories: /projets/:slug/
     posts: /activites/:year-:month-:day-:slug/
     posts_categories: /activites/:slug/
-    organizations: /organisations/:slug/
-    organizations_categories: /organisations/categories/:slug/
+    organizations: /a-propos/clients-partenaires/:slug/
+    organizations_categories: /a-propos/clients-partenaires/categories/:slug/
     persons: /personnes/:slug/
     persons_categories: /personnes/categories/:slug/
   taxonomies:
