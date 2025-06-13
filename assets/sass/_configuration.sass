@@ -1,6 +1,7 @@
 // Éditer les variables du thème pour configurer votre site web 
 // Variables disponibles : https://github.com/noesya/osuny-hugo-theme-AAA/blob/main/assets/sass/_theme/_configuration.sass
 // Documentation sur : https://developers.osuny.org/
+// Polices de caractères dans le dossier : static/assets/fonts
 
 $header-dropdown-full: true
 
@@ -13,62 +14,97 @@ $color-border: $color-text
 $color-background: hsl(0, 0%, 100%)
 $color-background-alt: hsl(0, 0%, 95%)
 
-
 // TYPOGRAPHY
-// Polices de caractères dans le dossier : static/assets/fonts
-
-// Font family
 
 $heading-font-family: "Lexend", "Helvetica", "Arial", sans-serif
 $body-font-family: "Lexend", "Helvetica", "Arial", sans-serif
 
-// Font size
-
-// Mobile
-
-$h1-size: pxToRem(36)               // 2.25rem
-$h3-size: pxToRem(28)               // 1.75rem
-$h2-size: pxToRem(24)               // 1.5rem
-$h4-size: pxToRem(22)               // 1.375rem
-$h5-size: pxToRem(20)               // 1.25rem
-$h6-size: pxToRem(18)               // 1.125rem
-
-$body-size-desktop: pxToRem(16)
-
-// Desktop
-
-$h1-size-desktop: pxToRem(56)       // 3.5rem
-$h2-size-desktop: pxToRem(48)       // 3rem
-$h3-size-desktop: pxToRem(32)       // 2rem
-$h4-size-desktop: pxToRem(24)       // 1.5rem
-$h5-size-desktop: pxToRem(20)       // 1.25rem
-$h6-size-desktop: pxToRem(18)       // 1.125rem
-
-$body-size-desktop: pxToRem(18)     // 1.125rem
-$small-size-desktop: pxToRem(16)    // 1rem
-
-
-// Line height
-
-// mobile
-
-$body-line-height: 160%
-
+// h1
+$h1-size: pxToRem(36)
+$h1-size-desktop: pxToRem(56)
 $h1-line-height: 120%
+$h1-line-height-desktop: 120%
+$h1-weight: 600
+
+// h2
+$h2-size: pxToRem(28)
+$h2-size-desktop: pxToRem(48)
 $h2-line-height: 125%
+$h2-line-height-desktop: 125%
+$h2-weight: 500
+
+// h3
+$h3-size: pxToRem(24)
+$h3-size-desktop: pxToRem(32)
 $h3-line-height: 130%
+$h3-line-height-desktop: 130%
+$h3-weight: 500
+
+// h4
+$h4-size: pxToRem(22)
+$h4-size-desktop: pxToRem(24)
 $h4-line-height: 135%
+$h4-line-height-desktop: 135%
+$h4-weight: 500
+
+// h5
+$h5-size: pxToRem(20)
+$h5-size-desktop: pxToRem(20)
 $h5-line-height: 140%
+$h5-line-height-desktop: 140%
+$h5-weight: 400
+
+// h6
+$h6-size: pxToRem(18)
+$h6-size-desktop: pxToRem(18)
 $h6-line-height: 145%
+$h6-line-height-desktop: 145%
+$h6-weight: 500
 
-$lead-line-height: 140%
+// lead
+$lead-size: $h3-size
+$lead-size-desktop: $h3-size-desktop
+$lead-sidebar-size: $h3-size
+$lead-sidebar-size-desktop: $h3-size-desktop
+$lead-line-height: 135%
+$lead-line-height-desktop: $lead-line-height
+$lead-hero-line-height: $lead-line-height
+$lead-hero-line-height-desktop: $lead-line-height
+
+// body
+$body-size: pxToRem(16)
+$body-size-desktop: pxToRem(18)
+$body-line-height: 160%
+$body-line-height-desktop: 180%
+$body-weight: 400
+
+// small
+$small-size: pxToRem(14)
+$small-size-desktop: pxToRem(16)
 $small-line-height: 150%
-$signature-line-height: 130%
-$meta-line-height: 150%
-$quote-line-height: 130%
+$small-line-height-desktop: 150%
+$small-weight: 400
 
-/// desktop
-    
+// meta
+$meta-size: $small-size
+$meta-size-desktop: $small-size-desktop
+$meta-line-height: 150%
+$meta-line-height-desktop: 150%
+$meta-weight: 400
+
+// quote
+$quote-size-desktop-short: $h3-size-desktop
+$quote-size-desktop-long: $h4-size-desktop
+$quote-line-height: 130%
+$quote-line-height-desktop: 130%
+$quote-weight: 400
+
+// signature
+$signature-size: $h6-size
+$signature-size-desktop: $h5-size-desktop
+$signature-line-height: $h6-line-height
+$signature-line-height-desktop: $h5-line-height-desktop
+$signature-weight: 400
 
 // HEADER
 
@@ -77,5 +113,8 @@ $header-border-bottom-width: 1px
 // COMPONENTS
 
 // button
-
 $btn-border-radius: 0
+$btn-padding: pxToRem(12) pxToRem(24)
+$btn-padding-desktop: pxToRem(16) pxToRem(32)
+$btn-hover-color: $color-background
+$btn-hover-background: $color-text

@@ -12,6 +12,13 @@
     flex: auto
     gap: $grid-gutter
 
+// logo
+footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
+  @include media-breakpoint-down(desktop)
+    font-size: $body-size
+  @include media-breakpoint-up(desktop)
+    font-size: $body-size-desktop
+
 // BUTTONS
 
 // Search

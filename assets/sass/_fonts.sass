@@ -1,3 +1,11 @@
 // @include font-face("Font name", font-file-in-fonts-without-extensions)
 
-@include font-face("lexend", Lexend/lexend, $exts: (woff woff2))
+@font-face
+  font-family: "Lexend"
+  src: url("static/assets/fonts/Lexend/lexend.woff2") format("woff2")
+  font-weight: 100 700
+  font-style: normal
+  font-display: swap
+
+// Legacy
+// @include font-face("Lexend", Lexend/lexend, $weight: 100 700)
