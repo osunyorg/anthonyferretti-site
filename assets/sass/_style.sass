@@ -2,6 +2,11 @@
 
 @import "_page-curriculum-vitae.sass"
 
+// TYPOGRAPHY
+
+b, strong
+  font-weight: 600
+
 // HEADER
 
 @include media-breakpoint-up(desktop)
@@ -19,8 +24,6 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
   @include media-breakpoint-up(desktop)
     font-size: $body-size-desktop
 
-// BUTTONS
-
 // Search
 
 .search-button--secondary-menu span
@@ -28,6 +31,8 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
 
 .search-button--secondary-menu
   @include icon(search-line, after)
+
+// BUTTONS
 
 // Button hero categories (temporaire)
 
