@@ -4,11 +4,13 @@
 
 // TYPOGRAPHY
 
+// bold
 b, strong
   font-weight: 600
 
-// HEADER
+// COMPONENTS
 
+// header
 @include media-breakpoint-up(desktop)
   .primary-menu > .container,
   #navigation,
@@ -24,18 +26,25 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
   @include media-breakpoint-up(desktop)
     font-size: $body-size-desktop
 
-// Search
-
+// search
 .search-button--secondary-menu span
   @extend .sr-only
-
 .search-button--secondary-menu
   @include icon(search-line, after)
 
+// footer
+.footer-credit
+  color: $color-text-alt
+
+// BLOCKS
+
+// contact
+.block-contact h3
+  color: $color-text-alt
+
 // BUTTONS
 
-// Button hero categories (temporaire)
-
+// button hero categories (temporaire)
 .projects_categories__term hgroup.has-lead > p:last-child
   margin-top: $spacing-3
   > a:last-child

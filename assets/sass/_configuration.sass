@@ -7,12 +7,12 @@ $header-dropdown-full: true
 
 // COLORS
 
-$color-accent: hsl(240, 100%, 50%) 
-$color-text: hsl(0, 0%, 10%)
-$color-text-alt: hsl(0, 0%, 30%)
-$color-border: $color-text
-$color-background: hsl(0, 0%, 100%)
-$color-background-alt: hsl(0, 0%, 95%)
+$color-text: hsla(0, 0%, 0%, 0.9)
+$color-text-alt: hsla(0, 0%, 0%, 0.7)
+$color-accent: $color-text-alt
+$color-border: hsla(0, 0%, 0%, 0.2)
+$color-background: hsla(0, 0%, 100%, 1)
+$color-background-alt: hsla(0, 0%, 95%, 1)
 
 // TYPOGRAPHY
 
@@ -68,6 +68,8 @@ $lead-sidebar-size: $h3-size
 $lead-sidebar-size-desktop: $h3-size-desktop
 $lead-line-height: 135%
 $lead-line-height-desktop: $lead-line-height
+$lead-hero-size: $h3-size
+$lead-hero-size-desktop: $h3-size-desktop
 $lead-hero-line-height: $lead-line-height
 $lead-hero-line-height-desktop: $lead-line-height
 
@@ -106,15 +108,63 @@ $signature-line-height: $h6-line-height
 $signature-line-height-desktop: $h5-line-height-desktop
 $signature-weight: 400
 
-// HEADER
-
-$header-border-bottom-width: 1px
-
 // COMPONENTS
+
+$border-width: 1px
+$border: $border-width solid $color-border
 
 // button
 $btn-border-radius: 0
+$btn-border: $border
 $btn-padding: pxToRem(12) pxToRem(24)
 $btn-padding-desktop: pxToRem(16) pxToRem(32)
 $btn-hover-color: $color-background
 $btn-hover-background: $color-text
+
+// header
+$header-background: $color-background-alt
+$header-border-bottom-width: $border-width
+$header-sticky-background: $color-background
+$header-nav-padding-y: pxToRem(16)
+$header-nav-padding-y-desktop: pxToRem(24)
+$header-dropdown-title-summary-font-size: $body-size
+$header-dropdown-title-summary-font-size-desktop: $lead-hero-size-desktop
+$header-dropdown-title-summary-line-height: 120%
+$header-dropdown-title-summary-line-height-desktop: $header-dropdown-title-summary-line-height
+
+// footer
+$footer-background-color: $header-background
+
+// navs
+$body-overlay-color: hsla(0, 0%, 0%, 0.3)
+
+// hero
+$hero-background-color: $header-background
+
+// BLOCKS
+
+// heading
+$heading-margin-bottom-with-sidebar: pxToRem(32)
+$heading-margin-bottom-desktop: pxToRem(48)
+
+// spacings
+$block-space-y: pxToRem(32)
+$block-space-y-with-sidebar: pxToRem(64)
+$block-space-y-desktop: pxToRem(64)
+$heading-margin-top: pxToRem(64)
+$heading-margin-top-with-sidebar: pxToRem(128)
+$heading-margin-top-desktop: pxToRem(128)
+$lined-list-y-spacing: space(8)
+
+// cta
+$block-call-to-action-accent-background: $color-background
+$block-call-to-action-accent-color: $color-text
+$block-call-to-action-accent-button-background: $color-text
+$block-call-to-action-accent-button-color: $block-call-to-action-accent-background
+$block-call-to-action-accent-button-border: $btn-border
+$block-call-to-action-accent-button-hover-background: $color-background-alt
+$block-call-to-action-accent-button-hover-color: $color-text
+$block-call-to-action-accent-button-hover-border: $btn-border
+
+// video
+$block-video-background: none
