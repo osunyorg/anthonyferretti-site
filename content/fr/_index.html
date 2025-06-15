@@ -8,7 +8,7 @@ bodyclass: >-
 url: "/"
 slug: ""
 date: 2024-03-21T16:27:55+01:00
-lastmod: 2025-06-15T12:22:53+02:00
+lastmod: 2025-06-15T12:50:20+02:00
 meta:
   hugo:
     permalink: "/"
@@ -17,7 +17,7 @@ meta:
     slug: ""
   dates:
     created_at: 2024-03-21T16:27:55+01:00
-    updated_at: 2025-06-15T12:22:53+02:00
+    updated_at: 2025-06-15T12:50:20+02:00
     published_at: 2024-03-21T16:27:55+01:00
 search:
   id: "bb4ea08a-6a7c-441e-bd21-980acb7048c9"
@@ -30,7 +30,7 @@ search:
   summary: >-
     <p><b>Penser, faire et former par le design<br></b>Pour des projets utiles, ouverts et soignés</p>
   body: >-
-    <p>Derniers projets </p>  <p> Dernières activités </p>  <p> Contact  <br>N'hésitez pas à me contacter pour toute information ou proposition de collaboration.</p>  <p>Me contacter <br>/contact/</p>
+    <p>Dernières activités </p>  <p> Derniers projets </p>  <p> À propos </p>  <p> Envie d'échaner  <br>Un projet, une idée, une envie de collaborer ? Parlons-en.</p>  <p>M'écrire <br>mailto:contact@anthonyferretti.fr</p>  <p>Voir toutes mes coordonnées <br>/contact/</p>
 
 breadcrumbs:
   - title: >-
@@ -78,54 +78,10 @@ header_cta:
   external: false
 
 contents_reading_time:
-  seconds: 6
+  seconds: 8
   text: >-
     moins d'une minute
 contents:
-  - kind: block
-    template: projects
-    title: >-
-      Derniers projets
-    slug: >-
-      derniers-projets
-    ranks:
-      base: 2
-      self: 2
-      children: 3
-    top:
-      active: true
-      title: 
-        value: >-
-          Derniers projets
-        heading: 2
-        link: "/projets/"
-    data:
-      mode: all
-      all: true
-      layout: list
-      options:
-        categories: true
-        image: true
-        subtitle: true
-        summary: true
-        year: false
-
-      projects:
-        - permalink: "/projets/2025-audience-data-performing-arts/"
-          path: "/projects/2025-audience-data-performing-arts"
-          slug: "audience-data-performing-arts"
-          file: "content/fr/projects/2025-audience-data-performing-arts.html"
-        - permalink: "/projets/2025-bonne-pioche/"
-          path: "/projects/2025-bonne-pioche"
-          slug: "bonne-pioche"
-          file: "content/fr/projects/2025-bonne-pioche.html"
-        - permalink: "/projets/2025-campus-de-la-transition/"
-          path: "/projects/2025-campus-de-la-transition"
-          slug: "campus-de-la-transition"
-          file: "content/fr/projects/2025-campus-de-la-transition.html"
-
-      quantity: 3
-
   - kind: block
     template: posts
     title: >-
@@ -149,11 +105,11 @@ contents:
       layout: list
       options:
         author: false
-        categories: true
+        categories: false
         date: true
         image: true
         reading_time: false
-        subtitle: true
+        subtitle: false
         summary: true
 
       posts:
@@ -174,11 +130,55 @@ contents:
 
 
   - kind: block
-    template: call_to_action
+    template: projects
     title: >-
-      Contact
+      Derniers projets
     slug: >-
-      contact
+      derniers-projets
+    ranks:
+      base: 2
+      self: 2
+      children: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Derniers projets
+        heading: 2
+        link: "/projets/"
+    data:
+      mode: all
+      all: true
+      layout: list
+      options:
+        categories: false
+        image: true
+        subtitle: false
+        summary: true
+        year: false
+
+      projects:
+        - permalink: "/projets/2025-audience-data-performing-arts/"
+          path: "/projects/2025-audience-data-performing-arts"
+          slug: "audience-data-performing-arts"
+          file: "content/fr/projects/2025-audience-data-performing-arts.html"
+        - permalink: "/projets/2025-bonne-pioche/"
+          path: "/projects/2025-bonne-pioche"
+          slug: "bonne-pioche"
+          file: "content/fr/projects/2025-bonne-pioche.html"
+        - permalink: "/projets/2025-campus-de-la-transition/"
+          path: "/projects/2025-campus-de-la-transition"
+          slug: "campus-de-la-transition"
+          file: "content/fr/projects/2025-campus-de-la-transition.html"
+
+      quantity: 3
+
+  - kind: block
+    template: pages
+    title: >-
+      À propos
+    slug: >-
+      a-propos
     ranks:
       base: 2
       self: 2
@@ -186,14 +186,49 @@ contents:
       active: true
       title: 
         value: >-
-          Contact
+          À propos
+        heading: 2
+        link: "/a-propos/"
+      description: >-
+        <p>Je suis designer d'interface (UX/UI designer senior). En 2013, j'ai co-fondé le <a href="https://collectifbam.fr/home.html">Collectif Bam</a>, un studio de design global engagé sur les transitions de société. Dix ans plus tard, l'agence deviendra <a href="https://praticable.fr/">Praticable</a>, une coopérative de design numérique responsable. Aujourd'hui, je travaille en indépendant pour des projets numériques d'intérêt général et enseigne mon métier dans différentes écoles et universités.</p>
+    data:
+      page:
+        permalink: "/a-propos/"
+        path: "/pages/a-propos"
+        slug: "a-propos"
+        file: "content/fr/pages/a-propos/_index.html"
+      options:
+        image: false
+        main_summary: true
+        summary: false
+
+      layout: list
+      pages:
+
+      quantity: 0
+
+
+  - kind: block
+    template: call_to_action
+    title: >-
+      Envie d'échaner
+    slug: >-
+      envie-d-echaner
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Envie d'échaner
         heading: 2
       description: >-
-        <p>N'hésitez pas à me contacter pour toute information ou proposition de collaboration.</p>
+        <p>Un projet, une idée, une envie de collaborer ? Parlons-en.</p>
     data:
       layout: accent_background
       text: >-
-        <p>N'hésitez pas à me contacter pour toute information ou proposition de collaboration.</p>
+        <p>Un projet, une idée, une envie de collaborer ? Parlons-en.</p>
 
 
       alt: >-
@@ -204,7 +239,14 @@ contents:
 
       buttons:
         - title: >-
-            Me contacter
+            M'écrire
+
+          url: >-
+            mailto:contact@anthonyferretti.fr
+
+          target_blank: false
+        - title: >-
+            Voir toutes mes coordonnées
 
           url: >-
             /contact/
