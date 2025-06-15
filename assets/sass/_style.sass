@@ -32,6 +32,12 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
 .search-button--secondary-menu
   @include icon(search-line, after)
 
+// hero
+// .hero
+//   @include media-breakpoint-up(desktop)
+//       margin-bottom: $spacing-6
+//       padding-bottom: $spacing-5
+
 // footer
 .footer-credit
   color: $color-text-alt
@@ -41,6 +47,32 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
 // contact
 .block-contact h3
   color: $color-text-alt
+
+// portfolio
+
+body.full-width .projects--list article.project
+  .project-title,
+  .project-subtitle
+    @include media-breakpoint-down(desktop)
+      font-size: $h3-size
+      line-height: $h3-line-height
+    @include media-breakpoint-up(desktop)
+      font-size: $h3-size-desktop
+      line-height: $h3-line-height-desktop
+.project-summary
+  margin-top: $spacing-2
+  .rich-text > p
+    line-height: $body-line-height
+
+// post
+
+.block-posts--list
+  article
+  @include in-page-without-sidebar
+    article
+      padding-bottom: $spacing-3
+      + article
+        margin-top: $spacing-3
 
 // BUTTONS
 
