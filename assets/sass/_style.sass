@@ -5,12 +5,14 @@
 // TYPOGRAPHY
 
 // bold
+
 b, strong
   font-weight: 600
 
 // COMPONENTS
 
 // header
+
 @include media-breakpoint-up(desktop)
   .primary-menu > .container,
   #navigation,
@@ -20,6 +22,7 @@ b, strong
     gap: $grid-gutter
 
 // logo
+
 footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
   @include media-breakpoint-down(desktop)
     font-size: $body-size
@@ -27,54 +30,18 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
     font-size: $body-size-desktop
 
 // search
+
 .search-button--secondary-menu span
   @extend .sr-only
 .search-button--secondary-menu
   @include icon(search-line, after)
 
-// hero
-// .hero
-//   @include media-breakpoint-up(desktop)
-//       margin-bottom: $spacing-6
-//       padding-bottom: $spacing-5
-
 // footer
+
 .footer-credit
   color: $color-text-alt
 
-// BLOCKS
-
-// contact
-.block-contact h3
-  color: $color-text-alt
-
-// portfolio
-
-body.full-width .projects--list article.project
-  .project-title,
-  .project-subtitle
-    @include media-breakpoint-down(desktop)
-      font-size: $h3-size
-      line-height: $h3-line-height
-    @include media-breakpoint-up(desktop)
-      font-size: $h3-size-desktop
-      line-height: $h3-line-height-desktop
-.project-summary
-  margin-top: $spacing-2
-  .rich-text > p
-    line-height: $body-line-height
-
-// post
-
-.block-posts--list
-  article
-  @include in-page-without-sidebar
-    article
-      padding-bottom: $spacing-3
-      + article
-        margin-top: $spacing-3
-
-// BUTTONS
+// button
 
 // button hero categories (temporaire)
 .projects_categories__term hgroup.has-lead > p:last-child
@@ -118,3 +85,71 @@ body.full-width .projects--list article.project
 // Ne pas afficher le bouton présent dans le texte dans un bloc catégorie (temporaire)
 .categories .rich-text p:last-child
   display: none
+
+// BLOCKS
+
+// page
+
+.block-pages--list
+  @include in-page-without-sidebar
+    .top .description p
+      font-size: $quote-size-desktop-long
+      line-height: $quote-line-height-desktop
+
+// contact
+
+.block-contact h3
+  color: $color-text-alt
+
+// project
+
+body.full-width .projects--list article.project
+  .project-title,
+  .project-subtitle
+    @include media-breakpoint-down(desktop)
+      font-size: $h3-size
+      line-height: $h3-line-height
+    @include media-breakpoint-up(desktop)
+      font-size: $h3-size-desktop
+      line-height: $h3-line-height-desktop
+
+.project-summary
+  margin-top: $spacing-2
+  .rich-text > p
+    line-height: $body-line-height
+
+// post
+
+.block-posts--list
+  article
+  @include in-page-without-sidebar
+    article
+      padding-bottom: $spacing-3
+      + article
+        margin-top: $spacing-3
+
+
+// cta
+.block-call_to_action
+  @include in-page-without-sidebar
+    .call_to_action--without-image:not(.call_to_action--without-text) > div .actions
+      grid-column: 9/13
+    
+// SECTIONS
+
+// post
+
+.posts__section .posts--list
+  article
+    margin-bottom: $spacing-4
+    padding-bottom: $spacing-4
+
+// project
+
+.projects__section .projects--list
+  & > li:first-child
+    padding-bottom: $spacing-4
+    padding-top: 0
+  & > li:not(:first-child)
+    padding-bottom: $spacing-4
+    padding-top: $spacing-4
