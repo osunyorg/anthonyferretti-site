@@ -1,5 +1,3 @@
-// IMPORTS
-
 @import "_page-curriculum-vitae.sass"
 
 // TYPOGRAPHY
@@ -13,14 +11,19 @@ b, strong
 
 // header
 
-@include media-breakpoint-up(desktop)
-  .primary-menu > .container,
-  #navigation,
-  .menu-primary
-    display: flex
-    flex: auto
-    gap: $grid-gutter
-
+header#document-header
+  @include media-breakpoint-up(desktop)
+    .primary-menu > .container,
+    #navigation,
+    .menu-primary
+      display: flex
+      flex: auto
+      gap: $grid-gutter
+  @include media-breakpoint-down(desktop)
+    border-bottom: $border
+  .dropdown-menu
+    border-top: $border
+  
 // logo
 
 footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
@@ -38,8 +41,10 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
 
 // footer
 
-.footer-credit
-  color: $color-text-alt
+footer
+  border-top: $border
+  .footer-credit
+    color: $color-text-alt
 
 // button
 
@@ -86,7 +91,62 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
 .categories .rich-text p:last-child
   display: none
 
+// hero
+
+.hero
+  border-bottom: $border
+
+// person
+
+.person,
+.persons__page .hero
+  picture img
+    filter: grayscale(100%)
+    transition: filter $default-duration ease
+
+.person:hover picture img,
+.persons__page .hero picture:hover img
+  filter: none
+
+.siblings-navigation ul a
+  font-size: $body-size-desktop
+  span
+    color: $color-text-alt
+
+// organization
+
+.organization
+  .media
+    border: $border-width solid transparent
+    transition: border-color $default-duration ease
+  img
+    filter: grayscale(100%)
+    transition: filter $default-duration ease
+
+.organization:hover
+  .media
+    border-color: $color-border
+  img
+    filter: none
+  
+.organizations.with-summaries .organization .organization-content .organization-title
+  font-weight: 500
+
 // BLOCKS
+
+.block
+  @include in-page-without-sidebar
+    border-bottom: $border
+    margin-top: 0
+    margin-bottom: 0
+    @include media-breakpoint-down(desktop)
+      padding-top: $block-space-y
+      padding-bottom: $block-space-y
+    @include media-breakpoint-up(desktop)
+      padding-top: $block-space-y-desktop
+      padding-bottom: $block-space-y-desktop
+    &:last-child
+      border-bottom: none
 
 // page
 
@@ -113,6 +173,12 @@ body.full-width .projects--list article.project
       font-size: $h3-size-desktop
       line-height: $h3-line-height-desktop
 
+.projects--list
+  & > li:first-child
+    padding-top: 0
+  & > li:last-child
+    padding-bottom: 0
+
 .project-summary
   margin-top: $spacing-2
   .rich-text > p
@@ -127,6 +193,8 @@ body.full-width .projects--list article.project
       padding-bottom: $spacing-3
       + article
         margin-top: $spacing-3
+    .post:last-child
+      padding-bottom: 0
 
 
 // cta
@@ -134,7 +202,10 @@ body.full-width .projects--list article.project
   @include in-page-without-sidebar
     .call_to_action--without-image:not(.call_to_action--without-text) > div .actions
       grid-column: 9/13
-    
+    .block-content
+      padding-top: 0
+      padding-bottom: 0
+
 // SECTIONS
 
 // post
@@ -146,10 +217,14 @@ body.full-width .projects--list article.project
 
 // project
 
-.projects__section .projects--list
-  & > li:first-child
-    padding-bottom: $spacing-4
-    padding-top: 0
-  & > li:not(:first-child)
-    padding-bottom: $spacing-4
-    padding-top: $spacing-4
+.projects__section
+  .projects--list
+    & > li:first-child
+      padding-bottom: $spacing-4
+      padding-top: 0
+    & > li:not(:first-child)
+      padding-bottom: $spacing-4
+      padding-top: $spacing-4
+  .project-categories
+    margin-bottom: 0
+
