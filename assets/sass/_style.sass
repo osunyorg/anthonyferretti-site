@@ -108,10 +108,19 @@ footer
 .persons__page .hero picture:hover img
   filter: none
 
+// siblings
+
 .siblings-navigation ul a
   font-size: $body-size-desktop
   span
     color: $color-text-alt
+
+// pagination
+
+.pagination
+  margin-top: 0
+  padding-top: $spacing-5
+  border-top: $border
 
 // organization
 
@@ -214,6 +223,10 @@ body.full-width .projects--list article.project
   article
     margin-bottom: $spacing-4
     padding-bottom: $spacing-4
+    &:last-child
+      margin-bottom: 0
+      padding-bottom: 0
+      border: none
 
 // project
 
