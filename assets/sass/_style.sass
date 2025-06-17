@@ -19,11 +19,37 @@ header#document-header
       display: flex
       flex: auto
       gap: $grid-gutter
+    .menu .nav-level-1 > li
+      & > a
+        position: relative
+        color: $color-text
+        display: inline-block
+        &.active::before
+          @include media-breakpoint-up(desktop)
+            content: ""
+            position: absolute
+            left: 0
+            bottom: calc(-#{$header-nav-padding-y-desktop} - #{$border-width})
+            height: $border-width
+            width: 100%
+            background-color: $color-text
+            z-index: 0
   @include media-breakpoint-down(desktop)
     border-bottom: $border
   .dropdown-menu
+    padding-top: $spacing-4
     border-top: $border
-  
+    position: absolute
+    z-index: 10
+    animation: none
+
+html.has-menu-opened header#document-header
+  .menu a
+    &[aria-expanded="false"]
+      color: $color-text-alt
+    &[aria-expanded="true"]
+      color: $color-text
+
 // logo
 
 footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
@@ -39,10 +65,20 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
 .search-button--secondary-menu
   @include icon(search-line, after)
 
+//breadcrumb
+
+.breadcrumb li.active
+  color: $color-text-alt
+
 // footer
 
-footer
+footer#document-footer
   border-top: $border
+  @include media-breakpoint-up(desktop)
+    .container
+      padding-bottom: 0
+      & + .container
+        padding-top: $spacing-4
   .footer-credit
     color: $color-text-alt
 
@@ -50,7 +86,7 @@ footer
 
 // button hero categories (temporaire)
 .projects_categories__term hgroup.has-lead > p:last-child
-  margin-top: $spacing-3
+  margin-top: $spacing-4
   > a:last-child
     appearance: none
     cursor: 
@@ -95,6 +131,15 @@ footer
 
 .hero
   border-bottom: $border
+  .content h1 > span
+    @include media-breakpoint-up(desktop)
+      margin-top: $spacing-4
+      font-size: $h2-size-desktop
+      color: $color-text
+      line-height: $h2-line-height
+      font-weight: $h2-weight
+  .content .hero-actions
+    margin-top: $spacing-4
 
 // person
 
@@ -108,12 +153,23 @@ footer
 .persons__page .hero picture:hover img
   filter: none
 
+.avatar
+  border-radius: 0
+
 // siblings
 
-.siblings-navigation ul a
-  font-size: $body-size-desktop
+.siblings-navigation ul li
+  a
+    font-size: $body-size-desktop
+    color: $color-text
   span
     color: $color-text-alt
+  a, span
+    transition: color $default-duration ease
+  &:hover
+    a,
+    span
+      color: $color-text
 
 // pagination
 
@@ -121,6 +177,41 @@ footer
   margin-top: 0
   padding-top: $spacing-5
   border-top: $border
+
+// toc
+
+.toc-container
+  @include in-page-with-sidebar
+    .toc-content
+      overflow-y: visible
+  .toc ol li a
+    position: relative
+    display: block
+    color: $color-text-alt
+    text-decoration: none
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      width: $border-width
+      background-color: transparent
+      transition: background-color $default-duration ease
+      transform: translateX(-1rem)
+    &:hover
+      color: $color-text
+    &.active
+      color: $color-text
+      &::before
+        background-color: $color-border
+
+// category
+
+.projects__page:not(.full-width) .project-sidebar .project-infos,
+.post-infos
+  a
+    color: $color-text
 
 // organization
 
@@ -167,26 +258,40 @@ footer
 
 // contact
 
-.block-contact h3
+.block-contact h3,
+.contacts-details ul li > span
   color: $color-text-alt
 
 // project
 
-body.full-width .projects--list article.project
-  .project-title,
-  .project-subtitle
-    @include media-breakpoint-down(desktop)
-      font-size: $h3-size
-      line-height: $h3-line-height
+body.full-width .projects--list
+  article.project
+    & .project-title,
+    & .project-subtitle
+      @include media-breakpoint-down(desktop)
+        font-size: $h3-size
+        line-height: $h3-line-height
+      @include media-breakpoint-up(desktop)
+        font-size: $h3-size-desktop
+        line-height: $h3-line-height-desktop
+  article [class$="-content"]
     @include media-breakpoint-up(desktop)
-      font-size: $h3-size-desktop
-      line-height: $h3-line-height-desktop
+      flex: none
+      width: $content-width
+    @include media-breakpoint-down(desktop)
+      width: auto
 
 .projects--list
   & > li:first-child
     padding-top: 0
   & > li:last-child
     padding-bottom: 0
+  & .project
+    @include media-breakpoint-up(desktop)
+      flex-direction: row-reverse
+      justify-content: start
+    @include media-breakpoint-down(desktop)
+      flex-direction: column
 
 .project-summary
   margin-top: $spacing-2
@@ -200,13 +305,17 @@ body.full-width .projects--list article.project
   @include in-page-without-sidebar
     article
       padding-bottom: $spacing-3
+      .post-content
+        width: $content-width
       + article
         margin-top: $spacing-3
+    article:has(.media:empty) [class$="-content"]
+      margin-left: $content-margin-left
     .post:last-child
       padding-bottom: 0
 
-
 // cta
+
 .block-call_to_action
   @include in-page-without-sidebar
     .call_to_action--without-image:not(.call_to_action--without-text) > div .actions
@@ -219,14 +328,16 @@ body.full-width .projects--list article.project
 
 // post
 
-.posts__section .posts--list
-  article
-    margin-bottom: $spacing-4
-    padding-bottom: $spacing-4
-    &:last-child
-      margin-bottom: 0
-      padding-bottom: 0
-      border: none
+.posts_categories__term,
+.posts__section
+  & .posts--list
+    article
+      margin-bottom: $spacing-4
+      padding-bottom: $spacing-4
+      &:last-child
+        margin-bottom: 0
+        padding-bottom: 0
+        border: none
 
 // project
 
@@ -241,3 +352,30 @@ body.full-width .projects--list article.project
   .project-categories
     margin-bottom: 0
 
+// PAGES
+
+// project
+
+.projects__page .hero .container
+  padding-right: 0
+  .content
+    gap: $grid-gutter-xxl
+    .hero-text
+      width: $content-width
+
+// person
+
+.persons__page .backlinks
+  & > .block,
+  & > *
+    padding-top: 0
+    &:last-child    
+     padding-bottom: 0
+
+// organization
+  
+.organizations__page .backlinks
+  & > .block,
+  & > *
+    padding-top: 0
+    padding-bottom: 0
