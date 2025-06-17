@@ -42,6 +42,9 @@ header#document-header
     position: absolute
     z-index: 10
     animation: none
+    & .nav-level-2 li:not(:first-child)
+      @include media-breakpoint-up(desktop)
+        margin-top: $spacing-3
 
 html.has-menu-opened header#document-header
   .menu a
@@ -368,7 +371,11 @@ body.full-width .projects--list
 .persons__page .backlinks
   & > .block,
   & > *
-    padding-top: 0
+    &:first-child
+      border-top: $border
+    @include media-breakpoint-up(desktop)
+      padding-top: $block-space-y-desktop
+      margin-top: 0
     &:last-child    
      padding-bottom: 0
 
@@ -377,5 +384,7 @@ body.full-width .projects--list
 .organizations__page .backlinks
   & > .block,
   & > *
+    &:first-child
+      border-top: $border
     padding-top: 0
     padding-bottom: 0
