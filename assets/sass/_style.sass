@@ -88,8 +88,7 @@ footer#document-footer
 
 // button
 
-// button hero categories (temporaire)
-.projects_categories__term hgroup.has-lead > p:last-child
+.projects_categories__term hgroup.has-lead > p:last-child // button hero categories (temporaire)
   margin-top: $spacing-4
   > a:last-child
     appearance: none
@@ -127,9 +126,10 @@ footer#document-footer
       border-radius: $btn-border-radius-desktop
       min-width: $btn-min-width-desktop
 
-// Ne pas afficher le bouton présent dans le texte dans un bloc catégorie (temporaire)
+// cateogry
+
 .categories .rich-text p:last-child
-  display: none
+  display: none // link more disabled
 
 // hero
 
@@ -176,10 +176,14 @@ footer#document-footer
 
 // pagination
 
-.pagination
-  margin-top: 0
-  padding-top: $spacing-5
-  border-top: $border
+.projects__section,
+.projects_categories__term
+.posts__section,
+.posts_categories__term
+  & .pagination
+    margin-top: 0
+    padding-top: $spacing-5
+    border-top: $border
 
 // toc
 
@@ -232,8 +236,16 @@ footer#document-footer
   img
     filter: none
   
-.organizations.with-summaries .organization .organization-content .organization-title
-  font-weight: 500
+.organizations.with-summaries .organization .organization-content
+  .organization-title
+    font-weight: 500
+    line-height: $small-line-height-desktop
+  .organization-summary
+    margin-top: $spacing-1
+
+.organizations.with-summaries .organization:only-child
+  width: calc((var(--column-width) * 6) + (var(--grid-gutter) * (6 - 1)))
+
 
 // BLOCKS
 
@@ -320,28 +332,9 @@ body.full-width .projects--list
         margin-top: $spacing-3
     article:has(.media:empty) [class$="-content"]
       margin-left: $content-margin-left
-    .post:last-child
-      padding-bottom: 0
-
-.posts--list .post-title a
-  position: relative
-  @include icon(arrow-right-line, after, true) // garde le mixin, utilise bien ::after
-  text-decoration: none
-  &::after
-    display: inline-block
-    vertical-align: middle
-    margin-left: 0.25rem
-    transform: translateX(0)
-    opacity: 0
-    transition: transform $arrow-duration $arrow-ease-transition, opacity $arrow-duration $arrow-ease-transition
-    position: relative !important // important pour forcer inline, pas absolute
-    top: auto
-    left: auto
-
-.posts--list article:hover .post-title a::after
-  transform: translateX(0.625rem)
-  vertical-align: baseline
-  opacity: 1
+    .post
+      &:last-child
+        padding-bottom: 0
 
 .post .post-subtitle
   @include media-breakpoint-up(desktop)
@@ -357,7 +350,9 @@ body.full-width .projects--list
     .block-content
       padding-top: 0
       padding-bottom: 0
-
+  @include in-page-with-sidebar
+    .call_to_action > div
+      padding: 0
 // person
 
 .block-persons
@@ -423,5 +418,7 @@ body.full-width .projects--list
   & > *
     &:first-child
       border-top: $border
-    padding-top: 0
-    padding-bottom: 0
+    @include media-breakpoint-up(desktop)
+      padding-top: $block-space-y-desktop
+    &:last-child    
+     padding-bottom: 0
