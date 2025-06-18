@@ -35,23 +35,25 @@ header#document-header
             background-color: $color-text
             z-index: 0
   @include media-breakpoint-down(desktop)
-    border-bottom: $border
+    .menu-secondary .nav-level-1 > li:first-child
+      border-top: $border
   .dropdown-menu
-    padding-top: $spacing-4
-    border-top: $border
-    position: absolute
-    z-index: 10
-    animation: none
-    & .nav-level-2 li:not(:first-child)
-      @include media-breakpoint-up(desktop)
+    @include media-breakpoint-up(desktop)
+      padding-top: $spacing-4
+      border-top: $border
+      position: absolute
+      z-index: 10
+      animation: none
+      & .nav-level-2 li:not(:first-child)
         margin-top: $spacing-3
 
 html.has-menu-opened header#document-header
   .menu a
-    &[aria-expanded="false"]
-      color: $color-text-alt
-    &[aria-expanded="true"]
-      color: $color-text
+    @include media-breakpoint-up(desktop)
+      &[aria-expanded="false"]
+        color: $color-text-alt
+      &[aria-expanded="true"]
+        color: $color-text
 
 // logo
 
@@ -142,7 +144,10 @@ footer#document-footer
       line-height: $h2-line-height
       font-weight: $h2-weight
   .content .hero-actions
-    margin-top: $spacing-4
+    @include media-breakpoint-up(desktop)
+      margin-top: $spacing-4
+    @include media-breakpoint-down(desktop)
+      margin-top: 0
 
 // person
 
@@ -173,6 +178,10 @@ footer#document-footer
     a,
     span
       color: $color-text
+
+.siblings-navigation li:first-child
+  @include media-breakpoint-down(desktop)
+    border-bottom: none
 
 // pagination
 
@@ -213,12 +222,16 @@ footer#document-footer
       &::before
         background-color: $color-border
 
-// category
+// infos
 
-.projects__page:not(.full-width) .project-sidebar .project-infos,
-.post-infos
-  a
-    color: $color-text
+.projects__page:not(.full-width) .project-sidebar
+  .project-infos,
+  .post-infos
+    a
+      color: $color-text
+  @include media-breakpoint-down(desktop)
+    border-bottom: $border
+    padding-bottom: $spacing-3
 
 // organization
 
@@ -244,7 +257,8 @@ footer#document-footer
     margin-top: $spacing-1
 
 .organizations.with-summaries .organization:only-child
-  width: calc((var(--column-width) * 6) + (var(--grid-gutter) * (6 - 1)))
+  @include media-breakpoint-up(desktop)
+    width: calc((var(--column-width) * 6) + (var(--grid-gutter) * (6 - 1)))
 
 
 // BLOCKS
@@ -391,12 +405,18 @@ body.full-width .projects--list
 
 // project
 
-.projects__page .hero .container
-  padding-right: 0
+.projects__page .hero
+  .container
+    @include media-breakpoint-up(desktop)
+      padding-right: 0
+      .content
+        gap: $grid-gutter-xxl
+        .hero-text
+          width: $content-width
   .content
-    gap: $grid-gutter-xxl
-    .hero-text
-      width: $content-width
+    @include media-breakpoint-down(desktop)
+      display: flex
+      flex-direction: column-reverse
 
 // person
 
