@@ -8,7 +8,7 @@ bodyclass: >-
 url: "/"
 slug: ""
 date: 2024-03-21T16:27:55+01:00
-lastmod: 2025-06-18T22:52:11+02:00
+lastmod: 2025-06-18T22:57:39+02:00
 meta:
   hugo:
     permalink: "/"
@@ -17,7 +17,7 @@ meta:
     slug: ""
   dates:
     created_at: 2024-03-21T16:27:55+01:00
-    updated_at: 2025-06-18T22:52:11+02:00
+    updated_at: 2025-06-18T22:57:39+02:00
     published_at: 2024-03-21T16:27:55+01:00
 search:
   id: "bb4ea08a-6a7c-441e-bd21-980acb7048c9"
@@ -30,7 +30,7 @@ search:
   summary: >-
     <p><b>Penser, faire et former par le design</b></p><p>Pour des projets utiles, ouverts et soignés</p>
   body: >-
-    <p>Accompagnements </p>  <p> Derniers projets </p>  <p> À propos </p>  <p> Dernières activités </p>  <p> Dernières collaborations </p>  <p> Contact  <br>Un projet, une idée, une collaboration en tête ? Parlons-en.</p>  <p>M'écrire par mail <br>mailto:contact@anthonyferretti.fr</p>  <p>Voir toutes mes coordonnées <br>/contact/</p>
+    <p>Accompagnements </p>  <p> Derniers projets </p>  <p> Dernières activités </p>  <p> À propos </p>  <p> Dernières collaborations </p>  <p> Contact  <br>Un projet, une idée, une collaboration en tête ? Parlons-en.</p>  <p>M'écrire par mail <br>mailto:contact@anthonyferretti.fr</p>  <p>Voir toutes mes coordonnées <br>/contact/</p>
 
 breadcrumbs:
   - title: >-
@@ -100,8 +100,6 @@ contents:
           Accompagnements
         heading: 2
         link: "/accompagnements/"
-      description: >-
-        <p>Penser, faire, former : trois formes d'accompagnement selon les besoins du projet.</p>
     data:
       page:
         permalink: "/accompagnements/"
@@ -110,7 +108,7 @@ contents:
         file: "content/fr/pages/accompagnements/_index.html"
       options:
         image: true
-        main_summary: true
+        main_summary: false
         summary: true
 
       layout: grid
@@ -176,6 +174,53 @@ contents:
       quantity: 3
 
   - kind: block
+    template: posts
+    title: >-
+      Dernières activités
+    slug: >-
+      dernieres-activites
+    ranks:
+      base: 2
+      self: 2
+      children: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Dernières activités
+        heading: 2
+        link: "/activites/"
+    data:
+      mode: all
+      all: true
+      layout: list
+      options:
+        author: false
+        categories: false
+        date: true
+        image: true
+        reading_time: false
+        subtitle: false
+        summary: true
+
+      posts:
+        - permalink: "/activites/2024-11-01-metropole-de-bordeaux-a-50c/"
+          path: "/posts/2024/2024-11-01-metropole-de-bordeaux-a-50c"
+          slug: "metropole-de-bordeaux-a-50c"
+          file: "content/fr/posts/2024/2024-11-01-metropole-de-bordeaux-a-50c.html"
+        - permalink: "/activites/2023-10-26-expertise-recherche-datacraft/"
+          path: "/posts/2023/2023-10-26-expertise-recherche-datacraft"
+          slug: "expertise-recherche-datacraft"
+          file: "content/fr/posts/2023/2023-10-26-expertise-recherche-datacraft.html"
+        - permalink: "/activites/2023-09-22-que-peut-le-design-pour-quon-se-mette-enfin-a-lire-les-etudes/"
+          path: "/posts/2023/2023-09-22-que-peut-le-design-pour-quon-se-mette-enfin-a-lire-les-etudes"
+          slug: "que-peut-le-design-pour-quon-se-mette-enfin-a-lire-les-etudes"
+          file: "content/fr/posts/2023/2023-09-22-que-peut-le-design-pour-quon-se-mette-enfin-a-lire-les-etudes.html"
+
+      quantity: 3
+
+
+  - kind: block
     template: pages
     title: >-
       À propos
@@ -219,53 +264,6 @@ contents:
           path: "/pages/a-propos/curriculum-vitae"
           slug: "curriculum-vitae"
           file: "content/fr/pages/a-propos/curriculum-vitae/_index.html"
-
-      quantity: 3
-
-
-  - kind: block
-    template: posts
-    title: >-
-      Dernières activités
-    slug: >-
-      dernieres-activites
-    ranks:
-      base: 2
-      self: 2
-      children: 3
-    top:
-      active: true
-      title: 
-        value: >-
-          Dernières activités
-        heading: 2
-        link: "/activites/"
-    data:
-      mode: all
-      all: true
-      layout: list
-      options:
-        author: false
-        categories: false
-        date: true
-        image: true
-        reading_time: false
-        subtitle: false
-        summary: true
-
-      posts:
-        - permalink: "/activites/2024-11-01-metropole-de-bordeaux-a-50c/"
-          path: "/posts/2024/2024-11-01-metropole-de-bordeaux-a-50c"
-          slug: "metropole-de-bordeaux-a-50c"
-          file: "content/fr/posts/2024/2024-11-01-metropole-de-bordeaux-a-50c.html"
-        - permalink: "/activites/2023-10-26-expertise-recherche-datacraft/"
-          path: "/posts/2023/2023-10-26-expertise-recherche-datacraft"
-          slug: "expertise-recherche-datacraft"
-          file: "content/fr/posts/2023/2023-10-26-expertise-recherche-datacraft.html"
-        - permalink: "/activites/2023-09-22-que-peut-le-design-pour-quon-se-mette-enfin-a-lire-les-etudes/"
-          path: "/posts/2023/2023-09-22-que-peut-le-design-pour-quon-se-mette-enfin-a-lire-les-etudes"
-          slug: "que-peut-le-design-pour-quon-se-mette-enfin-a-lire-les-etudes"
-          file: "content/fr/posts/2023/2023-09-22-que-peut-le-design-pour-quon-se-mette-enfin-a-lire-les-etudes.html"
 
       quantity: 3
 
