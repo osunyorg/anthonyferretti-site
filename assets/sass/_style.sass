@@ -35,6 +35,8 @@ header#document-header
             background-color: $color-text
             z-index: 0
   @include media-breakpoint-down(desktop)
+    &:not(.has-menu-opened header#document-header)
+      border-bottom: $border
     .menu-secondary .nav-level-1 > li:first-child
       border-top: $border
   .dropdown-menu
@@ -88,13 +90,15 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
     padding: $spacing-1 $spacing-2
     padding-right: 0
   @include media-breakpoint-down(desktop)
-  width: 100%
+    width: 100%
 
 //breadcrumb
 
-.breadcrumb li
-  &.active
+.breadcrumb
+  & li.active
     color: $color-text-alt
+  @include media-breakpoint-down(desktop)
+    border-bottom: $border
 
 // footer
 
@@ -157,17 +161,43 @@ footer#document-footer
 
 .hero
   border-bottom: $border
-  .content h1 > span
+  @include media-breakpoint-down(desktop)
+    margin-bottom: $block-space-y
+  .content
     @include media-breakpoint-up(desktop)
-      margin-top: $spacing-3
-      font-size: $h2-size-desktop
-      line-height: $h2-line-height
-      font-weight: $h2-weight
-  .content .hero-actions
-    @include media-breakpoint-up(desktop)
-      margin-top: $spacing-4
+      gap: $grid-gutter-xxl
     @include media-breakpoint-down(desktop)
-      margin-top: 0
+      display: flex
+      flex-direction: column-reverse
+    .hero-text
+      @include media-breakpoint-up(desktop)
+        width: $content-width
+      @include media-breakpoint-down(desktop)
+        margin-bottom: $spacing-4
+      h1 > span
+        @include media-breakpoint-up(desktop)
+          margin-top: $spacing-3
+          font-size: $h2-size-desktop
+          line-height: $h2-line-height
+          font-weight: $h2-weight
+        @include media-breakpoint-down(desktop)
+          margin-top: $spacing-3
+          font-size: $h4-size-desktop
+          line-height: $h4-line-height
+          font-weight: $h4-weight
+    .hero-actions
+      @include media-breakpoint-up(desktop)
+        margin-top: $spacing-4
+      @include media-breakpoint-down(desktop)
+        margin-top: $spacing-3
+    .image-landscape
+      @include media-breakpoint-down(desktop)
+        margin-top: $spacing-4
+
+.hero--image-portrait:where(:not(.has-breadcrumb-hero-end))
+  @include media-breakpoint-down(desktop)
+    figure
+      margin-bottom: $block-space-y
 
 // person
 
@@ -206,7 +236,7 @@ footer#document-footer
 // pagination
 
 .projects__section,
-.projects_categories__term
+.projects_categories__term,
 .posts__section,
 .posts_categories__term
   & .pagination
@@ -217,41 +247,49 @@ footer#document-footer
 // toc
 
 .toc-container
-  @include in-page-with-sidebar
-    .toc-content
-      overflow-y: visible
-  .toc ol li a
-    position: relative
-    display: block
-    color: $color-text-alt
-    text-decoration: none
-    &::before
-      content: ""
-      position: absolute
-      top: 0
-      bottom: 0
-      left: 0
-      width: $border-width
-      background-color: transparent
-      transition: background-color $default-duration ease
-      transform: translateX(-1rem)
-    &:hover
-      color: $color-text
-    &.active
-      color: $color-text
+  @include media-breakpoint-up(desktop)
+    @include in-page-with-sidebar
+      .toc-content
+        overflow-y: visible
+    .toc ol li a
+      position: relative
+      display: block
+      color: $color-text-alt
+      text-decoration: none
       &::before
-        background-color: $color-border
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        width: $border-width
+        background-color: transparent
+        transition: background-color $default-duration ease
+        transform: translateX(-1rem)
+      &:hover
+        color: $color-text
+      &.active
+        color: $color-text
+        &::before
+          background-color: $color-border
+  @include media-breakpoint-down(desktop)
+    .toc ol li a
+      color: $color-text-alt
+      &.active
+        color: $color-text
 
 // infos
 
+.section-sidebar .post-sidebar,
+.posts__page:not(.full-width) .post-sidebar,
+.section-sidebar .project-sidebar,
 .projects__page:not(.full-width) .project-sidebar
-  .project-infos,
-  .post-infos
-    a
-      color: $color-text
   @include media-breakpoint-down(desktop)
     border-bottom: $border
-    padding-bottom: $spacing-3
+    padding-bottom: $spacing-2
+
+.post-infos a
+  color: $color-text
 
 // organization
 
@@ -284,18 +322,28 @@ footer#document-footer
 // BLOCKS
 
 .block
-  @include in-page-without-sidebar
-    border-bottom: $border
-    margin-top: 0
-    margin-bottom: 0
-    @include media-breakpoint-down(desktop)
-      padding-top: $block-space-y
-      padding-bottom: $block-space-y
-    @include media-breakpoint-up(desktop)
+  border-bottom: $border
+  @include media-breakpoint-up(desktop)
+    @include in-page-without-sidebar
+      margin-top: 0
+      margin-bottom: 0
       padding-top: $block-space-y-desktop
       padding-bottom: $block-space-y-desktop
-    &:last-child
+    @include in-page-with-sidebar
       border-bottom: none
+  @include media-breakpoint-down(desktop)
+    margin-top: 0
+    margin-bottom: 0
+    padding-top: $block-space-y
+    padding-bottom: $block-space-y
+  &:last-child
+    border-bottom: none
+
+// title
+
+.block.block-title:not(:first-child)
+  @include media-breakpoint-down(desktop)
+    margin-top: 0
 
 // page
 
@@ -378,15 +426,19 @@ body.full-width .projects--list
 // cta
 
 .block-call_to_action
-  @include in-page-without-sidebar
-    .call_to_action--without-image:not(.call_to_action--without-text) > div .actions
-      grid-column: 9/13
-    .block-content
-      padding-top: 0
-      padding-bottom: 0
-  @include in-page-with-sidebar
-    .call_to_action > div
+  @include media-breakpoint-up(desktop)
+    @include in-page-without-sidebar
+      .call_to_action--without-image:not(.call_to_action--without-text) > div .actions
+        grid-column: 9/13
+      .block-content
+        padding: 0 $grid-gutter-xxl
+    @include in-page-with-sidebar
+      .call_to_action > div
+        padding: 0
+  @include media-breakpoint-down(desktop)
+    .call_to_action
       padding: 0
+
 // person
 
 .block-persons
@@ -403,6 +455,8 @@ body.full-width .projects--list
     article
       margin-bottom: $spacing-4
       padding-bottom: $spacing-4
+      @include media-breakpoint-down(desktop)
+        flex-direction: column
       &:last-child
         margin-bottom: 0
         padding-bottom: 0
@@ -423,6 +477,11 @@ body.full-width .projects--list
 
 // PAGES
 
+// home
+.page__home .hero .content
+  @include media-breakpoint-down(desktop)
+    flex-direction: column
+
 // project
 
 .projects__page .hero
@@ -433,10 +492,9 @@ body.full-width .projects--list
         gap: $grid-gutter-xxl
         .hero-text
           width: $content-width
-  .content
     @include media-breakpoint-down(desktop)
-      display: flex
-      flex-direction: column-reverse
+      .hero-text
+        gap: 0
 
 // person
 
