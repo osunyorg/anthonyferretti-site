@@ -70,8 +70,9 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
 
 //breadcrumb
 
-.breadcrumb li.active
-  color: $color-text-alt
+.breadcrumb li
+  &.active
+    color: $color-text-alt
 
 // footer
 
@@ -136,9 +137,8 @@ footer#document-footer
   border-bottom: $border
   .content h1 > span
     @include media-breakpoint-up(desktop)
-      margin-top: $spacing-4
+      margin-top: $spacing-3
       font-size: $h2-size-desktop
-      color: $color-text
       line-height: $h2-line-height
       font-weight: $h2-weight
   .content .hero-actions
@@ -277,6 +277,12 @@ body.full-width .projects--list
       @include media-breakpoint-up(desktop)
         font-size: $h3-size-desktop
         line-height: $h3-line-height-desktop
+      & a:hover
+        color: $color-text
+    & .project-subtitle
+      @include media-breakpoint-up(desktop)
+        font-size: $body-size-desktop
+        margin-top: $spacing-2
   article [class$="-content"]
     @include media-breakpoint-up(desktop)
       flex: none
@@ -317,6 +323,31 @@ body.full-width .projects--list
     .post:last-child
       padding-bottom: 0
 
+.posts--list .post-title a
+  position: relative
+  @include icon(arrow-right-line, after, true) // garde le mixin, utilise bien ::after
+  text-decoration: none
+  &::after
+    display: inline-block
+    vertical-align: middle
+    margin-left: 0.25rem
+    transform: translateX(0)
+    opacity: 0
+    transition: transform $arrow-duration $arrow-ease-transition, opacity $arrow-duration $arrow-ease-transition
+    position: relative !important // important pour forcer inline, pas absolute
+    top: auto
+    left: auto
+
+.posts--list article:hover .post-title a::after
+  transform: translateX(0.625rem)
+  vertical-align: baseline
+  opacity: 1
+
+.post .post-subtitle
+  @include media-breakpoint-up(desktop)
+    font-size: $body-size-desktop
+    margin-top: $spacing-2
+
 // cta
 
 .block-call_to_action
@@ -326,6 +357,12 @@ body.full-width .projects--list
     .block-content
       padding-top: 0
       padding-bottom: 0
+
+// person
+
+.block-persons
+  .person-name
+    font-weight: 500
 
 // SECTIONS
 
