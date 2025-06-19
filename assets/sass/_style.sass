@@ -455,9 +455,10 @@ body.full-width .projects--list
 
 // page
 
-.pages__section .page
+.pages__section
   @include media-breakpoint-down(desktop)
-    border-bottom: $border
+    article:not(:last-child)
+      border-bottom: $border
 
 // post
 
