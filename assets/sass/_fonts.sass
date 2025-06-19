@@ -1,4 +1,17 @@
 // @include font-face("Font name", font-file-in-fonts-without-extensions)
 
-@include font-face("InclusiveSans", InclusiveSans)
-@include font-face("BricolageGrotesque", BricolageGrotesque)
+// Regular (variable font)
+@include font-face("Lexend", Lexend/Lexend-Variable, $weight: 400 700)
+
+// Italics (non variables, fichiers distincts)
+@include font-face("Lexend", Lexend/Lexend-BoldItalic, $style: italic, $weight: 700)
+@include font-face("Lexend", Lexend/Lexend-SemiBoldItalic, $style: italic, $weight: 600)
+@include font-face("Lexend", Lexend/Lexend-MediumItalic, $style: italic, $weight: 500)
+@include font-face("Lexend", Lexend/Lexend-RegularItalic, $style: italic, $weight: 400)
+
+// Legacy
+// @include font-face("Lexend", Lexend/Lexend-BlackItalic, $style: italic, $weight 900)
+// @include font-face("Lexend", Lexend/Lexend-ExtraBoldItalic, $style: italic, $weight 800)
+// @include font-face("Lexend", Lexend/Lexend-LightItalic, $style: italic, $weight 300)
+// @include font-face("Lexend", Lexend/Lexend-ExtraLightItalic, $style: italic, $weight 200)
+// @include font-face("Lexend", Lexend/Lexend-ThinItalic, $style: italic, $weight 100)

@@ -1,27 +1,121 @@
-// HEADER
+@import "_page-curriculum-vitae.sass"
 
-@include media-breakpoint-up(desktop)
-  .primary-menu > .container,
-  #navigation,
-  .menu-primary
-    display: flex
-    flex: auto
-    gap: $grid-gutter
+// TYPOGRAPHY
 
-// BUTTONS
+// bold
 
-// Search
+b, strong
+  font-weight: 600
 
-.search-button--secondary-menu span
-  @extend .sr-only
+// COMPONENTS
+
+// header
+
+header#document-header
+  @include media-breakpoint-up(desktop)
+    .primary-menu > .container,
+    #navigation,
+    .menu-primary
+      display: flex
+      flex: auto
+      gap: $grid-gutter
+    .menu .nav-level-1 > li
+      & > a
+        position: relative
+        color: $color-text
+        display: inline-block
+        &.active::before
+          @include media-breakpoint-up(desktop)
+            content: ""
+            position: absolute
+            left: 0
+            bottom: calc(-#{$header-nav-padding-y-desktop} - #{$border-width})
+            height: $border-width
+            width: 100%
+            background-color: $color-text
+            z-index: 0
+  @include media-breakpoint-down(desktop)
+    &:not(.has-menu-opened header#document-header)
+      border-bottom: $border
+    .menu-secondary .nav-level-1 > li:first-child
+      border-top: $border
+  .dropdown-menu
+    @include media-breakpoint-up(desktop)
+      padding-top: $spacing-4
+      border-top: $border
+      position: absolute
+      z-index: 10
+      animation: none
+      & .nav-level-2 li:not(:first-child)
+        margin-top: $spacing-3
+
+html.has-menu-opened header#document-header
+  .menu a
+    @include media-breakpoint-up(desktop)
+      &[aria-expanded="false"]
+        color: $color-text-alt
+      &[aria-expanded="true"]
+        color: $color-text
+
+// logo
+
+footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
+  @include media-breakpoint-down(desktop)
+    font-size: $body-size
+  @include media-breakpoint-up(desktop)
+    font-size: $body-size-desktop
+
+// search
 
 .search-button--secondary-menu
-  @include icon(search-line, after)
+  @include media-breakpoint-up(desktop)
+    @include icon(search-line, after)
 
-// Button hero categories (temporaire)
+.search-button--secondary-menu span
+  display: inline
+  @include media-breakpoint-up(desktop)
+    position: absolute
+    width: 1px
+    height: 1px
+    padding: 0
+    margin: -1px
+    overflow: hidden
+    white-space: nowrap
+    border: 0
+    clip: rect(0, 0, 0, 0)
+    clip-path: inset(50%)
 
-.projects_categories__term hgroup.has-lead > p:last-child
-  margin-top: $spacing-3
+.search-button
+  @include media-breakpoint-up(desktop)
+    padding: $spacing-1 $spacing-2
+    padding-right: 0
+  @include media-breakpoint-down(desktop)
+    width: 100%
+
+//breadcrumb
+
+.breadcrumb
+  & li.active
+    color: $color-text-alt
+  @include media-breakpoint-down(desktop)
+    border-bottom: $border
+
+// footer
+
+footer#document-footer
+  border-top: $border
+  @include media-breakpoint-up(desktop)
+    .container
+      padding-bottom: 0
+      & + .container
+        padding-top: $spacing-4
+  .footer-credit
+    color: $color-text-alt
+
+// button
+
+.projects_categories__term hgroup.has-lead > p:last-child // button hero categories (temporaire)
+  margin-top: $spacing-4
   > a:last-child
     appearance: none
     cursor: 
@@ -58,6 +152,394 @@
       border-radius: $btn-border-radius-desktop
       min-width: $btn-min-width-desktop
 
-// Ne pas afficher le bouton présent dans le texte dans un bloc catégorie (temporaire)
+// cateogry
+
 .categories .rich-text p:last-child
-  display: none
+  display: none // link more disabled
+
+// hero
+
+.hero
+  border-bottom: $border
+  @include media-breakpoint-down(desktop)
+    margin-bottom: $block-space-y
+  .content
+    @include media-breakpoint-up(desktop)
+      gap: $grid-gutter-xxl
+    @include media-breakpoint-down(desktop)
+      display: flex
+      flex-direction: column-reverse
+    .hero-text
+      @include media-breakpoint-up(desktop)
+        width: $content-width
+      @include media-breakpoint-down(desktop)
+        margin-bottom: $spacing-4
+      h1 > span
+        @include media-breakpoint-up(desktop)
+          margin-top: $spacing-3
+          font-size: $h2-size-desktop
+          line-height: $h2-line-height
+          font-weight: $h2-weight
+        @include media-breakpoint-down(desktop)
+          margin-top: $spacing-3
+          font-size: $h4-size-desktop
+          line-height: $h4-line-height
+          font-weight: $h4-weight
+    .hero-actions
+      @include media-breakpoint-up(desktop)
+        margin-top: $spacing-4
+      @include media-breakpoint-down(desktop)
+        margin-top: $spacing-3
+    .image-landscape
+      @include media-breakpoint-down(desktop)
+        margin-top: $spacing-4
+    .image-square
+      @include media-breakpoint-down(desktop)
+        margin-top: $spacing-4
+
+.hero--image-portrait:where(:not(.has-breadcrumb-hero-end))
+  @include media-breakpoint-down(desktop)
+    figure
+      margin-bottom: $block-space-y
+
+// person
+
+.person,
+.persons__page
+  .hero
+    picture img
+      filter: grayscale(100%)
+      transition: filter $default-duration ease
+    &--with-image
+      @include media-breakpoint-down(desktop)
+        & > .container:where(:only-child) figure
+          margin-bottom: 0
+          margin-left: 0
+
+.person:hover picture img,
+.persons__page .hero picture:hover img
+  filter: none
+
+.avatar
+  border-radius: 0
+
+// siblings
+
+.siblings-navigation ul li
+  a
+    font-size: $body-size-desktop
+    color: $color-text
+  span
+    color: $color-text-alt
+  a, span
+    transition: color $default-duration ease
+  &:hover
+    a,
+    span
+      color: $color-text
+
+.siblings-navigation li:first-child
+  @include media-breakpoint-down(desktop)
+    border-bottom: none
+
+// pagination
+
+.projects__section,
+.projects_categories__term,
+.posts__section,
+.posts_categories__term
+  & .pagination
+    margin-top: 0
+    padding-top: $spacing-5
+    border-top: $border
+
+// toc
+
+.toc-container
+  @include media-breakpoint-up(desktop)
+    @include in-page-with-sidebar
+      .toc-content
+        overflow-y: visible
+    .toc ol li a
+      position: relative
+      display: block
+      color: $color-text-alt
+      text-decoration: none
+      &::before
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        width: $border-width
+        background-color: transparent
+        transition: background-color $default-duration ease
+        transform: translateX(-1rem)
+      &:hover
+        color: $color-text
+      &.active
+        color: $color-text
+        &::before
+          background-color: $color-border
+  @include media-breakpoint-down(desktop)
+    .toc ol li a
+      color: $color-text-alt
+      &.active
+        color: $color-text
+
+// infos
+
+.section-sidebar .post-sidebar,
+.posts__page:not(.full-width) .post-sidebar,
+.section-sidebar .project-sidebar,
+.projects__page:not(.full-width) .project-sidebar
+  @include media-breakpoint-down(desktop)
+    border-bottom: $border
+    padding-bottom: $spacing-2
+
+.post-infos a
+  color: $color-text
+
+// organization
+
+.organization
+  .media
+    border: $border-width solid transparent
+    transition: border-color $default-duration ease
+  img
+    filter: grayscale(100%)
+    transition: filter $default-duration ease
+
+.organization:hover
+  .media
+    border-color: $color-border
+  img
+    filter: none
+  
+.organizations.with-summaries .organization .organization-content
+  .organization-title
+    font-weight: 500
+    line-height: $small-line-height-desktop
+  .organization-summary
+    margin-top: $spacing-1
+
+.organizations.with-summaries .organization:only-child
+  @include media-breakpoint-up(desktop)
+    width: calc((var(--column-width) * 6) + (var(--grid-gutter) * (6 - 1)))
+
+
+// BLOCKS
+
+.block
+  border-bottom: $border
+  @include media-breakpoint-up(desktop)
+    @include in-page-without-sidebar
+      margin-top: 0
+      margin-bottom: 0
+      padding-top: $block-space-y-desktop
+      padding-bottom: $block-space-y-desktop
+    @include in-page-with-sidebar
+      border-bottom: none
+  @include media-breakpoint-down(desktop)
+    margin-top: 0
+    margin-bottom: 0
+    padding-top: $block-space-y
+    padding-bottom: $block-space-y
+  &:last-child
+    border-bottom: none
+
+// title
+
+.block.block-title:not(:first-child)
+  @include media-breakpoint-down(desktop)
+    margin-top: 0
+
+// page
+
+.block-pages
+  &--list
+    @include in-page-without-sidebar
+      .top .description p
+        font-size: $quote-size-desktop-long
+        line-height: $quote-line-height-desktop
+  &--grid
+    @include media-breakpoint-down(desktop)
+      article:not(:last-child)
+        padding-bottom: $spacing-3
+        border-bottom: $border !important
+
+// contact
+
+.block-contact h3,
+.contacts-details ul li > span
+  color: $color-text-alt
+
+// project
+
+body.full-width .projects--list
+  article.project
+    & .project-title,
+    & .project-subtitle
+      @include media-breakpoint-down(desktop)
+        font-size: $h3-size
+        line-height: $h3-line-height
+      @include media-breakpoint-up(desktop)
+        font-size: $h3-size-desktop
+        line-height: $h3-line-height-desktop
+      & a:hover
+        color: $color-text
+    & .project-subtitle
+      @include media-breakpoint-up(desktop)
+        font-size: $body-size-desktop
+        margin-top: $spacing-2
+  article [class$="-content"]
+    @include media-breakpoint-up(desktop)
+      flex: none
+      width: $content-width
+    @include media-breakpoint-down(desktop)
+      width: auto
+
+.projects--list
+  & > li:first-child
+    padding-top: 0
+  & > li:last-child
+    padding-bottom: 0
+  & .project
+    @include media-breakpoint-up(desktop)
+      flex-direction: row-reverse
+      justify-content: start
+    @include media-breakpoint-down(desktop)
+      flex-direction: column
+
+.project-summary
+  margin-top: $spacing-2
+  .rich-text > p
+    line-height: $body-line-height
+
+// post
+
+.block-posts--list
+  article
+  @include in-page-without-sidebar
+    article
+      padding-bottom: $spacing-3
+      .post-content
+        width: $content-width
+      + article
+        margin-top: $spacing-3
+    article:has(.media:empty) [class$="-content"]
+      margin-left: $content-margin-left
+    .post
+      &:last-child
+        padding-bottom: 0
+
+.post .post-subtitle
+  @include media-breakpoint-up(desktop)
+    font-size: $body-size-desktop
+    margin-top: $spacing-2
+
+// cta
+
+.block-call_to_action
+  @include media-breakpoint-up(desktop)
+    @include in-page-without-sidebar
+      .call_to_action--without-image:not(.call_to_action--without-text) > div .actions
+        grid-column: 9/13
+      .block-content
+        padding: 0 $grid-gutter-xxl
+    @include in-page-with-sidebar
+      .call_to_action > div
+        padding: 0
+  @include media-breakpoint-down(desktop)
+    .call_to_action
+      padding: 0
+
+// person
+
+.block-persons
+  .person-name
+    font-weight: 500
+
+// SECTIONS
+
+// page
+
+.pages__section
+  @include media-breakpoint-down(desktop)
+    article:not(:last-child)
+      border-bottom: $border
+
+// post
+
+.posts_categories__term,
+.posts__section
+  & .posts--list
+    article
+      margin-bottom: $spacing-4
+      padding-bottom: $spacing-4
+      @include media-breakpoint-down(desktop)
+        flex-direction: column
+      &:last-child
+        margin-bottom: 0
+        padding-bottom: 0
+        border: none
+
+// project
+
+.projects__section
+  .projects--list
+    & > li:first-child
+      padding-bottom: $spacing-4
+      padding-top: 0
+    & > li:not(:first-child)
+      padding-bottom: $spacing-4
+      padding-top: $spacing-4
+  .project-categories
+    margin-bottom: 0
+
+// PAGES
+
+// home
+
+.page__home .hero .content
+  @include media-breakpoint-down(desktop)
+    flex-direction: column
+
+// project
+
+.projects__page .hero
+  .container
+    @include media-breakpoint-up(desktop)
+      padding-right: 0
+      .content
+        gap: $grid-gutter-xxl
+        .hero-text
+          width: $content-width
+    @include media-breakpoint-down(desktop)
+      .hero-text
+        gap: 0
+
+// person
+
+.persons__page .backlinks
+  & > .block,
+  & > *
+    &:first-child
+      border-top: $border
+    @include media-breakpoint-up(desktop)
+      padding-top: $block-space-y-desktop
+      margin-top: 0
+    &:last-child    
+     padding-bottom: 0
+
+// organization
+  
+.organizations__page .backlinks
+  & > .block,
+  & > *
+    &:first-child
+      border-top: $border
+    @include media-breakpoint-up(desktop)
+      padding-top: $block-space-y-desktop
+    &:last-child    
+     padding-bottom: 0

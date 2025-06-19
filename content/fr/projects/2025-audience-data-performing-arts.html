@@ -10,7 +10,7 @@ slug: "audience-data-performing-arts"
 aliases:
   - /projets/2025-audience-data-literacy/
 date: 2025-02-01T14:03:25+01:00
-lastmod: 2025-05-15T15:17:59+02:00
+lastmod: 2025-06-19T11:35:03+02:00
 meta:
   hugo:
     permalink: "/projets/2025-audience-data-performing-arts/"
@@ -19,7 +19,7 @@ meta:
     slug: "audience-data-performing-arts"
   dates:
     created_at: 2025-02-01T14:03:25+01:00
-    updated_at: 2025-05-15T15:17:59+02:00
+    updated_at: 2025-06-19T11:35:03+02:00
     published_at: 2025-02-01T14:03:25+01:00
 search:
   id: "81887a87-5994-41a8-b81f-0f00d847d193"
@@ -32,7 +32,7 @@ search:
   summary: >-
     <p>Plateforme d'auto-formation dédiée aux décideur·ses et responsables d'actions dans le spectacle vivant.</p>
   body: >-
-    <p>Clients </p>  <p> Partenaire </p>  <p>En charge du développement du site avec  Osuny .</p>  <p> Équipe </p>  <p>Direction éditoriale, coordination</p>  <p>Chef de projet</p>  <p>Recherches, co-conception éditoriale, rédaction</p>  <p>UX/UI design et identité visuelle</p>  <p>Développement back-end</p>  <p>Développement front-end</p>  <p>Développement front-end</p>
+    <p>Contexte  <br> Clients & partenaires </p>  <p>Commanditaire</p>  <p>Commanditaire</p>  <p>Développement</p>  <p> Partenaire </p>  <p>En charge du développement du site avec  Osuny .</p>  <p> Équipe </p>  <p>Direction éditoriale, coordination</p>  <p>Chef de projet</p>  <p>Recherches, co-conception éditoriale, rédaction</p>  <p>UX/UI design et identité visuelle</p>  <p>Développement back-end</p>  <p>Développement front-end</p>  <p>Développement front-end</p>  <p> Démarche  <br>   <br>1. Cadrage stratégique</p>  <p>2. Architecture de l'information</p>  <p>3. Wireframes HD & tests utilisateurs</p>  <p>4. Identité visuelle</p>  <p>5. Prototype HD & tests utilisateurs</p>  <p>6. Suivi de développement</p>
 
 breadcrumbs:
   - title: >-
@@ -47,11 +47,16 @@ breadcrumbs:
 design:
   full_width: false
   toc:
-    present: false
+    present: true
     offcanvas: false
 
 translationKey: communication-website-portfolio-project-c2116ea5-89ae-447e-aa31-cbb33097f913
 
+image:
+  id: "a827c4c9-fbde-480f-bf62-93d91ba60882"
+  alt: ""
+  credit: >-
+    
 
 
 meta_description: >-
@@ -118,26 +123,45 @@ taxonomies:
 
 
 contents_reading_time:
-  seconds: 10
+  seconds: 18
   text: >-
     moins d'une minute
 contents:
   - kind: block
-    template: organizations
+    template: title
     title: >-
-      Clients
+      Contexte
     slug: >-
-      clients
+      contexte
     ranks:
       base: 2
       self: 2
-      children: 3
     top:
       active: true
       title: 
         value: >-
-          Clients
+          Contexte
         heading: 2
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: organizations
+    title: >-
+      Clients & partenaires
+    slug: >-
+      clients-partenaires
+    ranks:
+      base: 3
+      self: 3
+      children: 4
+    top:
+      active: true
+      title: 
+        value: >-
+          Clients & partenaires
+        heading: 3
     data:
       layout: grid
       description: >-
@@ -147,17 +171,31 @@ contents:
         link: true
         logo: true
         summary: true
+        address: false
 
       organizations:
         - permalink: "/a-propos/clients-partenaires/tmnlab/"
           path: "/organizations/tmnlab"
           slug: "tmnlab"
           file: "content/fr/organizations/tmnlab.html"
+          role: >-
+            Commanditaire
+
         - permalink: "/a-propos/clients-partenaires/prospero/"
           path: "/organizations/prospero"
           slug: "prospero"
           file: "content/fr/organizations/prospero.html"
-      quantity: 2
+          role: >-
+            Commanditaire
+
+        - permalink: "/a-propos/clients-partenaires/noesya/"
+          path: "/organizations/noesya"
+          slug: "noesya"
+          file: "content/fr/organizations/noesya.html"
+          role: >-
+            Développement
+
+      quantity: 3
 
   - kind: block
     template: organizations
@@ -166,15 +204,15 @@ contents:
     slug: >-
       partenaire
     ranks:
-      base: 2
-      self: 2
-      children: 3
+      base: 3
+      self: 3
+      children: 4
     top:
       active: true
       title: 
         value: >-
           Partenaire
-        heading: 2
+        heading: 3
       description: >-
         <p>En charge du développement du site avec <a href="https://www.osuny.org/" target="_blank" rel="noreferrer">Osuny <span class="sr-only">(lien externe)</span></a>.</p>
     data:
@@ -186,12 +224,16 @@ contents:
         link: true
         logo: true
         summary: true
+        address: false
 
       organizations:
         - permalink: "/a-propos/clients-partenaires/noesya/"
           path: "/organizations/noesya"
           slug: "noesya"
           file: "content/fr/organizations/noesya.html"
+          role: >-
+            
+
       quantity: 1
 
   - kind: block
@@ -201,15 +243,15 @@ contents:
     slug: >-
       equipe
     ranks:
-      base: 2
-      self: 2
-      children: 3
+      base: 3
+      self: 3
+      children: 4
     top:
       active: true
       title: 
         value: >-
           Équipe
-        heading: 2
+        heading: 3
     data:
       description: >-
         
@@ -272,6 +314,77 @@ contents:
             Développement front-end
 
       quantity: 7
+
+
+  - kind: block
+    template: title
+    title: >-
+      Démarche
+    slug: >-
+      demarche
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Démarche
+        heading: 2
+    data:
+      layout: classic
+
+
+  - kind: block
+    template: timeline
+    title: >-
+      
+    slug: >-
+      
+    ranks:
+      base: 3
+      children: 3
+    top:
+      active: false
+    data:
+      layout: vertical
+      events:
+        - title: >-
+            1. Cadrage stratégique
+
+          text: >-
+            
+
+        - title: >-
+            2. Architecture de l'information
+
+          text: >-
+            
+
+        - title: >-
+            3. Wireframes HD & tests utilisateurs
+
+          text: >-
+            
+
+        - title: >-
+            4. Identité visuelle
+
+          text: >-
+            
+
+        - title: >-
+            5. Prototype HD & tests utilisateurs
+
+          text: >-
+            
+
+        - title: >-
+            6. Suivi de développement
+
+          text: >-
+            
+
 
 
 

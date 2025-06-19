@@ -42,8 +42,11 @@ params:
     index:
       layout: list # grid | list
     taxonomies_to_hide: #config custom pour masquer certaines taxonomies
+    - "Expérience professionnelle"
+    - "Exposition"
     - "Niveau de diplôme"
     - "Mention"
+    - "Lieu"
   projects:
     default_image: true
     date_format: "2006"
@@ -51,6 +54,7 @@ params:
       layout: list # alternate | grid | large | lists
     taxonomies_to_hide: #config custom pour masquer certaines taxonomies
       - "Studio"
+      - "Lieu"
 
   # BLOCKS
   blocks:

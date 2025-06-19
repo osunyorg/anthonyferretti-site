@@ -1,10 +1,174 @@
 // Éditer les variables du thème pour configurer votre site web 
 // Variables disponibles : https://github.com/noesya/osuny-hugo-theme-AAA/blob/main/assets/sass/_theme/_configuration.sass
-// Documentation sur : https://developers.osuny.org/docs/theme/theme-aaa/
+// Documentation sur : https://developers.osuny.org/
+// Polices de caractères dans le dossier : static/assets/fonts
 
 $header-dropdown-full: true
 
+// COLORS
+
+$color-text: hsla(0, 0%, 0%, 0.9)
+$color-text-alt: hsla(0, 0%, 0%, 0.6)
+$color-accent: $color-text-alt
+$color-border: hsla(0, 0%, 0%, 0.2)
+$color-background: hsla(0, 0%, 100%, 1)
+$color-background-alt: hsla(0, 0%, 95%, 1)
+
 // TYPOGRAPHY
-// Mettre les polices de caractères dans le dossier static/assets/fonts
-$heading-font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif
-$body-font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+$heading-font-family: "Lexend", "Helvetica", "Arial", sans-serif
+$body-font-family: "Lexend", "Helvetica", "Arial", sans-serif
+
+// h1
+$h1-size: pxToRem(32)
+$h1-size-desktop: pxToRem(56)
+$h1-line-height: 120%
+$h1-line-height-desktop: 120%
+$h1-weight: 600
+
+// h2
+$h2-size: pxToRem(24)
+$h2-size-desktop: pxToRem(40)
+$h2-line-height: 125%
+$h2-line-height-desktop: 125%
+$h2-weight: 500
+
+// h3
+$h3-size: pxToRem(22)
+$h3-size-desktop: pxToRem(32)
+$h3-line-height: 130%
+$h3-line-height-desktop: 130%
+$h3-weight: 500
+
+// h4
+$h4-size: pxToRem(20)
+$h4-size-desktop: pxToRem(24)
+$h4-line-height: 135%
+$h4-line-height-desktop: 135%
+$h4-weight: 500
+
+// h5
+$h5-size: pxToRem(18)
+$h5-size-desktop: pxToRem(20)
+$h5-line-height: 140%
+$h5-line-height-desktop: 140%
+$h5-weight: 400
+
+// h6
+$h6-size: pxToRem(16)
+$h6-size-desktop: pxToRem(18)
+$h6-line-height: 145%
+$h6-line-height-desktop: 145%
+$h6-weight: 500
+
+// lead
+$lead-size: $h3-size
+$lead-size-desktop: $h3-size-desktop
+$lead-sidebar-size: $h3-size
+$lead-sidebar-size-desktop: $h3-size-desktop
+$lead-line-height: 135%
+$lead-line-height-desktop: $lead-line-height
+$lead-hero-size: $h3-size
+$lead-hero-size-desktop: $h3-size-desktop
+$lead-hero-line-height: $lead-line-height
+$lead-hero-line-height-desktop: $lead-line-height
+$lead-weight: 400
+
+// body
+$body-size: pxToRem(16)
+$body-size-desktop: pxToRem(18)
+$body-line-height: 180%
+$body-line-height-desktop: 180%
+$body-weight: 400
+
+// small
+$small-size: pxToRem(14)
+$small-size-desktop: pxToRem(16)
+$small-line-height: 150%
+$small-line-height-desktop: 150%
+$small-weight: 400
+
+// meta
+$meta-size: $small-size
+$meta-size-desktop: $small-size-desktop
+$meta-line-height: 150%
+$meta-line-height-desktop: 150%
+$meta-weight: 400
+
+// quote
+$quote-size-desktop-short: $h3-size-desktop
+$quote-size-desktop-long: $h4-size-desktop
+$quote-line-height: 130%
+$quote-line-height-desktop: 130%
+$quote-weight: 400
+
+// signature
+$signature-size: $h6-size
+$signature-size-desktop: $h5-size-desktop
+$signature-line-height: $h6-line-height
+$signature-line-height-desktop: $h5-line-height-desktop
+$signature-weight: 400
+
+// COMPONENTS
+
+$border-width: 1px
+$border: $border-width solid $color-border
+$content-width: calc((var(--column-width) * 7) + (var(--grid-gutter) * (7 - 1))) // custom
+$content-margin-left: calc( calc( (var(--column-width) * 3) + var(--grid-gutter) * ( 3 - 1 )) + var(--grid-gutter))
+
+// link
+$link-underline-offset: 21.25%
+$link-underline-thickness: $border-width
+$link-unhover-decoration-color-alpha: 0.3
+
+// button
+$btn-border-radius: 0
+$btn-border: $border
+$btn-padding: pxToRem(12) pxToRem(24)
+$btn-padding-desktop: pxToRem(16) pxToRem(32)
+$btn-hover-color: $color-background
+$btn-hover-background: $color-text
+
+// header
+$header-background: $color-background
+$header-border-bottom-width: $border-width
+$header-sticky-background: $color-background
+$header-nav-padding-y: pxToRem(16)
+$header-nav-padding-y-desktop: pxToRem(24)
+$header-dropdown-title-summary-font-size: $body-size
+$header-dropdown-title-summary-font-size-desktop: $lead-hero-size-desktop
+$header-dropdown-title-summary-line-height: 120%
+$header-dropdown-title-summary-line-height-desktop: $header-dropdown-title-summary-line-height
+
+// footer
+$footer-background-color: $header-background
+
+// navs
+$body-overlay-color: hsla(0, 0%, 0%, 0.3)
+
+// hero
+$hero-background-color: $header-background
+
+// BLOCKS
+
+// heading
+$heading-margin-bottom-with-sidebar: pxToRem(32)
+$heading-margin-bottom-desktop: pxToRem(48)
+
+// base
+$block-space-y: pxToRem(36)
+$block-space-y-desktop: pxToRem(64)
+$block-space-y-with-sidebar: pxToRem(64)
+
+// cta
+$block-call-to-action-accent-background: $color-background
+$block-call-to-action-accent-color: $color-text
+$block-call-to-action-accent-button-background: $color-text
+$block-call-to-action-accent-button-color: $block-call-to-action-accent-background
+$block-call-to-action-accent-button-border: $btn-border
+$block-call-to-action-accent-button-hover-background: $color-background-alt
+$block-call-to-action-accent-button-hover-color: $color-text
+$block-call-to-action-accent-button-hover-border: $btn-border
+
+// video
+$block-video-background: none

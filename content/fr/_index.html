@@ -8,7 +8,7 @@ bodyclass: >-
 url: "/"
 slug: ""
 date: 2024-03-21T16:27:55+01:00
-lastmod: 2025-05-31T15:31:08+02:00
+lastmod: 2025-06-18T23:06:41+02:00
 meta:
   hugo:
     permalink: "/"
@@ -17,7 +17,7 @@ meta:
     slug: ""
   dates:
     created_at: 2024-03-21T16:27:55+01:00
-    updated_at: 2025-05-31T15:31:08+02:00
+    updated_at: 2025-06-18T23:06:41+02:00
     published_at: 2024-03-21T16:27:55+01:00
 search:
   id: "bb4ea08a-6a7c-441e-bd21-980acb7048c9"
@@ -28,9 +28,9 @@ search:
   title: >-
     Accueil
   summary: >-
-    <p>Je suis designer d'interface (UX/UI designer senior). En 2013, j'ai cofondé le collectif de design numérique <a href="https://praticable.fr/">Praticable</a>, anciennement <a href="https://collectifbam.fr/home.html">Collectif Bam</a>. Aujourd'hui, je travaille en free-lance et j'enseigne mon métier dans différentes écoles.</p>
+    <p><b>Penser, faire et former par le design</b></p><p>Pour des projets utiles, ouverts et soignés</p>
   body: >-
-    <p>Derniers projets </p>  <p> Dernières activités </p>  <p> Contact  <br>N'hésitez pas à me contacter pour toute information ou proposition de collaboration.</p>  <p>Me contacter <br>/contact/</p>
+    <p>Accompagnements </p>  <p> Derniers projets </p>  <p> Dernières activités </p>  <p> Dernières collaborations </p>  <p> À propos </p>  <p> Contact  <br>Un projet, une idée, une collaboration en tête ? Parlons-en.</p>  <p>M'écrire par mail <br>mailto:contact@anthonyferretti.fr</p>  <p>Voir toutes mes coordonnées <br>/contact/</p>
 
 breadcrumbs:
   - title: >-
@@ -57,6 +57,7 @@ image:
 
 
 children:
+  - "pages/accompagnements/_index.html"
   - "projects/_index.html"
   - "posts/_index.html"
   - "pages/a-propos/_index.html"
@@ -66,10 +67,10 @@ meta_description: >-
   
 
 summary: >-
-  <p>Je suis designer d'interface (UX/UI designer senior). En 2013, j'ai cofondé le collectif de design numérique <a href="https://praticable.fr/">Praticable</a>, anciennement <a href="https://collectifbam.fr/home.html">Collectif Bam</a>. Aujourd'hui, je travaille en free-lance et j'enseigne mon métier dans différentes écoles.</p>
+  <p><b>Penser, faire et former par le design</b></p><p>Pour des projets utiles, ouverts et soignés</p>
 
 header_text: >-
-  Anthony Ferretti
+  Anthony Ferretti, designer stratégique & numérique indépendant
 header_cta:
   display: false
   label: >-
@@ -78,10 +79,56 @@ header_cta:
   external: false
 
 contents_reading_time:
-  seconds: 6
+  seconds: 9
   text: >-
     moins d'une minute
 contents:
+  - kind: block
+    template: pages
+    title: >-
+      Accompagnements
+    slug: >-
+      accompagnements
+    ranks:
+      base: 2
+      self: 2
+      children: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Accompagnements
+        heading: 2
+        link: "/accompagnements/"
+    data:
+      page:
+        permalink: "/accompagnements/"
+        path: "/pages/accompagnements"
+        slug: "accompagnements"
+        file: "content/fr/pages/accompagnements/_index.html"
+      options:
+        image: true
+        main_summary: false
+        summary: true
+
+      layout: grid
+      pages:
+        - permalink: "/accompagnements/penser-par-le-design/"
+          path: "/pages/accompagnements/penser-par-le-design"
+          slug: "penser-par-le-design"
+          file: "content/fr/pages/accompagnements/penser-par-le-design/_index.html"
+        - permalink: "/accompagnements/faire-par-le-design/"
+          path: "/pages/accompagnements/faire-par-le-design"
+          slug: "faire-par-le-design"
+          file: "content/fr/pages/accompagnements/faire-par-le-design/_index.html"
+        - permalink: "/accompagnements/former-par-le-design/"
+          path: "/pages/accompagnements/former-par-le-design"
+          slug: "former-par-le-design"
+          file: "content/fr/pages/accompagnements/former-par-le-design/_index.html"
+
+      quantity: 3
+
+
   - kind: block
     template: projects
     title: >-
@@ -104,9 +151,9 @@ contents:
       all: true
       layout: list
       options:
-        categories: true
+        categories: false
         image: true
-        subtitle: true
+        subtitle: false
         summary: true
         year: false
 
@@ -149,11 +196,11 @@ contents:
       layout: list
       options:
         author: false
-        categories: true
+        categories: false
         date: true
         image: true
         reading_time: false
-        subtitle: true
+        subtitle: false
         summary: true
 
       posts:
@@ -174,14 +221,129 @@ contents:
 
 
   - kind: block
-    template: pages
+    template: organizations
     title: >-
-      
+      Dernières collaborations
     slug: >-
-      
+      dernieres-collaborations
     ranks:
       base: 2
-      children: 2
+      self: 2
+      children: 3
+    top:
+      active: true
+      title: 
+        value: >-
+          Dernières collaborations
+        heading: 2
+    data:
+      layout: grid
+      description: >-
+        
+
+      options:
+        link: true
+        logo: true
+        summary: false
+        address: false
+
+      organizations:
+        - permalink: "/a-propos/clients-partenaires/sciences-po/"
+          path: "/organizations/sciences-po"
+          slug: "sciences-po"
+          file: "content/fr/organizations/sciences-po.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/universite-de-lille/"
+          path: "/organizations/universite-de-lille"
+          slug: "universite-de-lille"
+          file: "content/fr/organizations/universite-de-lille.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/cy-cergy-paris-universite/"
+          path: "/organizations/cy-cergy-paris-universite"
+          slug: "cy-cergy-paris-universite"
+          file: "content/fr/organizations/cy-cergy-paris-universite.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/universcience/"
+          path: "/organizations/universcience"
+          slug: "universcience"
+          file: "content/fr/organizations/universcience.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/tmnlab/"
+          path: "/organizations/tmnlab"
+          slug: "tmnlab"
+          file: "content/fr/organizations/tmnlab.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/gaite-lyrique/"
+          path: "/organizations/gaite-lyrique"
+          slug: "gaite-lyrique"
+          file: "content/fr/organizations/gaite-lyrique.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/la-faiencerie-theatre-de-creil/"
+          path: "/organizations/la-faiencerie-theatre-de-creil"
+          slug: "la-faiencerie-theatre-de-creil"
+          file: "content/fr/organizations/la-faiencerie-theatre-de-creil.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/la-27e-region/"
+          path: "/organizations/la-27e-region"
+          slug: "la-27e-region"
+          file: "content/fr/organizations/la-27e-region.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/anct/"
+          path: "/organizations/anct"
+          slug: "anct"
+          file: "content/fr/organizations/anct.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/democratie-ouverte/"
+          path: "/organizations/democratie-ouverte"
+          slug: "democratie-ouverte"
+          file: "content/fr/organizations/democratie-ouverte.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/communication-publique/"
+          path: "/organizations/communication-publique"
+          slug: "communication-publique"
+          file: "content/fr/organizations/communication-publique.html"
+          role: >-
+            
+
+        - permalink: "/a-propos/clients-partenaires/chu-de-bordeaux/"
+          path: "/organizations/chu-de-bordeaux"
+          slug: "chu-de-bordeaux"
+          file: "content/fr/organizations/chu-de-bordeaux.html"
+          role: >-
+            
+
+      quantity: 12
+
+  - kind: block
+    template: pages
+    title: >-
+      À propos
+    slug: >-
+      a-propos
+    ranks:
+      base: 2
+      self: 2
+      children: 3
     top:
       active: true
       title: 
@@ -189,6 +351,8 @@ contents:
           À propos
         heading: 2
         link: "/a-propos/"
+      description: >-
+        <p>Je suis designer d'interface (UX/UI designer senior). En 2013, j'ai co-fondé le <a href="https://collectifbam.fr/home.html">Collectif Bam</a>, un studio de design global engagé sur les transitions de société. Dix ans plus tard, l'agence deviendra <a href="https://praticable.fr/">Praticable</a>, une coopérative de design numérique responsable. Aujourd'hui, je travaille en indépendant pour des projets numériques d'intérêt général et enseigne mon métier dans différentes écoles et universités.</p>
     data:
       page:
         permalink: "/a-propos/"
@@ -196,9 +360,9 @@ contents:
         slug: "a-propos"
         file: "content/fr/pages/a-propos/_index.html"
       options:
-        image: true
-        main_summary: false
-        summary: true
+        image: false
+        main_summary: true
+        summary: false
 
       layout: list
       pages:
@@ -234,11 +398,11 @@ contents:
           Contact
         heading: 2
       description: >-
-        <p>N'hésitez pas à me contacter pour toute information ou proposition de collaboration.</p>
+        <p>Un projet, une idée, une collaboration en tête ? Parlons-en.</p>
     data:
       layout: accent_background
       text: >-
-        <p>N'hésitez pas à me contacter pour toute information ou proposition de collaboration.</p>
+        <p>Un projet, une idée, une collaboration en tête ? Parlons-en.</p>
 
 
       alt: >-
@@ -249,7 +413,14 @@ contents:
 
       buttons:
         - title: >-
-            Me contacter
+            M'écrire par mail
+
+          url: >-
+            mailto:contact@anthonyferretti.fr
+
+          target_blank: false
+        - title: >-
+            Voir toutes mes coordonnées
 
           url: >-
             /contact/
