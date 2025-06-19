@@ -193,6 +193,9 @@ footer#document-footer
     .image-landscape
       @include media-breakpoint-down(desktop)
         margin-top: $spacing-4
+    .image-square
+      @include media-breakpoint-down(desktop)
+        margin-top: $spacing-4
 
 .hero--image-portrait:where(:not(.has-breadcrumb-hero-end))
   @include media-breakpoint-down(desktop)
@@ -202,10 +205,16 @@ footer#document-footer
 // person
 
 .person,
-.persons__page .hero
-  picture img
-    filter: grayscale(100%)
-    transition: filter $default-duration ease
+.persons__page
+  .hero
+    picture img
+      filter: grayscale(100%)
+      transition: filter $default-duration ease
+    &--with-image
+      @include media-breakpoint-down(desktop)
+        & > .container:where(:only-child) figure
+          margin-bottom: 0
+          margin-left: 0
 
 .person:hover picture img,
 .persons__page .hero picture:hover img
