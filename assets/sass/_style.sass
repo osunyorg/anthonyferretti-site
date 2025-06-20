@@ -14,6 +14,11 @@ b, strong
 
 // COMPONENTS
 
+// layout
+
+main .blocks + *
+  margin-top: 0
+
 // header
 
 header#document-header
@@ -160,7 +165,18 @@ footer#document-footer
 
 .categories .rich-text p:last-child
   display: none // link more disabled
-    
+
+// taxonomies
+
+.taxonomies-list
+  border-bottom: $border
+  margin-bottom: 0
+  @include media-breakpoint-down(desktop)
+    gap: $spacing-2
+    padding-bottom: $block-space-y
+  @include media-breakpoint-up(desktop)
+    padding-bottom: $block-space-y-desktop
+
 // hero
 
 .hero
@@ -301,6 +317,10 @@ footer#document-footer
     border-bottom: $border
     padding-bottom: $spacing-2
 
+.projects__page:not(.full-width) .project-sidebar
+  @include media-breakpoint-down(desktop)
+    margin-bottom: $block-space-y
+
 .post-infos a
   color: $color-text
 
@@ -358,6 +378,12 @@ footer#document-footer
   @include media-breakpoint-down(desktop)
     margin-top: 0
 
+// gallery
+
+.block-gallery--large figure
+  @include media-breakpoint-down(desktop)
+    margin-bottom: 0
+
 // page
 
 .block-pages
@@ -382,8 +408,7 @@ footer#document-footer
 
 body.full-width .projects--list
   article.project
-    & .project-title,
-    & .project-subtitle
+    & .project-title
       @include media-breakpoint-down(desktop)
         font-size: $h3-size
         line-height: $h3-line-height
@@ -393,9 +418,13 @@ body.full-width .projects--list
       & a:hover
         color: $color-text
     & .project-subtitle
+      margin-top: $spacing-2
+      @include media-breakpoint-down(desktop)
+        font-size: $body-size
+        line-height: $h3-line-height
       @include media-breakpoint-up(desktop)
         font-size: $body-size-desktop
-        margin-top: $spacing-2
+        line-height: $h3-line-height-desktop
   article [class$="-content"]
     @include media-breakpoint-up(desktop)
       flex: none
@@ -404,11 +433,12 @@ body.full-width .projects--list
       width: auto
 
 .projects--list
-  & > li:first-child
+  li
     padding-top: 0
-  & > li:last-child
     padding-bottom: 0
-  & .project
+  article, .project
+    padding-bottom: $spacing-3
+    margin-top: $spacing-3
     @include media-breakpoint-up(desktop)
       flex-direction: row-reverse
       justify-content: start
@@ -437,10 +467,20 @@ body.full-width .projects--list
       &:last-child
         padding-bottom: 0
 
-.post .post-subtitle
-  @include media-breakpoint-up(desktop)
-    font-size: $body-size-desktop
+.post
+  .post-subtitle
     margin-top: $spacing-2
+    @include media-breakpoint-down(desktop)
+      font-size: $body-size
+      line-height: $h3-line-height
+    @include media-breakpoint-up(desktop)
+      font-size: $body-size-desktop
+      line-height: $h3-line-height-desktop
+  .post-meta
+    @include media-breakpoint-up(desktop)
+      margin-top: $spacing-4
+    @include media-breakpoint-down(desktop)
+      margin-top: $spacing-2
 
 // cta
 
@@ -479,12 +519,12 @@ body.full-width .projects--list
 .posts__section
   & .posts--list
     article
-      margin-bottom: $spacing-4
+      padding-top: $spacing-4
       padding-bottom: $spacing-4
+      margin-bottom: 0
       @include media-breakpoint-down(desktop)
         flex-direction: column
       &:last-child
-        margin-bottom: 0
         padding-bottom: 0
         border: none
 
@@ -500,13 +540,11 @@ body.full-width .projects--list
 // project
 
 .projects__section
-  .projects--list
-    & > li:first-child
-      padding-bottom: $spacing-4
-      padding-top: 0
-    & > li:not(:first-child)
+  & .projects--list
+    article
       padding-bottom: $spacing-4
       padding-top: $spacing-4
+      margin-top: 0
   .project-categories
     margin-bottom: 0
 
