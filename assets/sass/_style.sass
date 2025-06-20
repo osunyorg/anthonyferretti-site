@@ -488,6 +488,15 @@ body.full-width .projects--list
         padding-bottom: 0
         border: none
 
+.posts__section
+  .taxonomies-list
+    .dropdown:nth-child(1), // Expérience professionnelle
+    .dropdown:nth-child(5), // Exposition
+    .dropdown:nth-child(6), // Niveau de diplôme
+    .dropdown:nth-child(7), // Mention
+    .dropdown:nth-child(8)  // Lieu
+      display: none
+
 // project
 
 .projects__section
@@ -500,6 +509,10 @@ body.full-width .projects--list
       padding-top: $spacing-4
   .project-categories
     margin-bottom: 0
+  .taxonomies-list
+    .dropdown:nth-child(2), // Studio
+    .dropdown:nth-child(4)  // Lieu
+      display: none
 
 // PAGES
 
