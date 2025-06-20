@@ -166,6 +166,13 @@ footer#document-footer
 .categories .rich-text p:last-child
   display: none // link more disabled
 
+.project
+  .ancestor-studio,       // Studio
+  .ancestor-location,
+  li a[href*="/lieu/"],   // Lieu
+  .page-completed-state   // État/Terminé
+    display: none
+
 // taxonomies
 
 .taxonomies-list
@@ -553,8 +560,6 @@ body.full-width .projects--list
     .dropdown:nth-child(2), // Studio
     .dropdown:nth-child(4)  // Lieu
       display: none
-  .ancestor-studio // Studio
-    display: none
 
 // PAGES
 
