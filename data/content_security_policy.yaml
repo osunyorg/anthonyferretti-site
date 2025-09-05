@@ -13,3 +13,4 @@ allowed_domains:
   - "www.youtube-nocookie.com"
   - "embed.radiofrance.fr"
   - "open.spotify.com"
+  - "embed.figma.com"
