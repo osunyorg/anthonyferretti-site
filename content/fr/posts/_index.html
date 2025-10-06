@@ -65,11 +65,7 @@ summary: >-
 header_text: >-
   
 header_cta:
-  display: false
-  label: >-
-    
-  target: ""
-  external: false
+
 section_taxonomies:
   - name: >-
       Expérience professionnelle
@@ -102,12 +98,33 @@ section_taxonomies:
     slug: "enseignement"
     path: "/posts_categories/enseignement"
     categories:
+      - permalink: "/activites/enseignement/formation/"
+        path: "/posts_categories/enseignement/formation"
+        slug: "enseignement/formation"
+        file: "content/fr/posts_categories/enseignement/formation/_index.html"
+        name: >-
+          Formation
+        count: 1
       - permalink: "/activites/enseignement/workshop/"
         path: "/posts_categories/enseignement/workshop"
         slug: "enseignement/workshop"
         file: "content/fr/posts_categories/enseignement/workshop/_index.html"
         name: >-
           Workshop
+        count: 20
+      - permalink: "/activites/enseignement/jury/"
+        path: "/posts_categories/enseignement/jury"
+        slug: "enseignement/jury"
+        file: "content/fr/posts_categories/enseignement/jury/_index.html"
+        name: >-
+          Jury
+        count: 2
+      - permalink: "/activites/enseignement/mentorat/"
+        path: "/posts_categories/enseignement/mentorat"
+        slug: "enseignement/mentorat"
+        file: "content/fr/posts_categories/enseignement/mentorat/_index.html"
+        name: >-
+          Mentorat
         count: 1
   - name: >-
       Recherche
@@ -120,7 +137,7 @@ section_taxonomies:
         file: "content/fr/posts_categories/recherche/reflexion/_index.html"
         name: >-
           Réflexion
-        count: 1
+        count: 8
       - permalink: "/activites/recherche/evaluation/"
         path: "/posts_categories/recherche/evaluation"
         slug: "recherche/evaluation"
@@ -142,6 +159,13 @@ section_taxonomies:
         name: >-
           Mémoire
         count: 1
+      - permalink: "/activites/recherche/seminaire-et-atelier/"
+        path: "/posts_categories/recherche/seminaire-et-atelier"
+        slug: "recherche/seminaire-et-atelier"
+        file: "content/fr/posts_categories/recherche/seminaire-et-atelier/_index.html"
+        name: >-
+          Séminaire et atelier
+        count: 1
   - name: >-
       Intervention
     slug: "intervention"
@@ -153,26 +177,66 @@ section_taxonomies:
         file: "content/fr/posts_categories/intervention/conference/_index.html"
         name: >-
           Conférence
+        count: 11
+      - permalink: "/activites/intervention/table-ronde/"
+        path: "/posts_categories/intervention/table-ronde"
+        slug: "intervention/table-ronde"
+        file: "content/fr/posts_categories/intervention/table-ronde/_index.html"
+        name: >-
+          Table ronde
         count: 1
+      - permalink: "/activites/intervention/radio-podcast/"
+        path: "/posts_categories/intervention/radio-podcast"
+        slug: "intervention/radio-podcast"
+        file: "content/fr/posts_categories/intervention/radio-podcast/_index.html"
+        name: >-
+          Radio et podcast
+        count: 3
   - name: >-
       Exposition
     slug: "exposition"
     path: "/posts_categories/exposition"
     categories:
+      - permalink: "/activites/exposition/festival/"
+        path: "/posts_categories/exposition/festival"
+        slug: "exposition/festival"
+        file: "content/fr/posts_categories/exposition/festival/_index.html"
+        name: >-
+          Festival
+        count: 5
+      - permalink: "/activites/exposition/musee/"
+        path: "/posts_categories/exposition/musee"
+        slug: "exposition/musee"
+        file: "content/fr/posts_categories/exposition/musee/_index.html"
+        name: >-
+          Musée
+        count: 1
       - permalink: "/activites/exposition/foire-salon/"
         path: "/posts_categories/exposition/foire-salon"
         slug: "exposition/foire-salon"
         file: "content/fr/posts_categories/exposition/foire-salon/_index.html"
         name: >-
           Foire et salon
-        count: 1
-      - permalink: "/activites/exposition/exposition-de-projet/"
-        path: "/posts_categories/exposition/exposition-de-projet"
-        slug: "exposition/exposition-de-projet"
-        file: "content/fr/posts_categories/exposition/exposition-de-projet/_index.html"
+        count: 3
+  - name: >-
+      Studio
+    slug: "studio"
+    path: "/posts_categories/studio"
+    categories:
+      - permalink: "/activites/studio/praticable/"
+        path: "/posts_categories/studio/praticable"
+        slug: "studio/praticable"
+        file: "content/fr/posts_categories/studio/praticable/_index.html"
         name: >-
-          Exposition de projet
-        count: 1
+          Praticable
+        count: 5
+      - permalink: "/activites/studio/collectif-bam/"
+        path: "/posts_categories/studio/collectif-bam"
+        slug: "studio/collectif-bam"
+        file: "content/fr/posts_categories/studio/collectif-bam/_index.html"
+        name: >-
+          Collectif Bam
+        count: 34
   - name: >-
       Niveau de diplôme
     slug: "niveau"
@@ -229,28 +293,28 @@ section_taxonomies:
         file: "content/fr/posts_categories/lieu/bordeaux/_index.html"
         name: >-
           Bordeaux
-        count: 2
+        count: 14
       - permalink: "/activites/lieu/paris/"
         path: "/posts_categories/lieu/paris"
         slug: "lieu/paris"
         file: "content/fr/posts_categories/lieu/paris/_index.html"
         name: >-
           Paris
-        count: 9
+        count: 37
       - permalink: "/activites/lieu/toulouse/"
         path: "/posts_categories/lieu/toulouse"
         slug: "lieu/toulouse"
         file: "content/fr/posts_categories/lieu/toulouse/_index.html"
         name: >-
           Toulouse
-        count: 1
+        count: 3
       - permalink: "/activites/lieu/angouleme/"
         path: "/posts_categories/lieu/angouleme"
         slug: "lieu/angouleme"
         file: "content/fr/posts_categories/lieu/angouleme/_index.html"
         name: >-
           Angoulême
-        count: 1
+        count: 2
       - permalink: "/activites/lieu/strasbourg/"
         path: "/posts_categories/lieu/strasbourg"
         slug: "lieu/strasbourg"
@@ -271,6 +335,55 @@ section_taxonomies:
         file: "content/fr/posts_categories/lieu/delemont/_index.html"
         name: >-
           Delémont
+        count: 1
+      - permalink: "/activites/lieu/nantes/"
+        path: "/posts_categories/lieu/nantes"
+        slug: "lieu/nantes"
+        file: "content/fr/posts_categories/lieu/nantes/_index.html"
+        name: >-
+          Nantes
+        count: 2
+      - permalink: "/activites/lieu/grenoble/"
+        path: "/posts_categories/lieu/grenoble"
+        slug: "lieu/grenoble"
+        file: "content/fr/posts_categories/lieu/grenoble/_index.html"
+        name: >-
+          Grenoble
+        count: 1
+      - permalink: "/activites/lieu/marseille/"
+        path: "/posts_categories/lieu/marseille"
+        slug: "lieu/marseille"
+        file: "content/fr/posts_categories/lieu/marseille/_index.html"
+        name: >-
+          Marseille
+        count: 1
+      - permalink: "/activites/lieu/arles/"
+        path: "/posts_categories/lieu/arles"
+        slug: "lieu/arles"
+        file: "content/fr/posts_categories/lieu/arles/_index.html"
+        name: >-
+          Arles
+        count: 1
+      - permalink: "/activites/lieu/lyon/"
+        path: "/posts_categories/lieu/lyon"
+        slug: "lieu/lyon"
+        file: "content/fr/posts_categories/lieu/lyon/_index.html"
+        name: >-
+          Lyon
+        count: 2
+      - permalink: "/activites/lieu/saint-etienne/"
+        path: "/posts_categories/lieu/saint-etienne"
+        slug: "lieu/saint-etienne"
+        file: "content/fr/posts_categories/lieu/saint-etienne/_index.html"
+        name: >-
+          Saint-Étienne
+        count: 1
+      - permalink: "/activites/lieu/lille/"
+        path: "/posts_categories/lieu/lille"
+        slug: "lieu/lille"
+        file: "content/fr/posts_categories/lieu/lille/_index.html"
+        name: >-
+          Lille
         count: 1
 
 contents_reading_time:

@@ -7,7 +7,17 @@
 b, strong
   font-weight: 600
 
+// list
+
+.rich-text ul
+  list-style-type: square
+
 // COMPONENTS
+
+// layout
+
+main .blocks + *
+  margin-top: 0
 
 // header
 
@@ -147,7 +157,6 @@ footer#document-footer
     @include media-breakpoint-up(desktop)
       font-size: $btn-font-size-desktop
       padding: $btn-padding-desktop
-      padding-small: $btn-small-padding-desktop
       border: $btn-border-desktop
       border-radius: $btn-border-radius-desktop
       min-width: $btn-min-width-desktop
@@ -156,6 +165,24 @@ footer#document-footer
 
 .categories .rich-text p:last-child
   display: none // link more disabled
+
+.project
+  .ancestor-studio,       // Studio
+  .ancestor-location,
+  li a[href*="/lieu/"],   // Lieu
+  .page-completed-state   // État/Terminé
+    display: none
+
+// taxonomies
+
+.taxonomies-list
+  border-bottom: $border
+  margin-bottom: 0
+  @include media-breakpoint-down(desktop)
+    gap: $spacing-2
+    padding-bottom: $block-space-y
+  @include media-breakpoint-up(desktop)
+    padding-bottom: $block-space-y-desktop
 
 // hero
 
@@ -297,6 +324,10 @@ footer#document-footer
     border-bottom: $border
     padding-bottom: $spacing-2
 
+.projects__page:not(.full-width) .project-sidebar
+  @include media-breakpoint-down(desktop)
+    margin-bottom: $block-space-y
+
 .post-infos a
   color: $color-text
 
@@ -327,7 +358,6 @@ footer#document-footer
   @include media-breakpoint-up(desktop)
     width: calc((var(--column-width) * 6) + (var(--grid-gutter) * (6 - 1)))
 
-
 // BLOCKS
 
 .block
@@ -354,6 +384,12 @@ footer#document-footer
   @include media-breakpoint-down(desktop)
     margin-top: 0
 
+// gallery
+
+.block-gallery--large figure
+  @include media-breakpoint-down(desktop)
+    margin-bottom: 0
+
 // page
 
 .block-pages
@@ -378,8 +414,7 @@ footer#document-footer
 
 body.full-width .projects--list
   article.project
-    & .project-title,
-    & .project-subtitle
+    & .project-title
       @include media-breakpoint-down(desktop)
         font-size: $h3-size
         line-height: $h3-line-height
@@ -389,9 +424,13 @@ body.full-width .projects--list
       & a:hover
         color: $color-text
     & .project-subtitle
+      margin-top: $spacing-2
+      @include media-breakpoint-down(desktop)
+        font-size: $body-size
+        line-height: $h3-line-height
       @include media-breakpoint-up(desktop)
         font-size: $body-size-desktop
-        margin-top: $spacing-2
+        line-height: $h3-line-height-desktop
   article [class$="-content"]
     @include media-breakpoint-up(desktop)
       flex: none
@@ -400,11 +439,12 @@ body.full-width .projects--list
       width: auto
 
 .projects--list
-  & > li:first-child
+  li
     padding-top: 0
-  & > li:last-child
     padding-bottom: 0
-  & .project
+  article, .project
+    padding-bottom: $spacing-3
+    margin-top: $spacing-3
     @include media-breakpoint-up(desktop)
       flex-direction: row-reverse
       justify-content: start
@@ -433,10 +473,20 @@ body.full-width .projects--list
       &:last-child
         padding-bottom: 0
 
-.post .post-subtitle
-  @include media-breakpoint-up(desktop)
-    font-size: $body-size-desktop
+.post
+  .post-subtitle
     margin-top: $spacing-2
+    @include media-breakpoint-down(desktop)
+      font-size: $body-size
+      line-height: $h3-line-height
+    @include media-breakpoint-up(desktop)
+      font-size: $body-size-desktop
+      line-height: $h3-line-height-desktop
+  .post-meta
+    @include media-breakpoint-up(desktop)
+      margin-top: $spacing-4
+    @include media-breakpoint-down(desktop)
+      margin-top: $spacing-2
 
 // cta
 
@@ -448,11 +498,25 @@ body.full-width .projects--list
       .block-content
         padding: 0 $grid-gutter-xxl
     @include in-page-with-sidebar
-      .call_to_action > div
-        padding: 0
+      .call_to_action 
+        & > div
+          padding: 0
+        .top .block-title
+          margin-bottom: $spacing-3
+        .description > p
+          @include h4
+        .actions a
+          margin-top: 0
+        * + .actions
+          margin-top: $spacing-4
+      
   @include media-breakpoint-down(desktop)
     .call_to_action
       padding: 0
+      .actions a
+        margin-top: 0
+      * + .actions
+        margin-top: $spacing-3
 
 // person
 
@@ -475,27 +539,40 @@ body.full-width .projects--list
 .posts__section
   & .posts--list
     article
-      margin-bottom: $spacing-4
+      padding-top: $spacing-4
       padding-bottom: $spacing-4
+      margin-bottom: 0
       @include media-breakpoint-down(desktop)
         flex-direction: column
       &:last-child
-        margin-bottom: 0
         padding-bottom: 0
         border: none
+
+.posts__section
+  .taxonomies-list
+    .dropdown:nth-child(1), // Expérience professionnelle
+    .dropdown:nth-child(5), // Exposition
+    .dropdown:nth-child(6), // Niveau de diplôme
+    .dropdown:nth-child(7), // Mention
+    .dropdown:nth-child(8)  // Lieu
+      display: none
 
 // project
 
 .projects__section
-  .projects--list
-    & > li:first-child
-      padding-bottom: $spacing-4
-      padding-top: 0
-    & > li:not(:first-child)
+  & .projects--list
+    article
       padding-bottom: $spacing-4
       padding-top: $spacing-4
+      margin-top: 0
   .project-categories
     margin-bottom: 0
+
+.projects__section
+  .taxonomies-list
+    .dropdown:nth-child(2), // Studio
+    .dropdown:nth-child(4)  // Lieu
+      display: none
 
 // PAGES
 
