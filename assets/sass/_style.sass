@@ -161,6 +161,11 @@ footer#document-footer
       border-radius: $btn-border-radius-desktop
       min-width: $btn-min-width-desktop
 
+// player video
+
+.lazy-video-player button
+  border-radius: 0%
+
 // cateogry
 
 .categories .rich-text p:last-child
@@ -439,11 +444,7 @@ body.full-width .projects--list
       width: auto
 
 .projects--list
-  li
-    padding-top: 0
-    padding-bottom: 0
-  article, .project
-    margin-top: $spacing-3
+ & article, .project
     @include media-breakpoint-up(desktop)
       flex-direction: row-reverse
       justify-content: start
@@ -481,11 +482,6 @@ body.full-width .projects--list
     @include media-breakpoint-up(desktop)
       font-size: $body-size-desktop
       line-height: $h3-line-height-desktop
-  .post-meta
-    @include media-breakpoint-up(desktop)
-      margin-top: $spacing-4
-    @include media-breakpoint-down(desktop)
-      margin-top: $spacing-2
 
 // cta
 
@@ -522,6 +518,16 @@ body.full-width .projects--list
 .block-persons
   .person-name
     font-weight: 500
+
+// timeline
+
+.block-timeline .timeline-event
+  &::before
+    border-radius: 0%
+    margin-top: 0.7em
+  &::after
+    margin-top: $spacing-3
+    margin-bottom: $spacing-1
 
 // SECTIONS
 
@@ -561,6 +567,7 @@ body.full-width .projects--list
   & .projects--list
     > li
       padding-bottom: $spacing-4
+      padding-top: 0
       + li
         padding-top: $spacing-4
         margin-top: 0
@@ -617,5 +624,6 @@ body.full-width .projects--list
       border-top: $border
     @include media-breakpoint-up(desktop)
       padding-top: $block-space-y-desktop
+      margin-top: 0
     &:last-child    
      padding-bottom: 0
