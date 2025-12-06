@@ -413,7 +413,7 @@ footer#document-footer
 // project
 
 body.full-width .projects--list
-  article.project
+  .project .project-content
     & .project-title
       @include media-breakpoint-down(desktop)
         font-size: $h3-size
@@ -443,7 +443,6 @@ body.full-width .projects--list
     padding-top: 0
     padding-bottom: 0
   article, .project
-    padding-bottom: $spacing-3
     margin-top: $spacing-3
     @include media-breakpoint-up(desktop)
       flex-direction: row-reverse
@@ -539,7 +538,6 @@ body.full-width .projects--list
 .posts__section
   & .posts--list
     article
-      padding-top: $spacing-4
       padding-bottom: $spacing-4
       margin-bottom: 0
       @include media-breakpoint-down(desktop)
@@ -561,10 +559,11 @@ body.full-width .projects--list
 
 .projects__section
   & .projects--list
-    article
+    > li
       padding-bottom: $spacing-4
-      padding-top: $spacing-4
-      margin-top: 0
+      + li
+        padding-top: $spacing-4
+        margin-top: 0
   .project-categories
     margin-bottom: 0
 
