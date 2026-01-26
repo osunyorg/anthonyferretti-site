@@ -504,7 +504,6 @@ body.full-width .projects--list
           margin-top: 0
         * + .actions
           margin-top: $spacing-4
-      
   @include media-breakpoint-down(desktop)
     .call_to_action
       padding: 0
@@ -512,6 +511,9 @@ body.full-width .projects--list
         margin-top: 0
       * + .actions
         margin-top: $spacing-3
+
+main .blocks .block:first-child:is(#{$backgrounded_blocks})
+  margin-top: $block-space-y-desktop
 
 // person
 
