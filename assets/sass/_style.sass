@@ -359,7 +359,7 @@ footer#document-footer
   .organization-summary
     margin-top: $spacing-1
 
-.organizations.with-summaries .organization:only-child
+.organizations--grid.with-summaries > li:only-child > .organization 
   @include media-breakpoint-up(desktop)
     width: calc((var(--column-width) * 6) + (var(--grid-gutter) * (6 - 1)))
 
