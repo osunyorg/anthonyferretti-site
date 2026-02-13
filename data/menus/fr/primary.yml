@@ -2,114 +2,161 @@
 title: Menu principal
 items:
 - title: Accompagnements
+  slug: accompagnements
   target: "/accompagnements/"
   kind: page
   new_tab: false
   children:
   - title: Penser par le design
+    slug: penser-par-le-design
     target: "/accompagnements/penser-par-le-design/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/accompagnements/penser-par-le-design"
     file: content/fr/pages/accompagnements/penser-par-le-design/_index.html
   - title: Faire par le design
+    slug: faire-par-le-design
     target: "/accompagnements/faire-par-le-design/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/accompagnements/faire-par-le-design"
     file: content/fr/pages/accompagnements/faire-par-le-design/_index.html
   - title: Former par le design
+    slug: former-par-le-design
     target: "/accompagnements/former-par-le-design/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/accompagnements/former-par-le-design"
     file: content/fr/pages/accompagnements/former-par-le-design/_index.html
+  descendants_targets:
+  - "/accompagnements/faire-par-le-design/"
+  - "/accompagnements/former-par-le-design/"
+  - "/accompagnements/penser-par-le-design/"
   path: "/pages/accompagnements"
   file: content/fr/pages/accompagnements/_index.html
 - title: Projets
+  slug: projets
   target: "/projets/"
   kind: page
   new_tab: false
   children:
   - title: Stratégie
+    slug: strategie
     target: "/projets/expertise/strategie/"
     kind: url
     new_tab: false
     children: []
+    descendants_targets: []
   - title: Interface
+    slug: interface
     target: "/projets/expertise/interface/"
     kind: url
     new_tab: false
     children: []
+    descendants_targets: []
   - title: Identité
+    slug: identite
     target: "/projets/expertise/identite/"
     kind: url
     new_tab: false
     children: []
+    descendants_targets: []
   - title: Objet
+    slug: objet
     target: "/projets/expertise/objet/"
     kind: url
     new_tab: false
     children: []
+    descendants_targets: []
+  descendants_targets:
+  - "/projets/expertise/identite/"
+  - "/projets/expertise/interface/"
+  - "/projets/expertise/objet/"
+  - "/projets/expertise/strategie/"
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Activités
+  slug: activites
   target: "/activites/"
   kind: page
   new_tab: false
   children:
   - title: Enseignement
+    slug: enseignement
     target: "/activites/enseignement/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/enseignement"
     file: content/fr/posts_categories/enseignement/_index.html
   - title: Recherche
+    slug: recherche
     target: "/activites/recherche/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/recherche"
     file: content/fr/posts_categories/recherche/_index.html
   - title: Intervention
+    slug: intervention
     target: "/activites/intervention/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/intervention"
     file: content/fr/posts_categories/intervention/_index.html
+  descendants_targets:
+  - "/activites/enseignement/"
+  - "/activites/intervention/"
+  - "/activites/recherche/"
   path: "/posts"
   file: content/fr/posts/_index.html
 - title: À propos
+  slug: a-propos
   target: "/a-propos/"
   kind: page
   new_tab: false
   children:
   - title: Expertise
+    slug: expertise
     target: "/a-propos/expertise/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/a-propos/expertise"
     file: content/fr/pages/a-propos/expertise/_index.html
   - title: Clients & partenaires
+    slug: clients-partenaires
     target: "/a-propos/clients-partenaires/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/organizations"
     file: content/fr/organizations/_index.html
   - title: Curriculum vitæ
+    slug: curriculum-vitae
     target: "/a-propos/curriculum-vitae/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/a-propos/curriculum-vitae"
     file: content/fr/pages/a-propos/curriculum-vitae/_index.html
+  descendants_targets:
+  - "/a-propos/clients-partenaires/"
+  - "/a-propos/curriculum-vitae/"
+  - "/a-propos/expertise/"
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
 
