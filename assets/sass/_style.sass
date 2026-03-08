@@ -165,6 +165,7 @@ footer#document-footer
     .hero-text
       @include media-breakpoint-up(desktop)
         width: $content-width
+        padding-bottom: 0
       @include media-breakpoint-down(desktop)
         margin-bottom: $spacing-4
       h1 > span
@@ -247,6 +248,9 @@ footer#document-footer
     border-top: $border
 
 // toc
+
+html
+  scroll-behavior: smooth
 
 .toc-container
   @include media-breakpoint-up(desktop)
