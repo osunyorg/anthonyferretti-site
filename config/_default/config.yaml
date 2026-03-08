@@ -23,7 +23,7 @@ params:
           active: true
   breadcrumb:
     extendable: false
-    position: hero-end #  hero-start |  hero-end | after-hero | none
+    position: after-hero # hero-start | hero-end | after-hero | after-hero-title | none
 
   # SECTIONS
   organizations:
