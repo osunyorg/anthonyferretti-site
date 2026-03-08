@@ -426,6 +426,11 @@ body.full-width .projects--list
     @include media-breakpoint-down(desktop)
       flex-direction: column
 
+.projects--list > li
+  padding-bottom: $spacing-4
+  &:not(:first-child)
+    padding-top: $spacing-5
+
 .project-summary
   margin-top: $spacing-2
   .rich-text > p
