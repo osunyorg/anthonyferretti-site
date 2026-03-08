@@ -289,13 +289,23 @@ footer#document-footer
   @include media-breakpoint-down(desktop)
     border-bottom: $border
     padding-bottom: $spacing-2
+  & .post-infos a,
+  & .project-infos a
+    color: $color-text
+
+.projects__page:not(.full-width) .project-sidebar .project-infos 
+  & > li.authors ul,
+  & > li.terms ul,
+  & .taxonomies-single.with-label > li.authors ul,
+  & .taxonomies-single.with-label > li.terms ul
+    display: flex
+    flex-wrap: wrap
+    & li + li
+      margin-top: 0
 
 .projects__page:not(.full-width) .project-sidebar
   @include media-breakpoint-down(desktop)
     margin-bottom: $block-space-y
-
-.post-infos a
-  color: $color-text
 
 // organization
 

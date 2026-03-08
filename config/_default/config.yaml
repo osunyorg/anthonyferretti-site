@@ -21,6 +21,8 @@ params:
           active: false
         title:
           active: true
+  breadcrumb:
+    position: hero-start #  hero-start |  hero-end | after-hero | none
 
   # SECTIONS
   organizations:
