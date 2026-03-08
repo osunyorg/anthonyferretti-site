@@ -22,7 +22,8 @@ params:
         title:
           active: true
   breadcrumb:
-    position: hero-start #  hero-start |  hero-end | after-hero | none
+    extendable: false
+    position: hero-end #  hero-start |  hero-end | after-hero | none
 
   # SECTIONS
   organizations:
