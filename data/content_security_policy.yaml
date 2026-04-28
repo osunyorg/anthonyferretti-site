@@ -12,6 +12,6 @@ allowed_domains:
   - "youtube-nocookie.com"
   - "www.youtube-nocookie.com"
   - "embed.radiofrance.fr"
+  - "open.spotify.com"
   - "w.soundcloud.com"
   - "soundcloud.com"
-  - "open.spotify.com"
