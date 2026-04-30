@@ -299,6 +299,10 @@ from = "/a-propos/reseau/organisations/privowny/index.html"
 to = "/a-propos/clients-partenaires/privowny/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/blockchain-vaisselle/index.html"
+to = "/a-propos/clients-partenaires/blockchain-france/"
+
+[[redirects]]
 from = "/reseau/organisations/praticable/index.html"
 to = "/a-propos/clients-partenaires/praticable/"
 
