@@ -17,7 +17,7 @@ meta:
     slug: "mobilier-exposition"
   dates:
     created_at: 2024-11-23T11:11:48+01:00
-    updated_at: 2026-05-05T19:28:11+02:00
+    updated_at: 2026-05-05T19:39:39+02:00
     published_at: 2024-11-23T11:11:48+01:00
 search:
   id: "639b3b3d-b413-4a4a-9450-ad0bb2cba9b0"
@@ -30,7 +30,7 @@ search:
   summary: >-
     <p>Modules scénographiques mobiles et en kit dédiés à l'exposition de livres d'artistes. Design de produit, fabrication.</p>
   body: >-
-    <p>À propos  <br> Démarche  <br> Résultats  <br> Mentions  </p>
+    <p>À propos  <br> Démarche  <br> Résultats  <br> Mentions  <br> Client </p>  <p> Studio </p>
 
 breadcrumbs:
   - title: >-
@@ -209,12 +209,20 @@ contents:
 
   - kind: block
     template: organizations
-
-
+    title: >-
+      Client
+    slug: >-
+      client
     ranks:
       base: 3
+      self: 3
+      children: 4
     top:
-      active: false
+      active: true
+      title: 
+        value: >-
+          Client
+        heading: 3
 
     data:
       layout: grid
@@ -222,12 +230,53 @@ contents:
       options:
         link: true
         logo: true
-        summary: false
+        summary: true
         address: false
         filters: false
 
       organizations:
-      quantity: 0
+        - permalink: "/a-propos/clients-partenaires/frac-normandie/"
+          path: "/organizations/frac-normandie"
+          slug: "frac-normandie"
+          file: "content/fr/organizations/frac-normandie.html"
+
+      quantity: 1
+
+
+  - kind: block
+    template: organizations
+    title: >-
+      Studio
+    slug: >-
+      studio
+    ranks:
+      base: 3
+      self: 3
+      children: 4
+    top:
+      active: true
+      title: 
+        value: >-
+          Studio
+        heading: 3
+
+    data:
+      layout: grid
+
+      options:
+        link: true
+        logo: true
+        summary: true
+        address: false
+        filters: false
+
+      organizations:
+        - permalink: "/a-propos/clients-partenaires/collectif-bam/"
+          path: "/organizations/collectif-bam"
+          slug: "collectif-bam"
+          file: "content/fr/organizations/collectif-bam.html"
+
+      quantity: 1
 
 
 
