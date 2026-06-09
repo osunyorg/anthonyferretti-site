@@ -25,6 +25,9 @@ params:
     position: none # hero-start | hero-end | after-hero | after-hero-title | none
 
   # SECTIONS
+  home:
+    head:
+      title: site
   organizations:
     index:
       taxonomies: true
