@@ -48,37 +48,37 @@ items:
   children:
   - title: Stratégie
     slug: strategie
-    target: "/projets/expertise/strategie/"
+    target: "/projets/type/strategie/"
     kind: url
     new_tab: false
     children: []
     descendants_targets: []
   - title: Interface
     slug: interface
-    target: "/projets/expertise/interface/"
+    target: "/projets/type/interface/"
     kind: url
     new_tab: false
     children: []
     descendants_targets: []
   - title: Identité
     slug: identite
-    target: "/projets/expertise/identite/"
+    target: "/projets/type/identite/"
     kind: url
     new_tab: false
     children: []
     descendants_targets: []
   - title: Objet
     slug: objet
-    target: "/projets/expertise/objet/"
+    target: "/projets/type/objet/"
     kind: url
     new_tab: false
     children: []
     descendants_targets: []
   descendants_targets:
-  - "/projets/expertise/identite/"
-  - "/projets/expertise/interface/"
-  - "/projets/expertise/objet/"
-  - "/projets/expertise/strategie/"
+  - "/projets/type/identite/"
+  - "/projets/type/interface/"
+  - "/projets/type/objet/"
+  - "/projets/type/strategie/"
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Activités
