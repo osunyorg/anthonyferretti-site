@@ -5,7 +5,8 @@ _merge: deep
 params:
   search:
     active: true
-    positions: secondary-menu #config custom pour afficher l'icone search dans le menu secondaire
+    positions:
+      - primary #config custom pour afficher l'icone search dans le menu secondaire
   seo:
     title:
       separator: "-"
@@ -22,8 +23,9 @@ params:
         title:
           active: true
   breadcrumb:
-    position: none # hero-start | hero-end | after-hero | after-hero-title | none
-
+    position: after-hero # hero-start | hero-end | after-hero | after-hero-title | none
+  share_links:
+    enabled: false
   # SECTIONS
   home:
     head:

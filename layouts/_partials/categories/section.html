@@ -16,6 +16,7 @@
   )}}
 
   <div class="container">
+    {{/*  // Pour les actualités on affiche tous les posts à l'intérieur d'une taxonomie  */}}
     {{ if eq .Type "posts_categories" }}
       {{ $section_type := strings.TrimSuffix "_categories" .Type }}
       {{ $list_partial := printf "%s/partials/%s.html" $section_type $section_type }}
@@ -23,7 +24,8 @@
         {{ partial $list_partial . }}
       {{ end }}
       {{ partial "commons/section/pagination.html" . }}
-    {{ else }}
+    {{ else if ne .Type "projects_categories" }}
+      {{/*  N'afficher les catégories de la taxonomies que si ce n'est pas un projet  */}}
       {{ partial "categories/section/categories.html" . }}
     {{ end }}
   </div>
