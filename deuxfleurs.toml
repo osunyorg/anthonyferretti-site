@@ -404,7 +404,7 @@ to = "/personnes/brigitte-borja-de-mozota/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/pascal-barillot/index.html"
-to = "/personnes/pascal-barillot/"
+to = "/personnes/pascale-barillot/"
 
 [[redirects]]
 from = "/actualites/experience-professionnelle/index.html"
@@ -1269,6 +1269,10 @@ to = "/equipe-editoriale/"
 [[redirects]]
 from = "/activites/recherches/collectif-recherche/index.html"
 to = "/activites/recherche/collectif-recherche/"
+
+[[redirects]]
+from = "/personnes/pascal-barillot/index.html"
+to = "/personnes/pascale-barillot/"
 
 [[redirects]]
 from = "/reseau/organisations/anact/index.html"
