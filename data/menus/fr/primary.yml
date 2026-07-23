@@ -135,8 +135,8 @@ items:
     descendants_targets: []
     path: "/pages/a-propos/expertise"
     file: content/fr/pages/a-propos/expertise/_index.html
-  - title: Clients & partenaires
-    slug: clients-partenaires
+  - title: Réseau
+    slug: reseau
     target: "/a-propos/reseau/"
     kind: page
     new_tab: false
