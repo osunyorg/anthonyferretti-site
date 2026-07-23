@@ -19,8 +19,12 @@ from = "/actualites/recherche/reflexion/index.html"
 to = "/activites/recherche/reflexion/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/4mtec/index.html"
+to = "/a-propos/reseau/4mtec/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/universite-de-lille/index.html"
-to = "/a-propos/clients-partenaires/universite-de-lille/"
+to = "/a-propos/reseau/universite-de-lille/"
 
 [[redirects]]
 from = "/activites/collectif-bam/index.html"
@@ -56,7 +60,7 @@ to = "/personnes/marianne-massaloux/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/conseil-departemental-de-la-guadeloupe/index.html"
-to = "/a-propos/clients-partenaires/conseil-departemental-de-la-guadeloupe/"
+to = "/a-propos/reseau/conseil-departemental-de-la-guadeloupe/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/cyril-lage/index.html"
@@ -72,7 +76,7 @@ to = "/a-propos/clients-partenaires/assemblee-virtuelle/"
 
 [[redirects]]
 from = "/organisations/anact/index.html"
-to = "/a-propos/clients-partenaires/anact/"
+to = "/a-propos/reseau/anact/"
 
 [[redirects]]
 from = "/actualites/2020-09-01-le-design-peut-il-etre-populaire/index.html"
@@ -80,11 +84,11 @@ to = "/activites/2022-09-13-le-design-peut-il-etre-populaire/"
 
 [[redirects]]
 from = "/organisations/universite-de-lille/index.html"
-to = "/a-propos/clients-partenaires/universite-de-lille/"
+to = "/a-propos/reseau/universite-de-lille/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/medias-cite/index.html"
-to = "/a-propos/clients-partenaires/medias-cite/"
+to = "/a-propos/reseau/medias-cite/"
 
 [[redirects]]
 from = "/actualites/exposition/presentation/index.html"
@@ -112,7 +116,7 @@ to = "/projets/lieu/lille/"
 
 [[redirects]]
 from = "/organisations/dominique-tissot/index.html"
-to = "/a-propos/clients-partenaires/dominique-tissot/"
+to = "/a-propos/reseau/dominique-tissot/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/jacques-francois-marchandise/index.html"
@@ -128,7 +132,7 @@ to = "/personnes/vincent-de-montalivet/"
 
 [[redirects]]
 from = "/organisations/communication-publique/index.html"
-to = "/a-propos/clients-partenaires/communication-publique/"
+to = "/a-propos/reseau/communication-publique/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/alexis-benoit/index.html"
@@ -136,11 +140,15 @@ to = "/personnes/alexis-benoit/"
 
 [[redirects]]
 from = "/organisations/lycee-charles-augustin-coulomb/index.html"
-to = "/a-propos/clients-partenaires/lycee-charles-augustin-coulomb/"
+to = "/a-propos/reseau/lycee-charles-augustin-coulomb/"
 
 [[redirects]]
 from = "/reseau/organisations/lycee-charles-augustin-coulomb/index.html"
-to = "/a-propos/clients-partenaires/lycee-charles-augustin-coulomb/"
+to = "/a-propos/reseau/lycee-charles-augustin-coulomb/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/zone-ah/index.html"
+to = "/a-propos/reseau/zone-ah/"
 
 [[redirects]]
 from = "/actualites/mention/bien/index.html"
@@ -163,12 +171,20 @@ from = "/a-propos/reseau/personnes/florence-cassin/index.html"
 to = "/personnes/florence-cassin/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/college-de-la-pierre-aiguille/index.html"
+to = "/a-propos/reseau/college-de-la-pierre-aiguille/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/cy-ecole-de-design/index.html"
-to = "/a-propos/clients-partenaires/cy-ecole-de-design/"
+to = "/a-propos/reseau/cy-ecole-de-design/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/le-nouveau-cap/index.html"
-to = "/a-propos/clients-partenaires/le-nouveau-cap/"
+to = "/a-propos/reseau/le-nouveau-cap/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/anact/index.html"
+to = "/a-propos/reseau/anact/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/chloe-rotrou/index.html"
@@ -188,11 +204,15 @@ to = "/activites/niveau/niveau-4/"
 
 [[redirects]]
 from = "/organisations/la-faiencerie-theatre-de-creil/index.html"
-to = "/a-propos/clients-partenaires/la-faiencerie-theatre-de-creil/"
+to = "/a-propos/reseau/la-faiencerie-theatre-de-creil/"
 
 [[redirects]]
 from = "/activites/praticable/index.html"
 to = "/activites/studio/praticable/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/lams/index.html"
+to = "/a-propos/reseau/lams/"
 
 [[redirects]]
 from = "/actualites/niveau/index.html"
@@ -204,15 +224,15 @@ to = "/projets/type/identite/"
 
 [[redirects]]
 from = "/reseau/organisations/cy-ecole-de-design/index.html"
-to = "/a-propos/clients-partenaires/cy-ecole-de-design/"
+to = "/a-propos/reseau/cy-ecole-de-design/"
 
 [[redirects]]
 from = "/reseau/organisations/maif/index.html"
-to = "/a-propos/clients-partenaires/maif/"
+to = "/a-propos/reseau/maif/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/cite-scolaire-rive-gauche-lycee-josephine-baker/index.html"
-to = "/a-propos/clients-partenaires/cite-scolaire-rive-gauche-lycee-josephine-baker/"
+to = "/a-propos/reseau/cite-scolaire-rive-gauche-lycee-josephine-baker/"
 
 [[redirects]]
 from = "/activites/2019-07-01-pour-une-plus-grande-reflexivite-du-design/index.html"
@@ -240,7 +260,7 @@ to = "/activites/niveau/niveau-5/"
 
 [[redirects]]
 from = "/reseau/organisations/telescoop/index.html"
-to = "/a-propos/clients-partenaires/telescoop/"
+to = "/a-propos/reseau/telescoop/"
 
 [[redirects]]
 from = "/activites/2012-09-19-designer-global-independant/index.html"
@@ -252,7 +272,7 @@ to = "/personnes/maxime-bellec/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/communication-publique/index.html"
-to = "/a-propos/clients-partenaires/communication-publique/"
+to = "/a-propos/reseau/communication-publique/"
 
 [[redirects]]
 from = "/projets/2019-faciliter-orientation-insertion-professionnelle-jeunes/index.html"
@@ -263,20 +283,24 @@ from = "/a-propos/reseau/organisations/humanitarian-design-bureau/index.html"
 to = "/a-propos/clients-partenaires/humanitarian-design-bureau/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/ecole-du-domaine-du-possible/index.html"
+to = "/a-propos/reseau/ecole-du-domaine-du-possible/"
+
+[[redirects]]
 from = "/activites/interventions/index.html"
 to = "/activites/intervention/"
 
 [[redirects]]
 from = "/reseau/organisations/democratie-ouverte/index.html"
-to = "/a-propos/clients-partenaires/democratie-ouverte/"
+to = "/a-propos/reseau/democratie-ouverte/"
 
 [[redirects]]
 from = "/organisations/cy-cergy-paris-universite/index.html"
-to = "/a-propos/clients-partenaires/cy-cergy-paris-universite/"
+to = "/a-propos/reseau/cy-cergy-paris-universite/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/ecole-nationale-superieure-des-arts-appliques-et-des-metiers-dart-olivier-de-serres/index.html"
-to = "/a-propos/clients-partenaires/ensaama-olivier-de-serres/"
+to = "/a-propos/reseau/ensaama-olivier-de-serres/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/laurene-zyskind/index.html"
@@ -296,7 +320,7 @@ to = "/a-propos/reseau/la-27e-region/"
 
 [[redirects]]
 from = "/organisations/praticable/index.html"
-to = "/a-propos/clients-partenaires/praticable/"
+to = "/a-propos/reseau/praticable/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/olivia-simonet/index.html"
@@ -304,15 +328,15 @@ to = "/personnes/olivia-simonet/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/privowny/index.html"
-to = "/a-propos/clients-partenaires/privowny/"
+to = "/a-propos/reseau/privowny/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/blockchain-vaisselle/index.html"
-to = "/a-propos/clients-partenaires/blockchain-france/"
+to = "/a-propos/reseau/blockchain-france/"
 
 [[redirects]]
 from = "/reseau/organisations/praticable/index.html"
-to = "/a-propos/clients-partenaires/praticable/"
+to = "/a-propos/reseau/praticable/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/veronique-male/index.html"
@@ -328,7 +352,7 @@ to = "/projets/type/strategie/"
 
 [[redirects]]
 from = "/organisations/cite-scolaire-rive-gauche-lycee-josephine-baker/index.html"
-to = "/a-propos/clients-partenaires/cite-scolaire-rive-gauche-lycee-josephine-baker/"
+to = "/a-propos/reseau/cite-scolaire-rive-gauche-lycee-josephine-baker/"
 
 [[redirects]]
 from = "/activites/2020-09-01-le-design-peut-il-etre-populaire/index.html"
@@ -340,7 +364,7 @@ to = "/a-propos/reseau/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/studio-idae/index.html"
-to = "/a-propos/clients-partenaires/studio-idae/"
+to = "/a-propos/reseau/studio-idae/"
 
 [[redirects]]
 from = "/personnes/morgane-chevalier/activites/index.html"
@@ -352,11 +376,11 @@ to = "/personnes/thomas-thibault/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/college-pablo-neruda/index.html"
-to = "/a-propos/clients-partenaires/college-pablo-neruda/"
+to = "/a-propos/reseau/college-pablo-neruda/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/zone-ah/index.html"
-to = "/a-propos/clients-partenaires/zone-ah/"
+to = "/a-propos/reseau/zone-ah/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/annie-gentes/index.html"
@@ -376,7 +400,7 @@ to = "/personnes/tristan-saramon/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/telescoop/index.html"
-to = "/a-propos/clients-partenaires/telescoop/"
+to = "/a-propos/reseau/telescoop/"
 
 [[redirects]]
 from = "/activites/2022-01-12-production-de-formes/index.html"
@@ -403,8 +427,20 @@ from = "/reseau/personnes/adrien-payet/index.html"
 to = "/personnes/adrien-payet/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/telescoop/index.html"
+to = "/a-propos/reseau/telescoop/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/cite-scolaire-rive-gauche-lycee-josephine-baker/index.html"
+to = "/a-propos/reseau/cite-scolaire-rive-gauche-lycee-josephine-baker/"
+
+[[redirects]]
 from = "/expertise/design-strategique/index.html"
 to = "/a-propos/expertise/design-strategique/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/conseil-departemental-de-la-guadeloupe/index.html"
+to = "/a-propos/reseau/conseil-departemental-de-la-guadeloupe/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/brigitte-borja-de-mozota/index.html"
@@ -413,6 +449,14 @@ to = "/personnes/brigitte-borja-de-mozota/"
 [[redirects]]
 from = "/a-propos/reseau/personnes/pascal-barillot/index.html"
 to = "/personnes/pascale-barillot/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/ars-industralis/index.html"
+to = "/a-propos/reseau/ars-industralis/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/seine-saint-denis/index.html"
+to = "/a-propos/reseau/seine-saint-denis/"
 
 [[redirects]]
 from = "/actualites/experience-professionnelle/index.html"
@@ -427,12 +471,16 @@ from = "/activites/2023-09-04-designer-dinterface/index.html"
 to = "/activites/2023-09-04-designer-strategique-numerique-2/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/la-faiencerie-theatre-de-creil/index.html"
+to = "/a-propos/reseau/la-faiencerie-theatre-de-creil/"
+
+[[redirects]]
 from = "/a-propos/clients-partenaires/la-27e-region/index.html"
 to = "/a-propos/reseau/la-27e-region/"
 
 [[redirects]]
 from = "/reseau/organisations/collectif-des-tiers-lieux/index.html"
-to = "/a-propos/clients-partenaires/collectif-des-tiers-lieux/"
+to = "/a-propos/reseau/collectif-des-tiers-lieux/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/thomas-thibault/index.html"
@@ -448,7 +496,7 @@ to = "/a-propos/reseau/ouishare/"
 
 [[redirects]]
 from = "/reseau/organisations/campus-de-la-transition/index.html"
-to = "/a-propos/clients-partenaires/campus-de-la-transition/"
+to = "/a-propos/reseau/campus-de-la-transition/"
 
 [[redirects]]
 from = "/reseau/personnes/anthony-ferretti/actualites/index.html"
@@ -459,12 +507,20 @@ from = "/activites/2023-09-22-que-peut-le-design-pour-quon-se-mette-enfin-a-lire
 to = "/activites/2023-07-11-web-vs-pdf/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/esad-pyrenees/index.html"
+to = "/a-propos/reseau/esad-pyrenees/"
+
+[[redirects]]
 from = "/organisations/onet/index.html"
-to = "/a-propos/clients-partenaires/onet/"
+to = "/a-propos/reseau/onet/"
 
 [[redirects]]
 from = "/actualites/2013-07-19-designer-global-independant/index.html"
 to = "/activites/2012-09-19-designer-strategique-numerique-1/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/codesign-lab-media-studies/index.html"
+to = "/a-propos/reseau/codesign-lab-media-studies/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/morgane-chevalier/index.html"
@@ -472,7 +528,7 @@ to = "/personnes/morgane-chevalier/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/thecamp/index.html"
-to = "/a-propos/clients-partenaires/thecamp/"
+to = "/a-propos/reseau/thecamp/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/arthur-schmitt/index.html"
@@ -487,8 +543,12 @@ from = "/a-propos/reseau/personnes/florence-devaux/index.html"
 to = "/personnes/florence-devaux/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/decarbone/index.html"
+to = "/a-propos/reseau/decarbone/"
+
+[[redirects]]
 from = "/reseau/organisations/makers-idf/index.html"
-to = "/a-propos/clients-partenaires/makers-idf/"
+to = "/a-propos/reseau/makers-idf/"
 
 [[redirects]]
 from = "/actualites/intervention/index.html"
@@ -500,7 +560,7 @@ to = "/personnes/gilberte-caron/"
 
 [[redirects]]
 from = "/organisations/campus-de-la-transition/index.html"
-to = "/a-propos/clients-partenaires/campus-de-la-transition/"
+to = "/a-propos/reseau/campus-de-la-transition/"
 
 [[redirects]]
 from = "/agenda/intervention/index.html"
@@ -508,7 +568,7 @@ to = "/evenements/intervention/"
 
 [[redirects]]
 from = "/reseau/organisations/medias-cite/index.html"
-to = "/a-propos/clients-partenaires/medias-cite/"
+to = "/a-propos/reseau/medias-cite/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/tmnlab/index.html"
@@ -519,8 +579,12 @@ from = "/actualites/2011-06-01-bts-design-produit/index.html"
 to = "/activites/2011-06-01-bts-design-produit/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/my-recycle-stuff/index.html"
+to = "/a-propos/reseau/my-recycle-stuff/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/college-claude-debussy/index.html"
-to = "/a-propos/clients-partenaires/college-claude-debussy/"
+to = "/a-propos/reseau/college-claude-debussy/"
 
 [[redirects]]
 from = "/a-propos/pratique/index.html"
@@ -529,6 +593,10 @@ to = "/a-propos/expertise/"
 [[redirects]]
 from = "/reseau/organisations/assemblee-virtuelle/index.html"
 to = "/a-propos/clients-partenaires/assemblee-virtuelle/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/actes-if/index.html"
+to = "/a-propos/reseau/actes-if/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/lucie-bouchet/index.html"
@@ -559,12 +627,16 @@ from = "/a-propos/reseau/personnes/christine-champneuf/index.html"
 to = "/personnes/christine-champneuf/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/le-nouveau-cap/index.html"
+to = "/a-propos/reseau/le-nouveau-cap/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/accra/index.html"
-to = "/a-propos/clients-partenaires/accra/"
+to = "/a-propos/reseau/accra/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/seine-saint-denis/index.html"
-to = "/a-propos/clients-partenaires/seine-saint-denis/"
+to = "/a-propos/reseau/seine-saint-denis/"
 
 [[redirects]]
 from = "/actualites/2024-03-01-cofondateur-president-designer-dinterface-et-de-produit/index.html"
@@ -576,7 +648,11 @@ to = "/activites/lieu/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/ecole-des-arts-de-la-sorbonne-ufr4-universite-paris-1-pantheon-sorbonne/index.html"
-to = "/a-propos/clients-partenaires/universite-paris-1-pantheon-sorbonne/"
+to = "/a-propos/reseau/universite-paris-1-pantheon-sorbonne/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/groupe-la-depeche-du-midi/index.html"
+to = "/a-propos/reseau/groupe-la-depeche-du-midi/"
 
 [[redirects]]
 from = "/actualites/2009-06-01-bac-sti-arts-appliques/index.html"
@@ -584,7 +660,7 @@ to = "/activites/2009-06-01-bac-sti-arts-appliques/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/decarbone/index.html"
-to = "/a-propos/clients-partenaires/decarbone/"
+to = "/a-propos/reseau/decarbone/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/charlotte-bobrie/index.html"
@@ -592,7 +668,7 @@ to = "/personnes/charlotte-bobrie/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/makers-idf/index.html"
-to = "/a-propos/clients-partenaires/makers-idf/"
+to = "/a-propos/reseau/makers-idf/"
 
 [[redirects]]
 from = "/projets/expertise/interface/index.html"
@@ -600,7 +676,7 @@ to = "/projets/type/interface/"
 
 [[redirects]]
 from = "/organisations/ecole-nationale-superieure-des-arts-appliques-et-des-metiers-dart-olivier-de-serres/index.html"
-to = "/a-propos/clients-partenaires/ensaama-olivier-de-serres/"
+to = "/a-propos/reseau/ensaama-olivier-de-serres/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/francis-morel/index.html"
@@ -620,11 +696,19 @@ to = "/activites/mention/"
 
 [[redirects]]
 from = "/organisations/medias-cite/index.html"
-to = "/a-propos/clients-partenaires/medias-cite/"
+to = "/a-propos/reseau/medias-cite/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/diana-filippova/index.html"
 to = "/personnes/diana-filippova/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/le-chaudronio/index.html"
+to = "/a-propos/reseau/le-chaudronio/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/emilieu-studio/index.html"
+to = "/a-propos/reseau/emilieu-studio/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/sarah-dulac/index.html"
@@ -635,16 +719,20 @@ from = "/a-propos/pratiques/index.html"
 to = "/a-propos/expertise/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/groupe-ratp/index.html"
+to = "/a-propos/reseau/groupe-ratp/"
+
+[[redirects]]
 from = "/a-propos/reseau/personnes/arthur-de-grave/index.html"
 to = "/personnes/arthur-de-grave/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/la-faiencerie-theatre-de-creil/index.html"
-to = "/a-propos/clients-partenaires/la-faiencerie-theatre-de-creil/"
+to = "/a-propos/reseau/la-faiencerie-theatre-de-creil/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/iri/index.html"
-to = "/a-propos/clients-partenaires/iri/"
+to = "/a-propos/reseau/iri/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/anthony-ferretti/activites/index.html"
@@ -665,6 +753,10 @@ to = "/a-propos/reseau/"
 [[redirects]]
 from = "/a-propos/reseau/organisations/chu-de-bordeaux/index.html"
 to = "/a-propos/reseau/chu-de-bordeaux/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/makesense/index.html"
+to = "/a-propos/reseau/makesense/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/capucine-treffot/index.html"
@@ -708,7 +800,7 @@ to = "/activites/experience-professionnelle/entrepreneuriat/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/ecole-nationale-superieure-des-arts-appliques-et-des-metiers-dart-olivier-de-serres/index.html"
-to = "/a-propos/clients-partenaires/ensaama-olivier-de-serres/"
+to = "/a-propos/reseau/ensaama-olivier-de-serres/"
 
 [[redirects]]
 from = "/reseau/organisations/index.html"
@@ -716,7 +808,7 @@ to = "/a-propos/reseau/"
 
 [[redirects]]
 from = "/reseau/organisations/my-recycle-stuff/index.html"
-to = "/a-propos/clients-partenaires/my-recycle-stuff/"
+to = "/a-propos/reseau/my-recycle-stuff/"
 
 [[redirects]]
 from = "/actualites/enseignement/jury/index.html"
@@ -740,7 +832,7 @@ to = "/personnes/pierre-julien-cazaux/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/maif/index.html"
-to = "/a-propos/clients-partenaires/maif/"
+to = "/a-propos/reseau/maif/"
 
 [[redirects]]
 from = "/clients-partenaires/index.html"
@@ -749,6 +841,10 @@ to = "/a-propos/reseau/"
 [[redirects]]
 from = "/activites/enseignements/jury/index.html"
 to = "/activites/enseignement/jury/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/sciences-po/index.html"
+to = "/a-propos/reseau/sciences-po/"
 
 [[redirects]]
 from = "/projets/expertise/design-numerique/index.html"
@@ -760,11 +856,15 @@ to = "/activites/enseignement/workshop/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/mairie-daulnay-sous-bois/index.html"
-to = "/a-propos/clients-partenaires/mairie-daulnay-sous-bois/"
+to = "/a-propos/reseau/mairie-daulnay-sous-bois/"
 
 [[redirects]]
 from = "/reseau/organisations/ouishare/index.html"
 to = "/a-propos/reseau/ouishare/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/lycee-charles-augustin-coulomb/index.html"
+to = "/a-propos/reseau/lycee-charles-augustin-coulomb/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/christophe-thelisson/index.html"
@@ -795,6 +895,10 @@ from = "/portrait/index.html"
 to = "/a-propos/portrait/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/makers-idf/index.html"
+to = "/a-propos/reseau/makers-idf/"
+
+[[redirects]]
 from = "/actualites/intervention/conference/index.html"
 to = "/activites/intervention/conference/"
 
@@ -808,11 +912,15 @@ to = "/personnes/pierre-damien-huyghe/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/onet/index.html"
-to = "/a-propos/clients-partenaires/onet/"
+to = "/a-propos/reseau/onet/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/privowny/index.html"
+to = "/a-propos/reseau/privowny/"
 
 [[redirects]]
 from = "/organisations/groupe-ratp/index.html"
-to = "/a-propos/clients-partenaires/groupe-ratp/"
+to = "/a-propos/reseau/groupe-ratp/"
 
 [[redirects]]
 from = "/projets/organisation/index.html"
@@ -843,12 +951,20 @@ from = "/a-propos/reseau/personnes/fabienne-guibe/index.html"
 to = "/personnes/fabienne-guibe/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/mady-co/index.html"
+to = "/a-propos/reseau/mady-co/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/universcience/index.html"
 to = "/a-propos/reseau/universcience/"
 
 [[redirects]]
 from = "/reseau/organisations/tributerre/index.html"
-to = "/a-propos/clients-partenaires/tributerre/"
+to = "/a-propos/reseau/tributerre/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/groupe-chronos/index.html"
+to = "/a-propos/reseau/groupe-chronos/"
 
 [[redirects]]
 from = "/organisations/chu-de-bordeaux/index.html"
@@ -860,7 +976,7 @@ to = "/activites/2012-03-01-ratp-stage-designer/"
 
 [[redirects]]
 from = "/organisations/mady-co/index.html"
-to = "/a-propos/clients-partenaires/mady-co/"
+to = "/a-propos/reseau/mady-co/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/marine-albarede/index.html"
@@ -868,7 +984,7 @@ to = "/personnes/marine-albarede/"
 
 [[redirects]]
 from = "/reseau/organisations/groupe-ratp/index.html"
-to = "/a-propos/clients-partenaires/groupe-ratp/"
+to = "/a-propos/reseau/groupe-ratp/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/alain-pierre-forsans/index.html"
@@ -880,15 +996,23 @@ to = "/a-propos/reseau/personnes/morgane-chevalier/activites/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/microsoft-france/index.html"
-to = "/a-propos/clients-partenaires/microsoft-france/"
+to = "/a-propos/reseau/microsoft-france/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/microsoft-france/index.html"
+to = "/a-propos/reseau/microsoft-france/"
 
 [[redirects]]
 from = "/reseau/organisations/actes-if/index.html"
-to = "/a-propos/clients-partenaires/actes-if/"
+to = "/a-propos/reseau/actes-if/"
 
 [[redirects]]
 from = "/reseau/organisations/dominique-tissot/index.html"
-to = "/a-propos/clients-partenaires/dominique-tissot/"
+to = "/a-propos/reseau/dominique-tissot/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/ademe/index.html"
+to = "/a-propos/reseau/ademe/"
 
 [[redirects]]
 from = "/activites/interventions/conference/index.html"
@@ -904,7 +1028,7 @@ to = "/personnes/romain-aubois/"
 
 [[redirects]]
 from = "/organisations/cy-ecole-de-design/index.html"
-to = "/a-propos/clients-partenaires/cy-ecole-de-design/"
+to = "/a-propos/reseau/cy-ecole-de-design/"
 
 [[redirects]]
 from = "/equipe/anthony-ferretti/index.html"
@@ -920,7 +1044,11 @@ to = "/projets/2024-transition-design-lab/"
 
 [[redirects]]
 from = "/organisations/democratie-ouverte/index.html"
-to = "/a-propos/clients-partenaires/democratie-ouverte/"
+to = "/a-propos/reseau/democratie-ouverte/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/cy-ecole-de-design/index.html"
+to = "/a-propos/reseau/cy-ecole-de-design/"
 
 [[redirects]]
 from = "/organisations/prospero/index.html"
@@ -932,7 +1060,7 @@ to = "/activites/niveau/niveau-7/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/democratie-ouverte/index.html"
-to = "/a-propos/clients-partenaires/democratie-ouverte/"
+to = "/a-propos/reseau/democratie-ouverte/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/bonne-pioche/index.html"
@@ -940,19 +1068,23 @@ to = "/a-propos/reseau/bonne-pioche/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/groupe-la-depeche-du-midi/index.html"
-to = "/a-propos/clients-partenaires/groupe-la-depeche-du-midi/"
+to = "/a-propos/reseau/groupe-la-depeche-du-midi/"
 
 [[redirects]]
 from = "/organisations/gaite-lyrique/index.html"
-to = "/a-propos/clients-partenaires/gaite-lyrique/"
+to = "/a-propos/reseau/gaite-lyrique/"
 
 [[redirects]]
 from = "/organisations/decarbone/index.html"
-to = "/a-propos/clients-partenaires/decarbone/"
+to = "/a-propos/reseau/decarbone/"
 
 [[redirects]]
 from = "/actualites/niveau/niveau-4/index.html"
 to = "/activites/niveau/niveau-4/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/liris/index.html"
+to = "/a-propos/reseau/liris/"
 
 [[redirects]]
 from = "/actualites/index.html"
@@ -968,7 +1100,7 @@ to = "/personnes/morgane-chevalier/"
 
 [[redirects]]
 from = "/organisations/accra/index.html"
-to = "/a-propos/clients-partenaires/accra/"
+to = "/a-propos/reseau/accra/"
 
 [[redirects]]
 from = "/actualites/2022-03-25-praticable-cofondateur-designer/index.html"
@@ -977,6 +1109,10 @@ to = "/activites/2022-03-25-praticable-cofondateur-designer/"
 [[redirects]]
 from = "/actualites/recherche/index.html"
 to = "/activites/recherche/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/telecom-paris/index.html"
+to = "/a-propos/reseau/telecom-paris/"
 
 [[redirects]]
 from = "/activites/2014-09-01-codesign-lab-media-studies-chercheur-associe/index.html"
@@ -988,15 +1124,23 @@ to = "/a-propos/expertise/design-graphique/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/collectif-des-tiers-lieux/index.html"
-to = "/a-propos/clients-partenaires/collectif-des-tiers-lieux/"
+to = "/a-propos/reseau/collectif-des-tiers-lieux/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/iri/index.html"
+to = "/a-propos/reseau/iri/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/sylvain-jule/index.html"
 to = "/personnes/sylvain-jule/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/hesso/index.html"
+to = "/a-propos/reseau/hesso/"
+
+[[redirects]]
 from = "/reseau/organisations/onet/index.html"
-to = "/a-propos/clients-partenaires/onet/"
+to = "/a-propos/reseau/onet/"
 
 [[redirects]]
 from = "/actualites/2012-07-19-designer-global-independant/index.html"
@@ -1016,7 +1160,7 @@ to = "/personnes/veronique-routin/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/campus-de-la-transition/index.html"
-to = "/a-propos/clients-partenaires/campus-de-la-transition/"
+to = "/a-propos/reseau/campus-de-la-transition/"
 
 [[redirects]]
 from = "/reseau/anthony-ferretti/index.html"
@@ -1029,6 +1173,10 @@ to = "/activites/mention/mention-tres-bien/"
 [[redirects]]
 from = "/activites/experiences-professionnelles/entrepreneuriat/index.html"
 to = "/activites/experience-professionnelle/entrepreneuriat/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/o-tempora/index.html"
+to = "/a-propos/reseau/o-tempora/"
 
 [[redirects]]
 from = "/actualites/recherche/collectif-recherche/index.html"
@@ -1076,7 +1224,7 @@ to = "/activites/2023-09-04-designer-strategique-numerique-2/"
 
 [[redirects]]
 from = "/reseau/organisations/accra/index.html"
-to = "/a-propos/clients-partenaires/accra/"
+to = "/a-propos/reseau/accra/"
 
 [[redirects]]
 from = "/actualites/intervention/radio/index.html"
@@ -1087,8 +1235,12 @@ from = "/a-propos/reseau/personnes/equipe-editoriale/index.html"
 to = "/equipe-editoriale/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/universite-bordeaux-montaigne/index.html"
+to = "/a-propos/reseau/universite-bordeaux-montaigne/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/hesso/index.html"
-to = "/a-propos/clients-partenaires/hesso/"
+to = "/a-propos/reseau/hesso/"
 
 [[redirects]]
 from = "/actualites/experience-professionnelle/emploi/index.html"
@@ -1097,6 +1249,10 @@ to = "/activites/experience-professionnelle/emploi/"
 [[redirects]]
 from = "/activites/enseignements/index.html"
 to = "/activites/enseignement/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/departement-du-var/index.html"
+to = "/a-propos/reseau/departement-du-var/"
 
 [[redirects]]
 from = "/actualites/2013-07-19-designer-global/index.html"
@@ -1112,7 +1268,7 @@ to = "/personnes/arnaud-levy/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/anct/index.html"
-to = "/a-propos/clients-partenaires/anct/"
+to = "/a-propos/reseau/anct/"
 
 [[redirects]]
 from = "/actualites/enseignement/cours/index.html"
@@ -1120,7 +1276,7 @@ to = "/activites/enseignement/cours/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/cap-collectif/index.html"
-to = "/a-propos/clients-partenaires/cap-collectif/"
+to = "/a-propos/reseau/cap-collectif/"
 
 [[redirects]]
 from = "/reseau/organisations/la-27e-region/index.html"
@@ -1135,20 +1291,36 @@ from = "/a-propos/reseau/personnes/anthony-ferretti/index.html"
 to = "/personnes/anthony-ferretti/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/lycee-francois-magendie/index.html"
+to = "/a-propos/reseau/lycee-francois-magendie/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/a-cest-mieux/index.html"
-to = "/a-propos/clients-partenaires/a-cest-mieux/"
+to = "/a-propos/reseau/a-cest-mieux/"
 
 [[redirects]]
 from = "/reseau/organisations/chu-de-bordeaux/index.html"
 to = "/a-propos/reseau/chu-de-bordeaux/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/accra/index.html"
+to = "/a-propos/reseau/accra/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/praticable/index.html"
+to = "/a-propos/reseau/praticable/"
+
+[[redirects]]
 from = "/organisations/hesso/index.html"
-to = "/a-propos/clients-partenaires/hesso/"
+to = "/a-propos/reseau/hesso/"
 
 [[redirects]]
 from = "/reseau/organisations/ratp/index.html"
-to = "/a-propos/clients-partenaires/groupe-ratp/"
+to = "/a-propos/reseau/groupe-ratp/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/maif/index.html"
+to = "/a-propos/reseau/maif/"
 
 [[redirects]]
 from = "/actualites/formation/bts-niveau-7-bac-4/index.html"
@@ -1163,8 +1335,12 @@ from = "/projets/prestataire/index.html"
 to = "/projets/studio/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/mairie-daulnay-sous-bois/index.html"
+to = "/a-propos/reseau/mairie-daulnay-sous-bois/"
+
+[[redirects]]
 from = "/organisations/collectif-des-tiers-lieux/index.html"
-to = "/a-propos/clients-partenaires/collectif-des-tiers-lieux/"
+to = "/a-propos/reseau/collectif-des-tiers-lieux/"
 
 [[redirects]]
 from = "/projets/expertise/design-volumique/index.html"
@@ -1172,7 +1348,7 @@ to = "/projets/type/objet/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/anact/index.html"
-to = "/a-propos/clients-partenaires/anact/"
+to = "/a-propos/reseau/anact/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/nicolas-beaumont/index.html"
@@ -1184,15 +1360,23 @@ to = "/personnes/victor-wright/"
 
 [[redirects]]
 from = "/reseau/organisations/cy-cergy-paris-universite/index.html"
-to = "/a-propos/clients-partenaires/cy-cergy-paris-universite/"
+to = "/a-propos/reseau/cy-cergy-paris-universite/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/ensaama-olivier-de-serres/index.html"
+to = "/a-propos/reseau/ensaama-olivier-de-serres/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/lycee-charles-augustin-coulomb/index.html"
-to = "/a-propos/clients-partenaires/lycee-charles-augustin-coulomb/"
+to = "/a-propos/reseau/lycee-charles-augustin-coulomb/"
 
 [[redirects]]
 from = "/design-graphique/index.html"
 to = "/a-propos/expertise/design-graphique/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/universite-paris-1-pantheon-sorbonne/index.html"
+to = "/a-propos/reseau/universite-paris-1-pantheon-sorbonne/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/matali-crasset/index.html"
@@ -1208,19 +1392,27 @@ to = "/projets/type/"
 
 [[redirects]]
 from = "/organisations/ecole-des-arts-de-la-sorbonne-ufr4-universite-paris-1-pantheon-sorbonne/index.html"
-to = "/a-propos/clients-partenaires/universite-paris-1-pantheon-sorbonne/"
+to = "/a-propos/reseau/universite-paris-1-pantheon-sorbonne/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/yann-bergamaschi/index.html"
 to = "/personnes/yann-bergamaschi/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/medias-cite/index.html"
+to = "/a-propos/reseau/medias-cite/"
+
+[[redirects]]
 from = "/organisations/my-recycle-stuff/index.html"
-to = "/a-propos/clients-partenaires/my-recycle-stuff/"
+to = "/a-propos/reseau/my-recycle-stuff/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/julien-soulard/index.html"
 to = "/personnes/julien-soulard/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/nodesign/index.html"
+to = "/a-propos/reseau/nodesign/"
 
 [[redirects]]
 from = "/actualites/2013-06-01-dsaa-diplome-superieur-des-arts-appliques-design-industriel/index.html"
@@ -1235,8 +1427,16 @@ from = "/reseau/personnes/adrien-payet/actualites/index.html"
 to = "/a-propos/reseau/personnes/adrien-payet/activites/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/college-claude-debussy/index.html"
+to = "/a-propos/reseau/college-claude-debussy/"
+
+[[redirects]]
 from = "/a-propos/reseau/personnes/vincent-poulain/index.html"
 to = "/personnes/vincent-poulain/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/departement-de-la-gironde/index.html"
+to = "/a-propos/reseau/departement-de-la-gironde/"
 
 [[redirects]]
 from = "/reseau/organisations/collectif-bam/index.html"
@@ -1248,7 +1448,11 @@ to = "/a-propos/clients-partenaires/sacvl/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/etrange-ordinaire/index.html"
-to = "/a-propos/clients-partenaires/etrange-ordinaire/"
+to = "/a-propos/reseau/etrange-ordinaire/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/bordeaux-metropole/index.html"
+to = "/a-propos/reseau/bordeaux-metropole/"
 
 [[redirects]]
 from = "/actualites/lieu/paris/index.html"
@@ -1257,6 +1461,10 @@ to = "/activites/lieu/paris/"
 [[redirects]]
 from = "/projets/design-volumique/index.html"
 to = "/projets/type/objet/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/cy-cergy-paris-universite/index.html"
+to = "/a-propos/reseau/cy-cergy-paris-universite/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/collectif-bam/index.html"
@@ -1280,7 +1488,7 @@ to = "/a-propos/reseau/tmnlab/"
 
 [[redirects]]
 from = "/organisations/makers-idf/index.html"
-to = "/a-propos/clients-partenaires/makers-idf/"
+to = "/a-propos/reseau/makers-idf/"
 
 [[redirects]]
 from = "/activites/enseignements/cours/index.html"
@@ -1288,11 +1496,15 @@ to = "/activites/enseignement/cours/"
 
 [[redirects]]
 from = "/reseau/organisations/universite-de-lille/index.html"
-to = "/a-propos/clients-partenaires/universite-de-lille/"
+to = "/a-propos/reseau/universite-de-lille/"
 
 [[redirects]]
 from = "/reseau/equipe-editoriale/index.html"
 to = "/equipe-editoriale/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/ecole-de-design-nantes-atlantique/index.html"
+to = "/a-propos/reseau/ecole-de-design-nantes-atlantique/"
 
 [[redirects]]
 from = "/activites/recherches/collectif-recherche/index.html"
@@ -1304,7 +1516,7 @@ to = "/personnes/pascale-barillot/"
 
 [[redirects]]
 from = "/reseau/organisations/anact/index.html"
-to = "/a-propos/clients-partenaires/anact/"
+to = "/a-propos/reseau/anact/"
 
 [[redirects]]
 from = "/activites/stage/index.html"
@@ -1315,6 +1527,10 @@ from = "/reseau/personnes/pierre-damien-huyghe/index.html"
 to = "/personnes/pierre-damien-huyghe/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/blockchain-france/index.html"
+to = "/a-propos/reseau/blockchain-france/"
+
+[[redirects]]
 from = "/organisations/bonne-pioche/index.html"
 to = "/a-propos/reseau/bonne-pioche/"
 
@@ -1323,12 +1539,24 @@ from = "/actualites/2023-09-04-designer-dinterface/index.html"
 to = "/activites/2023-09-04-designer-strategique-numerique-2/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/tributerre/index.html"
+to = "/a-propos/reseau/tributerre/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/tributerre/index.html"
-to = "/a-propos/clients-partenaires/tributerre/"
+to = "/a-propos/reseau/tributerre/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/cap-collectif/index.html"
+to = "/a-propos/reseau/cap-collectif/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/timothee-goguely/index.html"
 to = "/personnes/timothee-goguely/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/etrange-ordinaire/index.html"
+to = "/a-propos/reseau/etrange-ordinaire/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/prospero/index.html"
@@ -1336,11 +1564,11 @@ to = "/a-propos/reseau/prospero/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/sciences-po/index.html"
-to = "/a-propos/clients-partenaires/sciences-po/"
+to = "/a-propos/reseau/sciences-po/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/le-chaudronio/index.html"
-to = "/a-propos/clients-partenaires/le-chaudronio/"
+to = "/a-propos/reseau/le-chaudronio/"
 
 [[redirects]]
 from = "/actualites/recherche/evaluation/index.html"
@@ -1367,8 +1595,12 @@ from = "/actualites/2023-10-26-expertise-recherche-datacraft/index.html"
 to = "/activites/2023-10-26-expertise-recherche-datacraft/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/universite-de-lille/index.html"
+to = "/a-propos/reseau/universite-de-lille/"
+
+[[redirects]]
 from = "/reseau/organisations/la-faiencerie-theatre-de-creil/index.html"
-to = "/a-propos/clients-partenaires/la-faiencerie-theatre-de-creil/"
+to = "/a-propos/reseau/la-faiencerie-theatre-de-creil/"
 
 [[redirects]]
 from = "/actualites/enseignement/index.html"
@@ -1380,7 +1612,11 @@ to = "/a-propos/reseau/personnes/thomas-thibault/activites/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/praticable/index.html"
-to = "/a-propos/clients-partenaires/praticable/"
+to = "/a-propos/reseau/praticable/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/gaite-lyrique/index.html"
+to = "/a-propos/reseau/gaite-lyrique/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/antoine-choumoff/index.html"
@@ -1392,7 +1628,7 @@ to = "/a-propos/reseau/fing/"
 
 [[redirects]]
 from = "/reseau/organisations/mady-co/index.html"
-to = "/a-propos/clients-partenaires/mady-co/"
+to = "/a-propos/reseau/mady-co/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/pierre-baudry/index.html"
@@ -1400,11 +1636,15 @@ to = "/personnes/pierre-baudry/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/actes-if/index.html"
-to = "/a-propos/clients-partenaires/actes-if/"
+to = "/a-propos/reseau/actes-if/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/a-cest-mieux/index.html"
+to = "/a-propos/reseau/a-cest-mieux/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/codesign-lab-media-studies/index.html"
-to = "/a-propos/clients-partenaires/codesign-lab-media-studies/"
+to = "/a-propos/reseau/codesign-lab-media-studies/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/yves-armel-martin/index.html"
@@ -1412,11 +1652,11 @@ to = "/personnes/yves-armel-martin/"
 
 [[redirects]]
 from = "/reseau/organisations/decarbone/index.html"
-to = "/a-propos/clients-partenaires/decarbone/"
+to = "/a-propos/reseau/decarbone/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/dominique-tissot/index.html"
-to = "/a-propos/clients-partenaires/dominique-tissot/"
+to = "/a-propos/reseau/dominique-tissot/"
 
 [[redirects]]
 from = "/reseau/organisations/bonne-pioche/index.html"
@@ -1427,8 +1667,12 @@ from = "/a-propos/reseau/personnes/benoit-bouye/index.html"
 to = "/personnes/benoit-bouye/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/bsa-web/index.html"
+to = "/a-propos/reseau/bsa-web/"
+
+[[redirects]]
 from = "/reseau/organisations/ecole-des-arts-de-la-sorbonne-ufr4-universite-paris-1-pantheon-sorbonne/index.html"
-to = "/a-propos/clients-partenaires/universite-paris-1-pantheon-sorbonne/"
+to = "/a-propos/reseau/universite-paris-1-pantheon-sorbonne/"
 
 [[redirects]]
 from = "/actualites/formation/index.html"
@@ -1440,11 +1684,15 @@ to = "/personnes/"
 
 [[redirects]]
 from = "/reseau/organisations/codesign-lab-media-studies/index.html"
-to = "/a-propos/clients-partenaires/codesign-lab-media-studies/"
+to = "/a-propos/reseau/codesign-lab-media-studies/"
 
 [[redirects]]
 from = "/activites/recherches/reflexion/index.html"
 to = "/activites/recherche/reflexion/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/onet/index.html"
+to = "/a-propos/reseau/onet/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/tmnlab/index.html"
@@ -1467,16 +1715,20 @@ from = "/actualites/exposition/foire-salon/index.html"
 to = "/activites/exposition/foire-salon/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/collectif-des-tiers-lieux/index.html"
+to = "/a-propos/reseau/collectif-des-tiers-lieux/"
+
+[[redirects]]
 from = "/actualites/2024-11-22-que-peut-le-design-pour-quon-se-mettre-enfin-a-lire-les-etudes/index.html"
 to = "/activites/2023-07-11-web-vs-pdf/"
 
 [[redirects]]
 from = "/organisations/a-cest-mieux/index.html"
-to = "/a-propos/clients-partenaires/a-cest-mieux/"
+to = "/a-propos/reseau/a-cest-mieux/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/gaite-lyrique/index.html"
-to = "/a-propos/clients-partenaires/gaite-lyrique/"
+to = "/a-propos/reseau/gaite-lyrique/"
 
 [[redirects]]
 from = "/expertise/design-volumique/index.html"
@@ -1485,6 +1737,10 @@ to = "/a-propos/expertise/design-volumique/"
 [[redirects]]
 from = "/actualites/2013-06-01-dsaa-design-industriel/index.html"
 to = "/activites/2013-06-01-dsaa-design-industriel/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/college-pablo-neruda/index.html"
+to = "/a-propos/reseau/college-pablo-neruda/"
 
 [[redirects]]
 from = "/activites/recherches/evaluation/index.html"
@@ -1496,7 +1752,7 @@ to = "/personnes/"
 
 [[redirects]]
 from = "/reseau/organisations/a-cest-mieux/index.html"
-to = "/a-propos/clients-partenaires/a-cest-mieux/"
+to = "/a-propos/reseau/a-cest-mieux/"
 
 [[redirects]]
 from = "/actualites/lieu/lausanne/index.html"
@@ -1504,7 +1760,11 @@ to = "/activites/lieu/lausanne/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/liris/index.html"
-to = "/a-propos/clients-partenaires/liris/"
+to = "/a-propos/reseau/liris/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/anct/index.html"
+to = "/a-propos/reseau/anct/"
 
 [[redirects]]
 from = "/projets/prestataire/praticable/index.html"
@@ -1523,12 +1783,20 @@ from = "/a-propos/reseau/personnes/camille-adam/index.html"
 to = "/personnes/camille-adam/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/campus-de-la-transition/index.html"
+to = "/a-propos/reseau/campus-de-la-transition/"
+
+[[redirects]]
 from = "/actualites/experience/index.html"
 to = "/activites/experience-professionnelle/"
 
 [[redirects]]
 from = "/activites/experiences-professionnelles/index.html"
 to = "/activites/experience-professionnelle/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/thecamp/index.html"
+to = "/a-propos/reseau/thecamp/"
 
 [[redirects]]
 from = "/projets/expertise/design-graphique/index.html"
@@ -1540,7 +1808,7 @@ to = "/a-propos/reseau/la-27e-region/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/mady-co/index.html"
-to = "/a-propos/clients-partenaires/mady-co/"
+to = "/a-propos/reseau/mady-co/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/antonin-leonard/index.html"
@@ -1552,7 +1820,7 @@ to = "/activites/lieu/toulouse/"
 
 [[redirects]]
 from = "/organisations/tributerre/index.html"
-to = "/a-propos/clients-partenaires/tributerre/"
+to = "/a-propos/reseau/tributerre/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/edf/index.html"
@@ -1576,7 +1844,7 @@ to = "/a-propos/clients-partenaires/sacvl/"
 
 [[redirects]]
 from = "/organisations/liris/index.html"
-to = "/a-propos/clients-partenaires/liris/"
+to = "/a-propos/reseau/liris/"
 
 [[redirects]]
 from = "/a-propos/personnes/index.html"
@@ -1592,7 +1860,7 @@ to = "/personnes/emmanuelle-roux/"
 
 [[redirects]]
 from = "/organisations/maif/index.html"
-to = "/a-propos/clients-partenaires/maif/"
+to = "/a-propos/reseau/maif/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/camille-legeron/index.html"
@@ -1600,7 +1868,7 @@ to = "/personnes/camille-legeron/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/cy-cergy-paris-universite/index.html"
-to = "/a-propos/clients-partenaires/cy-cergy-paris-universite/"
+to = "/a-propos/reseau/cy-cergy-paris-universite/"
 
 [[redirects]]
 from = "/actualites/lieu/delemont/index.html"
@@ -1616,7 +1884,11 @@ to = "/activites/2009-06-01-bac-sti-arts-appliques/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/emilieu-studio/index.html"
-to = "/a-propos/clients-partenaires/emilieu-studio/"
+to = "/a-propos/reseau/emilieu-studio/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/democratie-ouverte/index.html"
+to = "/a-propos/reseau/democratie-ouverte/"
 
 [[redirects]]
 from = "/activites/recherches/memoire/index.html"
@@ -1624,7 +1896,7 @@ to = "/activites/recherche/memoire/"
 
 [[redirects]]
 from = "/reseau/organisations/gaite-lyrique/index.html"
-to = "/a-propos/clients-partenaires/gaite-lyrique/"
+to = "/a-propos/reseau/gaite-lyrique/"
 
 [[redirects]]
 from = "/expertise/design-numerique/index.html"
@@ -1636,7 +1908,11 @@ to = "/activites/experience-professionnelle/stage/"
 
 [[redirects]]
 from = "/organisations/telescoop/index.html"
-to = "/a-propos/clients-partenaires/telescoop/"
+to = "/a-propos/reseau/telescoop/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/bureau-des-possibles/index.html"
+to = "/a-propos/reseau/bureau-des-possibles/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/bruno-vitasse/index.html"
@@ -1644,7 +1920,11 @@ to = "/personnes/bruno-vitasse/"
 
 [[redirects]]
 from = "/organisations/actes-if/index.html"
-to = "/a-propos/clients-partenaires/actes-if/"
+to = "/a-propos/reseau/actes-if/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/messidor/index.html"
+to = "/a-propos/reseau/messidor/"
 
 [[redirects]]
 from = "/projets/expertise/design-strategique/index.html"
@@ -1660,11 +1940,11 @@ to = "/a-propos/expertise/design-strategique/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/groupe-ratp/index.html"
-to = "/a-propos/clients-partenaires/groupe-ratp/"
+to = "/a-propos/reseau/groupe-ratp/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/departement-de-la-gironde/index.html"
-to = "/a-propos/clients-partenaires/departement-de-la-gironde/"
+to = "/a-propos/reseau/departement-de-la-gironde/"
 
 [[redirects]]
 from = "/activites/intervention/radio/index.html"
@@ -1672,7 +1952,7 @@ to = "/activites/intervention/radio-podcast/"
 
 [[redirects]]
 from = "/reseau/organisations/ecole-nationale-superieure-des-arts-appliques-et-des-metiers-dart-olivier-de-serres/index.html"
-to = "/a-propos/clients-partenaires/ensaama-olivier-de-serres/"
+to = "/a-propos/reseau/ensaama-olivier-de-serres/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/universcience/index.html"
@@ -1684,7 +1964,11 @@ to = "/a-propos/clients-partenaires/sacvl/"
 
 [[redirects]]
 from = "/reseau/organisations/cite-scolaire-rive-gauche-lycee-josephine-baker/index.html"
-to = "/a-propos/clients-partenaires/cite-scolaire-rive-gauche-lycee-josephine-baker/"
+to = "/a-propos/reseau/cite-scolaire-rive-gauche-lycee-josephine-baker/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/communication-publique/index.html"
+to = "/a-propos/reseau/communication-publique/"
 
 [[redirects]]
 from = "/intervention/index.html"
@@ -1712,7 +1996,7 @@ to = "/personnes/adrien-payet/"
 
 [[redirects]]
 from = "/organisations/codesign-lab-media-studies/index.html"
-to = "/a-propos/clients-partenaires/codesign-lab-media-studies/"
+to = "/a-propos/reseau/codesign-lab-media-studies/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/emma-feldhendler/index.html"
@@ -1724,11 +2008,15 @@ to = "/activites/2013-07-03-collectif-bam-cofondateur-designer/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/departement-du-var/index.html"
-to = "/a-propos/clients-partenaires/departement-du-var/"
+to = "/a-propos/reseau/departement-du-var/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/studio-idae/index.html"
+to = "/a-propos/reseau/studio-idae/"
 
 [[redirects]]
 from = "/reseau/organisations/communication-publique/index.html"
-to = "/a-propos/clients-partenaires/communication-publique/"
+to = "/a-propos/reseau/communication-publique/"
 
 [[redirects]]
 from = "/actualites/enseignement/workshop/index.html"
@@ -1740,7 +2028,7 @@ to = "/activites/2014-06-01-master-2-recherche-arts-medias-technologies/"
 
 [[redirects]]
 from = "/reseau/organisations/liris/index.html"
-to = "/a-propos/clients-partenaires/liris/"
+to = "/a-propos/reseau/liris/"
 
 [[redirects]]
 from = "/activites/expositions/foire-salon/index.html"
@@ -1756,15 +2044,23 @@ to = "/a-propos/reseau/tmnlab/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/bureau-des-possibles/index.html"
-to = "/a-propos/clients-partenaires/bureau-des-possibles/"
+to = "/a-propos/reseau/bureau-des-possibles/"
 
 [[redirects]]
 from = "/activites/seminaire-et-atelier/index.html"
 to = "/activites/recherche/seminaire-et-atelier/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/isdat/index.html"
+to = "/a-propos/reseau/isdat/"
+
+[[redirects]]
 from = "/actualites/2012-03-01-ratp-stage-designer/index.html"
 to = "/activites/2012-03-01-ratp-stage-designer/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/dominique-tissot/index.html"
+to = "/a-propos/reseau/dominique-tissot/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/prospero/index.html"
@@ -1780,7 +2076,7 @@ to = "/activites/recherche/reflexion/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/ecole-des-arts-de-la-sorbonne-ufr4-universite-paris-1-pantheon-sorbonne/index.html"
-to = "/a-propos/clients-partenaires/universite-paris-1-pantheon-sorbonne/"
+to = "/a-propos/reseau/universite-paris-1-pantheon-sorbonne/"
 
 [[redirects]]
 from = "/actualites/lieu/bordeaux/index.html"
@@ -1791,8 +2087,16 @@ from = "/actualites/2023-09-22-que-peut-le-design-pour-quon-se-mette-enfin-a-lir
 to = "/activites/2023-07-11-web-vs-pdf/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/banque-de-france/index.html"
+to = "/a-propos/reseau/banque-de-france/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/my-recycle-stuff/index.html"
-to = "/a-propos/clients-partenaires/my-recycle-stuff/"
+to = "/a-propos/reseau/my-recycle-stuff/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/ecv/index.html"
+to = "/a-propos/reseau/ecv/"
 
 [[redirects]]
 from = "/design-volumique/index.html"
@@ -1800,7 +2104,7 @@ to = "/a-propos/expertise/design-volumique/"
 
 [[redirects]]
 from = "/reseau/organisations/hesso/index.html"
-to = "/a-propos/clients-partenaires/hesso/"
+to = "/a-propos/reseau/hesso/"
 
 [[redirects]]
 from = "/projets/2020-vrap-ples/index.html"
