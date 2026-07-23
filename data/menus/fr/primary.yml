@@ -137,7 +137,7 @@ items:
     file: content/fr/pages/a-propos/expertise/_index.html
   - title: Clients & partenaires
     slug: clients-partenaires
-    target: "/a-propos/clients-partenaires/"
+    target: "/a-propos/reseau/"
     kind: page
     new_tab: false
     children: []
@@ -154,9 +154,9 @@ items:
     path: "/pages/a-propos/curriculum-vitae"
     file: content/fr/pages/a-propos/curriculum-vitae/_index.html
   descendants_targets:
-  - "/a-propos/clients-partenaires/"
   - "/a-propos/curriculum-vitae/"
   - "/a-propos/expertise/"
+  - "/a-propos/reseau/"
   path: "/pages/a-propos"
   file: content/fr/pages/a-propos/_index.html
 - title: Contact
