@@ -9,7 +9,7 @@ subtitle: >-
 url: "/activites/2013-06-01-dsaa-design-industriel/"
 slug: "dsaa-design-industriel"
 date: 2013-06-01T00:00:00+02:00
-lastmod: 2025-08-03T15:09:31+02:00
+lastmod: 2026-08-01T19:05:45+02:00
 meta:
   hugo:
     permalink: "/activites/2013-06-01-dsaa-design-industriel/"
@@ -18,7 +18,7 @@ meta:
     slug: "dsaa-design-industriel"
   dates:
     created_at: 2024-11-21T18:36:45+01:00
-    updated_at: 2025-08-03T15:09:31+02:00
+    updated_at: 2026-08-01T19:05:45+02:00
     published_at: 2013-06-01T00:00:00+02:00
 search:
   id: "82bf4c19-5340-4144-8cbf-4a3dc09fe055"
@@ -31,7 +31,7 @@ search:
   summary: >-
     <p>Mémoire et projet de fin de d'études sur les arrêts de bus parisiens, en collaboration avec la RATP, sous la direction de Christophe Thélisson.</p>
   body: >-
-    <p>Établissement d'enseignement </p>  <p> Direction de mémoire et de projet </p>  <p> Projet de diplôme </p>  <p> Stage </p>
+    <p>Mentions  <br> Établissement d'enseignement </p>  <p> Direction de mémoire et de projet </p>  <p> Stage </p>
 
 breadcrumbs:
   - title: >-
@@ -107,10 +107,30 @@ taxonomies:
 
 
 contents_reading_time:
-  seconds: 4
+  seconds: 3
   text: >-
     moins d'une minute
 contents:
+  - kind: block
+    template: title
+    title: >-
+      Mentions
+    slug: >-
+      mentions
+    ranks:
+      base: 2
+      self: 2
+    top:
+      active: true
+      title: 
+        value: >-
+          Mentions
+        heading: 2
+
+    data:
+      layout: classic
+
+
   - kind: block
     template: organizations
     title: >-
@@ -118,15 +138,15 @@ contents:
     slug: >-
       etablissement-d-enseignement
     ranks:
-      base: 2
-      self: 2
-      children: 3
+      base: 3
+      self: 3
+      children: 4
     top:
       active: true
       title: 
         value: >-
           Établissement d'enseignement
-        heading: 2
+        heading: 3
 
     data:
       layout: grid
@@ -154,23 +174,23 @@ contents:
     slug: >-
       direction-de-memoire-et-de-projet
     ranks:
-      base: 2
-      self: 2
-      children: 3
+      base: 3
+      self: 3
+      children: 4
     top:
       active: true
       title: 
         value: >-
           Direction de mémoire et de projet
-        heading: 2
+        heading: 3
 
     data:
 
-      layout: large
+      layout: list
       options:
         image: true
         summary: true
-        link: true
+        link: false
         contact: false
 
       persons:
@@ -183,62 +203,32 @@ contents:
 
 
   - kind: block
-    template: projects
-    title: >-
-      Projet de diplôme
-    slug: >-
-      projet-de-diplome
-    ranks:
-      base: 2
-      self: 2
-    top:
-      active: true
-      title: 
-        value: >-
-          Projet de diplôme
-        heading: 2
-
-    data:
-      mode: selection
-      layout: large
-      options:
-        categories: true
-        image: true
-        subtitle: true
-        summary: true
-        year: true
-
-      projects:
-
-      quantity: 0
-
-  - kind: block
     template: posts
     title: >-
       Stage
     slug: >-
       stage
     ranks:
-      base: 2
-      self: 2
-      children: 3
+      base: 3
+      self: 3
+      children: 4
     top:
       active: true
       title: 
         value: >-
           Stage
-        heading: 2
+        heading: 3
 
     data:
       mode: selection
-      layout: large
+      layout: list
       options:
         author: false
-        categories: true
+        categories: false
         date: true
         image: true
         reading_time: false
-        subtitle: true
+        subtitle: false
         summary: true
 
       posts:
