@@ -16,21 +16,11 @@ fr:
           value: >-
             mailto:contact@anthonyferretti.fr
       social_networks:
-        github:
-          label: >-
-            ferrettianthony
-          value: >-
-            https://github.com/ferrettianthony
         linkedin:
           label: >-
             ferrettianthony
           value: >-
             https://www.linkedin.com/in/ferrettianthony/
-        youtube:
-          label: >-
-            ferrettianthony
-          value: >-
-            https://www.youtube.com/@ferrettianthony
 
   taxonomies:
     administrator: administrators
