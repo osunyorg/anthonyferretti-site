@@ -1,45 +1,6 @@
 ---
 title: Menu principal
 items:
-- title: Accompagnements
-  slug: accompagnements
-  target: "/accompagnements/"
-  kind: page
-  new_tab: false
-  children:
-  - title: Penser par le design
-    slug: penser-par-le-design
-    target: "/accompagnements/penser-par-le-design/"
-    kind: page
-    new_tab: false
-    children: []
-    descendants_targets: []
-    path: "/pages/accompagnements/penser-par-le-design"
-    file: content/fr/pages/accompagnements/penser-par-le-design/_index.html
-  - title: Faire par le design
-    slug: faire-par-le-design
-    target: "/accompagnements/faire-par-le-design/"
-    kind: page
-    new_tab: false
-    children: []
-    descendants_targets: []
-    path: "/pages/accompagnements/faire-par-le-design"
-    file: content/fr/pages/accompagnements/faire-par-le-design/_index.html
-  - title: Former par le design
-    slug: former-par-le-design
-    target: "/accompagnements/former-par-le-design/"
-    kind: page
-    new_tab: false
-    children: []
-    descendants_targets: []
-    path: "/pages/accompagnements/former-par-le-design"
-    file: content/fr/pages/accompagnements/former-par-le-design/_index.html
-  descendants_targets:
-  - "/accompagnements/faire-par-le-design/"
-  - "/accompagnements/former-par-le-design/"
-  - "/accompagnements/penser-par-le-design/"
-  path: "/pages/accompagnements"
-  file: content/fr/pages/accompagnements/_index.html
 - title: Projets
   slug: projets
   target: "/projets/"

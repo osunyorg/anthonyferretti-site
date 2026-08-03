@@ -43,10 +43,6 @@ from = "/curriculum-vitae/index.html"
 to = "/a-propos/curriculum-vitae/"
 
 [[redirects]]
-from = "/design-strategique/index.html"
-to = "/a-propos/expertise/design-strategique/"
-
-[[redirects]]
 from = "/actualites/mention/mention-tres-bien/index.html"
 to = "/activites/mention/mention-tres-bien/"
 
@@ -435,10 +431,6 @@ from = "/a-propos/clients-partenaires/cite-scolaire-rive-gauche-lycee-josephine-
 to = "/a-propos/reseau/cite-scolaire-rive-gauche-lycee-josephine-baker/"
 
 [[redirects]]
-from = "/expertise/design-strategique/index.html"
-to = "/a-propos/expertise/design-strategique/"
-
-[[redirects]]
 from = "/a-propos/clients-partenaires/conseil-departemental-de-la-guadeloupe/index.html"
 to = "/a-propos/reseau/conseil-departemental-de-la-guadeloupe/"
 
@@ -791,10 +783,6 @@ from = "/personnes/adrien-payet/activites/index.html"
 to = "/a-propos/reseau/personnes/adrien-payet/activites/"
 
 [[redirects]]
-from = "/a-propos/pratique/design-graphique/index.html"
-to = "/a-propos/expertise/design-graphique/"
-
-[[redirects]]
 from = "/actualites/experience-professionnelle/entrepreneuriat/index.html"
 to = "/activites/experience-professionnelle/entrepreneuriat/"
 
@@ -891,10 +879,6 @@ from = "/activites/2021-03-04-boite-mail/index.html"
 to = "/activites/2021-03-04-boites-mail/"
 
 [[redirects]]
-from = "/portrait/index.html"
-to = "/a-propos/portrait/"
-
-[[redirects]]
 from = "/a-propos/clients-partenaires/makers-idf/index.html"
 to = "/a-propos/reseau/makers-idf/"
 
@@ -933,10 +917,6 @@ to = "/a-propos/clients-partenaires/assemblee-virtuelle/"
 [[redirects]]
 from = "/activites/2020-04-23-ux-un-peu-de-u-et-un-peu-de-x/index.html"
 to = "/activites/2020-04-23-histoire-critique-ui-ux/"
-
-[[redirects]]
-from = "/a-propos/pratique/design-volumique/index.html"
-to = "/a-propos/expertise/design-volumique/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/thierry-marcou/index.html"
@@ -1117,10 +1097,6 @@ to = "/a-propos/reseau/telecom-paris/"
 [[redirects]]
 from = "/activites/2014-09-01-codesign-lab-media-studies-chercheur-associe/index.html"
 to = "/activites/2014-09-01-codesign-lab-media-studies-designer-chercheur-associe/"
-
-[[redirects]]
-from = "/expertise/design-graphique/index.html"
-to = "/a-propos/expertise/design-graphique/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/collectif-des-tiers-lieux/index.html"
@@ -1371,10 +1347,6 @@ from = "/a-propos/reseau/organisations/lycee-charles-augustin-coulomb/index.html
 to = "/a-propos/reseau/lycee-charles-augustin-coulomb/"
 
 [[redirects]]
-from = "/design-graphique/index.html"
-to = "/a-propos/expertise/design-graphique/"
-
-[[redirects]]
 from = "/a-propos/clients-partenaires/universite-paris-1-pantheon-sorbonne/index.html"
 to = "/a-propos/reseau/universite-paris-1-pantheon-sorbonne/"
 
@@ -1473,10 +1445,6 @@ to = "/a-propos/reseau/collectif-bam/"
 [[redirects]]
 from = "/a-propos/organisations/index.html"
 to = "/a-propos/reseau/"
-
-[[redirects]]
-from = "/design-numerique/index.html"
-to = "/a-propos/expertise/design-numerique/"
 
 [[redirects]]
 from = "/actualites/niveau/niveau-7/index.html"
@@ -1707,10 +1675,6 @@ from = "/a-propos/reseau/personnes/margot-buisson/index.html"
 to = "/personnes/margot-buisson/"
 
 [[redirects]]
-from = "/a-propos/pratique/design-numerique/index.html"
-to = "/a-propos/expertise/design-numerique/"
-
-[[redirects]]
 from = "/actualites/exposition/foire-salon/index.html"
 to = "/activites/exposition/foire-salon/"
 
@@ -1729,10 +1693,6 @@ to = "/a-propos/reseau/a-cest-mieux/"
 [[redirects]]
 from = "/a-propos/reseau/organisations/gaite-lyrique/index.html"
 to = "/a-propos/reseau/gaite-lyrique/"
-
-[[redirects]]
-from = "/expertise/design-volumique/index.html"
-to = "/a-propos/expertise/design-volumique/"
 
 [[redirects]]
 from = "/actualites/2013-06-01-dsaa-design-industriel/index.html"
@@ -1899,10 +1859,6 @@ from = "/reseau/organisations/gaite-lyrique/index.html"
 to = "/a-propos/reseau/gaite-lyrique/"
 
 [[redirects]]
-from = "/expertise/design-numerique/index.html"
-to = "/a-propos/expertise/design-numerique/"
-
-[[redirects]]
 from = "/activites/experiences-professionnelles/stage/index.html"
 to = "/activites/experience-professionnelle/stage/"
 
@@ -1933,10 +1889,6 @@ to = "/projets/type/strategie/"
 [[redirects]]
 from = "/a-propos/reseau/personnes/benjamin-tincq/index.html"
 to = "/personnes/benjamin-tincq/"
-
-[[redirects]]
-from = "/a-propos/pratique/design-strategique/index.html"
-to = "/a-propos/expertise/design-strategique/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/groupe-ratp/index.html"
@@ -2097,10 +2049,6 @@ to = "/a-propos/reseau/my-recycle-stuff/"
 [[redirects]]
 from = "/a-propos/clients-partenaires/ecv/index.html"
 to = "/a-propos/reseau/ecv/"
-
-[[redirects]]
-from = "/design-volumique/index.html"
-to = "/a-propos/expertise/design-volumique/"
 
 [[redirects]]
 from = "/reseau/organisations/hesso/index.html"
