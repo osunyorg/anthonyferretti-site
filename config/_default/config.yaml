@@ -44,7 +44,7 @@ params:
       taxonomies:
         position: content # content | hero | none
   posts:
-    default_image: true
+    default_image: false
     date_format: "02/01/2006"
     index:
       layout: list # grid | list
