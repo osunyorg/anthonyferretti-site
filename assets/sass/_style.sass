@@ -299,6 +299,7 @@ html
   @include media-breakpoint-down(desktop)
     border-bottom: $border
     padding-bottom: $spacing-2
+    margin-bottom: 0
   & .post-infos a,
   & .project-infos a
     color: $color-text
@@ -314,10 +315,6 @@ html
     gap: $spacing-2
     & li + li
       margin-top: 0
-
-.projects__page:not(.full-width) .project-sidebar
-  @include media-breakpoint-down(desktop)
-    margin-bottom: 0
 
 // organization
 
@@ -367,7 +364,11 @@ html
     border-bottom: none
 
 .document-content > .blocks .block:first-child
-  margin-top: 0
+  @include media-breakpoint-up(desktop)
+    @include in-page-without-sidebar 
+      margin-top: 0
+  @include media-breakpoint-down(desktop)
+    margin-top: 0
 
 // title
 
