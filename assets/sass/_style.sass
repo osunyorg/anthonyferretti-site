@@ -133,13 +133,27 @@ footer#document-footer
 // taxonomies
 
 .taxonomies-list
-  border-bottom: $border
-  margin-bottom: 0
-  @include media-breakpoint-down(desktop)
-    gap: $spacing-2
-    padding-bottom: $block-space-y
   @include media-breakpoint-up(desktop)
-    padding-bottom: $block-space-y-desktop
+    height: $spacing-5
+    align-items: center
+    &--dropdown
+      margin: 0
+  
+.section-taxonomies-container
+  @include media-breakpoint-up(desktop)
+    height: $spacing-5
+    margin-top: 0 !important
+  @include media-breakpoint-down(desktop)
+    padding-bottom: $grid-gutter
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    // bottom: 0
+    left: 0
+    right: 0
+    height: $border-width
+    background: $color-border
 
 // hero
 
