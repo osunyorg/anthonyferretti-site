@@ -23,7 +23,7 @@
       {{ if templates.Exists ( printf "_partials/%s" $list_partial ) }}
         {{ partial $list_partial . }}
       {{ end }}
-      {{ partial "commons/section/pagination.html" . }}
+      {{ partial "commons/pagination.html" . }}
     {{ else if ne .Type "projects_categories" }}
       {{/*  N'afficher les catégories de la taxonomies que si ce n'est pas un projet  */}}
       {{ partial "categories/section/categories.html" . }}
