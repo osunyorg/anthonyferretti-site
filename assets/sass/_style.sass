@@ -436,8 +436,8 @@ body.full-width .projects--list
   @include in-page-without-sidebar
     article
       padding-bottom: $spacing-3
-      .post-content
-        width: $content-width
+      // .post-content
+      //   width: $content-width
       + article
         margin-top: $spacing-3
     // article:has(.media:empty) [class$="-content"]
@@ -455,6 +455,14 @@ body.full-width .projects--list
     @include media-breakpoint-up(desktop)
       font-size: $body-size-desktop
       line-height: $h3-line-height-desktop
+
+.posts--list
+  .post .post-title a
+    @include stretched-link(before)
+    @include icon(arrow-right-line, after, true)
+    @include hover-translate-icon(after, $fade: true)
+    &::after
+      position: static
 
 // cta
 
