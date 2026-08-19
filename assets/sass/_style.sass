@@ -160,7 +160,7 @@ footer#document-footer
 .hero
   border-bottom: $border
   @include media-breakpoint-down(desktop)
-    margin-bottom: $block-space-y
+    margin-bottom: 0
   .content
     @include media-breakpoint-up(desktop)
       gap: $grid-gutter-xxl
@@ -194,6 +194,8 @@ footer#document-footer
     .image-square
       @include media-breakpoint-down(desktop)
         margin-top: $spacing-4
+  & + .container
+    margin-top: 0
 
 .hero--image-portrait:where(:not(.has-breadcrumb-hero-end))
   @include media-breakpoint-down(desktop)
@@ -349,7 +351,7 @@ html
 .block
   border-bottom: $border
   @include media-breakpoint-up(desktop)
-    @include in-page-without-sidebar
+    @include in-page-without-sidebar 
       margin-top: 0
       margin-bottom: 0
       padding-top: $block-space-y-desktop
@@ -357,10 +359,10 @@ html
     @include in-page-with-sidebar
       border-bottom: none
   @include media-breakpoint-down(desktop)
-    margin-top: 0
-    margin-bottom: 0
-    padding-top: $block-space-y
-    padding-bottom: $block-space-y
+      margin-top: 0
+      margin-bottom: 0
+      padding-top: $block-space-y
+      padding-bottom: $block-space-y
   &:last-child
     border-bottom: none
 
