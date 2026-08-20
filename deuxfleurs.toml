@@ -1527,6 +1527,10 @@ from = "/a-propos/clients-partenaires/etrange-ordinaire/index.html"
 to = "/a-propos/reseau/etrange-ordinaire/"
 
 [[redirects]]
+from = "/cb5d9a6cdc1f4efda229cfddaf9fe2bf/index.html"
+to = "/"
+
+[[redirects]]
 from = "/a-propos/clients-partenaires/prospero/index.html"
 to = "/a-propos/reseau/prospero/"
 
