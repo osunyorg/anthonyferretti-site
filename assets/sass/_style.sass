@@ -404,6 +404,11 @@ html
 .contacts-details ul li > span
   color: $color-text-alt
 
+// single meta
+
+.single-meta li a
+  @include link(var(--color-text))
+
 // project
 
 body.full-width .projects--list
@@ -628,7 +633,7 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
     &:first-child
       border-top: $border
     @include media-breakpoint-up(desktop)
-      padding-top: $block-space-y-desktop
+      // padding-top: $block-space-y-desktop
       margin-top: 0
     &:last-child    
      padding-bottom: 0
