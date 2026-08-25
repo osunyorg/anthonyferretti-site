@@ -276,7 +276,7 @@ to = "/projets/2019-faciliter-orientation-professionnelle-jeunes/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/humanitarian-design-bureau/index.html"
-to = "/a-propos/clients-partenaires/humanitarian-design-bureau/"
+to = "/a-propos/reseau/humanitarian-design-bureau/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/ecole-du-domaine-du-possible/index.html"
@@ -477,6 +477,10 @@ to = "/a-propos/reseau/collectif-des-tiers-lieux/"
 [[redirects]]
 from = "/a-propos/reseau/personnes/thomas-thibault/index.html"
 to = "/personnes/thomas-thibault/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/practishare/index.html"
+to = "/a-propos/reseau/practishare/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/angela-grelaud-boussinot/index.html"
@@ -811,6 +815,10 @@ from = "/projets/prestataire/collectif-bam/index.html"
 to = "/projets/studio/collectif-bam/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/edf/index.html"
+to = "/a-propos/reseau/edf/"
+
+[[redirects]]
 from = "/a-propos/reseau/personnes/alix-vignon/index.html"
 to = "/personnes/alix-vignon/"
 
@@ -1093,6 +1101,10 @@ to = "/activites/recherche/"
 [[redirects]]
 from = "/a-propos/clients-partenaires/telecom-paris/index.html"
 to = "/a-propos/reseau/telecom-paris/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/frac-normandie/index.html"
+to = "/a-propos/reseau/frac-normandie/"
 
 [[redirects]]
 from = "/activites/2014-09-01-codesign-lab-media-studies-chercheur-associe/index.html"
@@ -1383,6 +1395,10 @@ from = "/a-propos/reseau/personnes/julien-soulard/index.html"
 to = "/personnes/julien-soulard/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/humanitarian-design-bureau/index.html"
+to = "/a-propos/reseau/humanitarian-design-bureau/"
+
+[[redirects]]
 from = "/a-propos/clients-partenaires/nodesign/index.html"
 to = "/a-propos/reseau/nodesign/"
 
@@ -1416,7 +1432,7 @@ to = "/a-propos/reseau/collectif-bam/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/sacvl/index.html"
-to = "/a-propos/clients-partenaires/sacvl/"
+to = "/a-propos/reseau/sacvl/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/etrange-ordinaire/index.html"
@@ -1615,6 +1631,10 @@ from = "/a-propos/clients-partenaires/a-cest-mieux/index.html"
 to = "/a-propos/reseau/a-cest-mieux/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/sacvl/index.html"
+to = "/a-propos/reseau/sacvl/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/codesign-lab-media-studies/index.html"
 to = "/a-propos/reseau/codesign-lab-media-studies/"
 
@@ -1788,7 +1808,7 @@ to = "/a-propos/reseau/tributerre/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/edf/index.html"
-to = "/a-propos/clients-partenaires/edf/"
+to = "/a-propos/reseau/edf/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/noesya/index.html"
@@ -1804,7 +1824,7 @@ to = "/activites/2023-07-11-web-vs-pdf/"
 
 [[redirects]]
 from = "/organisations/sacvl/index.html"
-to = "/a-propos/clients-partenaires/sacvl/"
+to = "/a-propos/reseau/sacvl/"
 
 [[redirects]]
 from = "/organisations/liris/index.html"
@@ -1899,6 +1919,10 @@ from = "/a-propos/reseau/personnes/benjamin-tincq/index.html"
 to = "/personnes/benjamin-tincq/"
 
 [[redirects]]
+from = "/a-propos/clients-partenaires/okoni/index.html"
+to = "/a-propos/reseau/okoni/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/groupe-ratp/index.html"
 to = "/a-propos/reseau/groupe-ratp/"
 
@@ -1920,7 +1944,7 @@ to = "/a-propos/reseau/universcience/"
 
 [[redirects]]
 from = "/reseau/organisations/sacvl/index.html"
-to = "/a-propos/clients-partenaires/sacvl/"
+to = "/a-propos/reseau/sacvl/"
 
 [[redirects]]
 from = "/reseau/organisations/cite-scolaire-rive-gauche-lycee-josephine-baker/index.html"
