@@ -132,28 +132,48 @@ footer#document-footer
 
 // taxonomies
 
-.taxonomies-list
-  @include media-breakpoint-up(desktop)
-    height: $spacing-5
-    align-items: center
-    &--dropdown
-      margin: 0
-  
 .section-taxonomies-container
+  border-bottom: $border
   @include media-breakpoint-up(desktop)
     height: $spacing-5
     margin-top: 0 !important
   @include media-breakpoint-down(desktop)
     padding-bottom: $grid-gutter
-  &::after
-    content: ''
-    display: block
-    position: absolute
-    // bottom: 0
-    left: 0
-    right: 0
-    height: $border-width
-    background: $color-border
+
+.taxonomies-list
+  // Le thème pointe cette variable sur --color-background-alt (gris)
+  --dropdown-background: var(--color-background)
+
+  @include media-breakpoint-up(desktop)
+    height: $spacing-5
+    align-items: center
+    &--dropdown
+      margin: 0
+
+  // Un panneau ouvert : les autres boutons passent en retrait
+  &:has(> .dropdown > button[aria-expanded="true"])
+    .dropdown > button[aria-expanded="false"]
+      color: $color-text-alt
+
+  .dropdown
+    > button
+      transition: color $menu-link-duration
+      &::after
+        display: inline-block
+        transition: transform $menu-link-duration
+      &[aria-expanded="true"]
+        @include icon(arrow-down-s-line, after)
+          transform: rotate(180deg)
+
+    .taxonomy-categories
+      border-top: $border
+      border-bottom: $border
+      > ul
+        @include grid(4, xl, $spacing-3)
+        li a
+          @include hover-translate-icon
+          &:hover
+            color: var(--color-text)
 
 // hero
 
