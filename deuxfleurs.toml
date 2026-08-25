@@ -68,7 +68,7 @@ to = "/activites/2010-05-01-dominique-tissot-maquettiste-stage/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/assemblee-virtuelle/index.html"
-to = "/a-propos/clients-partenaires/assemblee-virtuelle/"
+to = "/a-propos/reseau/assemblee-virtuelle/"
 
 [[redirects]]
 from = "/organisations/anact/index.html"
@@ -584,7 +584,7 @@ to = "/a-propos/expertise/"
 
 [[redirects]]
 from = "/reseau/organisations/assemblee-virtuelle/index.html"
-to = "/a-propos/clients-partenaires/assemblee-virtuelle/"
+to = "/a-propos/reseau/assemblee-virtuelle/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/actes-if/index.html"
@@ -912,7 +912,7 @@ to = "/projets/studio/"
 
 [[redirects]]
 from = "/organisations/assemblee-virtuelle/index.html"
-to = "/a-propos/clients-partenaires/assemblee-virtuelle/"
+to = "/a-propos/reseau/assemblee-virtuelle/"
 
 [[redirects]]
 from = "/activites/2020-04-23-ux-un-peu-de-u-et-un-peu-de-x/index.html"
@@ -1837,6 +1837,10 @@ to = "/a-propos/reseau/cy-cergy-paris-universite/"
 [[redirects]]
 from = "/actualites/lieu/delemont/index.html"
 to = "/activites/lieu/delemont/"
+
+[[redirects]]
+from = "/a-propos/clients-partenaires/assemblee-virtuelle/index.html"
+to = "/a-propos/reseau/assemblee-virtuelle/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/renaud-francou/index.html"
