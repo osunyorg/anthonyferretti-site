@@ -396,6 +396,14 @@ html
 .block-features .features .feature .name
   @include h4
 
+.block-features .features .feature .feature-content > .name + .feature-description
+  margin-top: $spacing-1
+
+.block-features--list .features .feature
+  @include in-page-with-sidebar
+    &:has(.media) .feature-content > .name + .feature-description
+      margin-top: $spacing-1
+
 // gallery
 
 .block-gallery--large figure
