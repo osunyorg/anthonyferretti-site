@@ -118,17 +118,12 @@ footer#document-footer
 .lazy-video-player button
   border-radius: 0%
 
-// cateogry
+// categories
 
-.categories .rich-text p:last-child
-  display: none // link more disabled
-
-.project
-  .ancestor-studio,       // Studio
-  .ancestor-location,
-  li a[href*="/lieu/"],   // Lieu
-  .page-completed-state   // État/Terminé
-    display: none
+.categories--grid article
+  [class$="-title"] a
+    @include icon(arrow-right-line, after, true)
+    @include hover-translate-icon(after)
 
 // taxonomies
 
@@ -592,6 +587,13 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
       display: none
 
 // project
+
+.project
+  .ancestor-studio,       // Studio
+  .ancestor-location,
+  li a[href*="/lieu/"],   // Lieu
+  .page-completed-state   // État/Terminé
+    display: none
 
 .projects__section
   & .projects--list
