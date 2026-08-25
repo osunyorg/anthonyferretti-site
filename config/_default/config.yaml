@@ -53,6 +53,8 @@ params:
     date_format: "2006"
     index:
       layout: list # alternate | grid | large | lists
+      options:
+        year: true
 
   # BLOCKS
   blocks:
