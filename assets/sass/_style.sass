@@ -120,10 +120,10 @@ footer#document-footer
 
 // categories
 
-.categories--grid article
+.category-item
   [class$="-title"] a
     @include icon(arrow-right-line, after, true)
-    @include hover-translate-icon(after)
+    @include hover-translate-icon(after, $fade: true)
 
 // taxonomies
 
