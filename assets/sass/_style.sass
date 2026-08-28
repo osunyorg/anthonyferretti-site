@@ -77,20 +77,12 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
   @include media-breakpoint-up(desktop)
     font-size: $body-size-desktop
 
-// .search-button
-//   @include media-breakpoint-up(desktop)
-//     padding: $spacing-1 $spacing-2
-//     padding-right: 0
-//   @include media-breakpoint-down(desktop)
-//     width: 100%
-
 //breadcrumb
 .breadcrumb-container
   &::after
     content: ''
     display: block
     position: absolute
-    // bottom: 0
     left: 0
     right: 0
     height: $border-width
@@ -98,8 +90,6 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
   .breadcrumb
     & li.active
       color: $color-text-alt
-  // @include media-breakpoint-down(desktop)
-  //   border-bottom: $border
 
 // footer
 
@@ -491,12 +481,8 @@ body.full-width .projects--list
   @include in-page-without-sidebar
     article
       padding-bottom: $spacing-3
-      // .post-content
-      //   width: $content-width
       + article
         margin-top: $spacing-3
-    // article:has(.media:empty) [class$="-content"]
-    //   margin-left: $content-margin-left
     .post
       &:last-child
         padding-bottom: 0
@@ -668,7 +654,6 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
     &:first-child
       border-top: $border
     @include media-breakpoint-up(desktop)
-      // padding-top: $block-space-y-desktop
       margin-top: 0
     &:last-child    
      padding-bottom: 0
