@@ -32,13 +32,19 @@ params:
       title: site
   organizations:
     index:
-      taxonomies: true
+      taxonomies:
+        display: true
+        layout: dropdown # dropdown | inline
+        show_name: true
     single:
       backlinks: true
   persons:
     index:
       layout: grid # grid | list
-      taxonomies: true
+      taxonomies:
+        display: true
+        layout: dropdown # dropdown | inline
+        show_name: true
     single:
       backlinks: true #activé mais author désactivé en attendant MAJ Osuny pour avoir les auteurs dans les projets
       taxonomies:
