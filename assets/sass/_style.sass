@@ -309,7 +309,7 @@ html
   & .project-infos a
     color: $color-text
 
-.projects__page:not(.full-width) .project-sidebar .project-infos 
+.projects__page:not(.full-width) .project-sidebar .project-infos
   & > li.authors ul,
   & > li.terms ul,
   & .taxonomies-single.with-label > li.authors ul,
@@ -336,7 +336,7 @@ html
     border-color: $color-border
   img
     filter: none
-  
+
 .organizations.with-summaries .organization .organization-content
   .organization-title
     font-weight: 500
@@ -344,7 +344,7 @@ html
   .organization-summary
     margin-top: $spacing-1
 
-.organizations--grid.with-summaries > li:only-child > .organization 
+.organizations--grid.with-summaries > li:only-child > .organization
   @include media-breakpoint-up(desktop)
     width: calc((var(--column-width) * 6) + (var(--grid-gutter) * (6 - 1)))
 
@@ -353,7 +353,7 @@ html
 .block
   border-bottom: $border
   @include media-breakpoint-up(desktop)
-    @include in-page-without-sidebar 
+    @include in-page-without-sidebar
       margin-top: 0
       margin-bottom: 0
       padding-top: $block-space-y-desktop
@@ -370,7 +370,7 @@ html
 
 .document-content > .blocks .block:first-child
   @include media-breakpoint-up(desktop)
-    @include in-page-without-sidebar 
+    @include in-page-without-sidebar
       margin-top: 0
   @include media-breakpoint-down(desktop)
     margin-top: 0
@@ -464,7 +464,7 @@ body.full-width .projects--list
       flex-direction: column
 
 .projects--list > li
-  @include in-page-without-sidebar 
+  @include in-page-without-sidebar
     padding-bottom: $spacing-4
     &:not(:first-child)
       padding-top: $spacing-5
@@ -514,7 +514,7 @@ body.full-width .projects--list
       .block-content
         padding: 0 $grid-gutter-xxl
     @include in-page-with-sidebar
-      .call_to_action 
+      .call_to_action
         & > div
           padding: 0
         .top .block-title
@@ -642,11 +642,11 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
     @include media-breakpoint-up(desktop)
       padding-top: $block-space-y-desktop
       margin-top: 0
-    &:last-child    
+    &:last-child
      padding-bottom: 0
 
 // organization
-  
+
 .organizations__page .backlinks
   & > .block,
   & > *
@@ -654,5 +654,5 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
       border-top: $border
     @include media-breakpoint-up(desktop)
       margin-top: 0
-    &:last-child    
+    &:last-child
      padding-bottom: 0
