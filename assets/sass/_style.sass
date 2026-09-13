@@ -67,6 +67,16 @@ html.has-menu-opened header#document-header
       &[aria-expanded="true"]
         color: $color-text
 
+.search-button--primary .pf-trigger-btn
+  @include media-breakpoint-down(desktop)
+    justify-content: space-between
+  @include media-breakpoint-up(desktop)
+    .pf-trigger-text
+      @include sr-only
+    &::after
+      padding: space(5)
+      margin: space(-5)
+
 // logo
 
 footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
