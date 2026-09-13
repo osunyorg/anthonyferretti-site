@@ -476,7 +476,7 @@ body.full-width .projects--list
   @include in-page-without-sidebar
     padding-bottom: $spacing-4
     &:not(:first-child)
-      padding-top: $spacing-5
+      padding-top: $spacing-4
 
 .project-summary
   margin-top: $spacing-2
@@ -485,15 +485,14 @@ body.full-width .projects--list
 
 // post
 
-.block-posts--list
+.posts--list > li
   @include in-page-without-sidebar
-    article
-      padding-bottom: $spacing-3
-      + article
-        margin-top: $spacing-3
-    .post
-      &:last-child
-        padding-bottom: 0
+    padding-bottom: $spacing-4
+    + li
+      margin-top: $spacing-4
+
+.block-posts--list .posts--list > li:last-child
+  padding-bottom: 0
 
 .post
   .post-subtitle
