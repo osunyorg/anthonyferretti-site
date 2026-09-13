@@ -75,6 +75,18 @@ params:
             mobile:   350
             tablet:   350
             desktop:  415
+      posts:
+        layouts:
+          list:
+            mobile:   240
+            tablet:   320
+            desktop:  415
+      organizations:
+        layouts:
+          grid:
+            mobile:   300
+            tablet:   250
+            desktop:  210
 
   # BLOCKS
   blocks:
