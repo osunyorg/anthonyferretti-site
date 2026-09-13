@@ -458,6 +458,13 @@ html
       + li
         margin-top: $spacing-3
 
+.projects--list
+  @include media-breakpoint-down(md)
+    .project .media
+      width: auto
+      margin-left: var(--grid-gutter-negative)
+      margin-right: var(--grid-gutter-negative)
+
 body.full-width .projects--list
   .project .project-content
     & .project-title

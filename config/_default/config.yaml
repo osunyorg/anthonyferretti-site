@@ -71,6 +71,10 @@ params:
             mobile:   350
             tablet:   480
             desktop:  576
+          list:
+            mobile:   350
+            tablet:   350
+            desktop:  415
 
   # BLOCKS
   blocks:
