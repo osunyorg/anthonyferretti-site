@@ -61,6 +61,16 @@ params:
       layout: list # alternate | grid | large | lists
       options:
         year: true
+  
+  # IMAGES
+  image_sizes:
+    sections:
+      projects:
+        layouts:
+          grid:
+            mobile:   350
+            tablet:   480
+            desktop:  576
 
   # BLOCKS
   blocks:
