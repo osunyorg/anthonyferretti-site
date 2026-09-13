@@ -430,6 +430,13 @@ html
 .projects--grid
   @include media-breakpoint-up(desktop)
     grid-template-columns: repeat(3, 1fr)
+  @include media-breakpoint-down(md)
+    > li
+      padding-bottom: $spacing-3
+      &:where(:not(:last-child))
+        border-bottom: var(--border-width) solid var(--color-border)
+      + li
+        margin-top: $spacing-3
 
 body.full-width .projects--list
   .project .project-content
