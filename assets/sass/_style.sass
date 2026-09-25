@@ -692,3 +692,28 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
       margin-top: 0
     &:last-child
       padding-bottom: 0
+
+.organizations__page .hero
+  .organization-logo
+    margin-top: $spacing-4
+    picture
+      aspect-ratio: 1/1
+      background: var(--color-background-alt)
+      display: block
+      padding: $spacing-4
+    img
+      height: 100%
+      object-fit: contain
+      width: 100%
+  @include media-breakpoint-down(desktop)
+    .organization-logo
+      width: columns(6)
+  @include media-breakpoint-up(desktop)
+    .content
+      display: flex
+      justify-content: space-between
+      .hero-text
+        width: columns(8)
+    .organization-logo
+      margin-top: $spacing-5
+      width: columns(3)
