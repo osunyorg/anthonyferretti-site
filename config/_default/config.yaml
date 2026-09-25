@@ -2,6 +2,12 @@
 
 theme: osuny
 _merge: deep
+cascade:
+  - target:
+      path: "{/persons,/persons/**,/persons_categories,/persons_categories/**}"
+    build:
+      render: never
+      list: never
 params:
   search:
     active: true
