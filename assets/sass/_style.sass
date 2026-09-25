@@ -717,3 +717,7 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
     .organization-logo
       margin-top: $spacing-5
       width: columns(3)
+
+@include media-breakpoint-up(desktop)
+  body.organizations__page .single-meta.content-meta.with-labels > li.taxonomies
+    width: columns(3)
