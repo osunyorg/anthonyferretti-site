@@ -1,0 +1,23 @@
+{{ partial "organizations/single/hero.html" . }}
+{{ partial "organizations/single/pagefind.html" . }}
+
+<div class="document-content">
+
+  <div class="container">
+    <div itemprop="articleBody" class="organization-presentation-container">
+      {{ partial "organizations/single/summary.html" . }}
+      {{ partial "organizations/single/presentation.html" . }}
+    </div>
+  </div>
+
+  {{ partial "organizations/single/sidebar.html" . }}
+
+  {{ partial "contents/list.html" (dict
+    "context" .
+    "contents" .Params.contents
+  ) }}
+
+  {{ if site.Params.organizations.single.backlinks }}
+    {{ partial "contents/backlinks.html" . }}
+  {{ end }}
+</div>
