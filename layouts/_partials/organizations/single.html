@@ -1,14 +1,22 @@
 {{ partial "organizations/single/hero.html" . }}
 {{ partial "organizations/single/pagefind.html" . }}
 
+{{/* Conteneur de présentation rendu seulement s'il a du contenu.
+     Logo déplacé dans le hero : cf. override organizations/single/hero.html */}}
+{{ $presentation := printf "%s%s"
+  (partial "organizations/single/summary.html" .)
+  (partial "organizations/single/presentation.html" .)
+}}
+
 <div class="document-content">
 
-  <div class="container">
-    <div itemprop="articleBody" class="organization-presentation-container">
-      {{ partial "organizations/single/summary.html" . }}
-      {{ partial "organizations/single/presentation.html" . }}
+  {{ with trim $presentation " \n\t\r" }}
+    <div class="container">
+      <div itemprop="articleBody" class="organization-presentation-container">
+        {{ . | safeHTML }}
+      </div>
     </div>
-  </div>
+  {{ end }}
 
   {{ partial "organizations/single/sidebar.html" . }}
 
