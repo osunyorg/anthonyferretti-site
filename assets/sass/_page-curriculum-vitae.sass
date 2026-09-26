@@ -13,6 +13,10 @@
         margin-bottom: 0
       .project-summary
         font-size: $small-size-desktop
+  & .projects--list .project-content
+    @include media-breakpoint-up(desktop)
+      flex: none
+      width: columns(6)
   [itemprop="abstract"],
   .post-meta,
   .projects--list .project-meta
