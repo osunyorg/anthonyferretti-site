@@ -183,6 +183,10 @@ from = "/a-propos/clients-partenaires/anact/index.html"
 to = "/a-propos/reseau/anact/"
 
 [[redirects]]
+from = "/projets/2015-cobusiness/index.html"
+to = "/projets/2014-cobusiness/"
+
+[[redirects]]
 from = "/a-propos/reseau/personnes/chloe-rotrou/index.html"
 to = "/personnes/chloe-rotrou/"
 
