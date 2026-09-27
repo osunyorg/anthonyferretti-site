@@ -323,6 +323,10 @@ from = "/a-propos/reseau/personnes/olivia-simonet/index.html"
 to = "/personnes/olivia-simonet/"
 
 [[redirects]]
+from = "/projets/2025-communication-publique/index.html"
+to = "/projets/2024-communication-publique/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/privowny/index.html"
 to = "/a-propos/reseau/privowny/"
 
@@ -789,6 +793,10 @@ to = "/a-propos/reseau/personnes/adrien-payet/activites/"
 [[redirects]]
 from = "/actualites/experience-professionnelle/entrepreneuriat/index.html"
 to = "/activites/experience-professionnelle/entrepreneuriat/"
+
+[[redirects]]
+from = "/projets/2023-design-system-sciences-po/index.html"
+to = "/projets/2024-design-system-sciences-po/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/ecole-nationale-superieure-des-arts-appliques-et-des-metiers-dart-olivier-de-serres/index.html"
@@ -1291,6 +1299,10 @@ from = "/reseau/organisations/chu-de-bordeaux/index.html"
 to = "/a-propos/reseau/chu-de-bordeaux/"
 
 [[redirects]]
+from = "/projets/2024-ile-de-france-tiers-lieux/index.html"
+to = "/projets/2023-ile-de-france-tiers-lieux/"
+
+[[redirects]]
 from = "/a-propos/clients-partenaires/accra/index.html"
 to = "/a-propos/reseau/accra/"
 
@@ -1395,6 +1407,10 @@ from = "/a-propos/reseau/personnes/julien-soulard/index.html"
 to = "/personnes/julien-soulard/"
 
 [[redirects]]
+from = "/projets/2025-bonne-pioche/index.html"
+to = "/projets/2024-bonne-pioche/"
+
+[[redirects]]
 from = "/a-propos/clients-partenaires/humanitarian-design-bureau/index.html"
 to = "/a-propos/reseau/humanitarian-design-bureau/"
 
@@ -1465,6 +1481,10 @@ to = "/a-propos/reseau/"
 [[redirects]]
 from = "/actualites/niveau/niveau-7/index.html"
 to = "/activites/niveau/niveau-7/"
+
+[[redirects]]
+from = "/projets/2025-la-27e-region/index.html"
+to = "/projets/2026-la-27e-region/"
 
 [[redirects]]
 from = "/reseau/organisations/tmnlab/index.html"
@@ -1889,6 +1909,10 @@ to = "/a-propos/reseau/gaite-lyrique/"
 [[redirects]]
 from = "/activites/experiences-professionnelles/stage/index.html"
 to = "/activites/experience-professionnelle/stage/"
+
+[[redirects]]
+from = "/projets/2023-demometre/index.html"
+to = "/projets/2025-demometre/"
 
 [[redirects]]
 from = "/organisations/telescoop/index.html"
