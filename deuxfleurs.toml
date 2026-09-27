@@ -399,6 +399,10 @@ from = "/a-propos/reseau/personnes/tristan-saramon/index.html"
 to = "/personnes/tristan-saramon/"
 
 [[redirects]]
+from = "/projets/2019-messidor/index.html"
+to = "/projets/2020-messidor/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/telescoop/index.html"
 to = "/a-propos/reseau/telescoop/"
 
@@ -481,6 +485,10 @@ to = "/a-propos/reseau/collectif-des-tiers-lieux/"
 [[redirects]]
 from = "/a-propos/reseau/personnes/thomas-thibault/index.html"
 to = "/personnes/thomas-thibault/"
+
+[[redirects]]
+from = "/projets/2022-outiller-la-mediation-numerique/index.html"
+to = "/projets/2021-outiller-la-mediation-numerique/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/practishare/index.html"
@@ -711,6 +719,10 @@ from = "/a-propos/clients-partenaires/emilieu-studio/index.html"
 to = "/a-propos/reseau/emilieu-studio/"
 
 [[redirects]]
+from = "/projets/2017-beurk-design/index.html"
+to = "/projets/2020-beurk-design/"
+
+[[redirects]]
 from = "/a-propos/reseau/personnes/sarah-dulac/index.html"
 to = "/personnes/sarah-dulac/"
 
@@ -885,6 +897,10 @@ to = "/projets/2014-smart-grids/"
 [[redirects]]
 from = "/a-propos/reseau/personnes/berenice-sellier/index.html"
 to = "/personnes/berenice-sellier/"
+
+[[redirects]]
+from = "/projets/2019-le-monde-nouveau/index.html"
+to = "/projets/2022-le-monde-nouveau/"
 
 [[redirects]]
 from = "/actualites/formation/niveau-5/index.html"
@@ -1088,7 +1104,7 @@ to = "/activites/"
 
 [[redirects]]
 from = "/projets/2022-outil-qvt-qualite-de-vie-au-travail/index.html"
-to = "/projets/2022-faut-on-parle-outil-conditions-travail/"
+to = "/projets/2023-faut-on-parle-outil-conditions-travail/"
 
 [[redirects]]
 from = "/reseau/personnes/morgane-chevalier/index.html"
@@ -1208,7 +1224,7 @@ to = "/activites/experience-professionnelle/stage/"
 
 [[redirects]]
 from = "/projets/2019-ameliorer-accompagnement-personnes-situation-handicap-psychique-retour-emploi/index.html"
-to = "/projets/2019-messidor/"
+to = "/projets/2020-messidor/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/virginie-valente-duarte/index.html"
@@ -1263,6 +1279,10 @@ from = "/a-propos/reseau/personnes/arnaud-levy/index.html"
 to = "/personnes/arnaud-levy/"
 
 [[redirects]]
+from = "/projets/2016-blockchain-vaisselle/index.html"
+to = "/projets/2017-blockchain-vaisselle/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/anct/index.html"
 to = "/a-propos/reseau/anct/"
 
@@ -1301,6 +1321,10 @@ to = "/a-propos/reseau/chu-de-bordeaux/"
 [[redirects]]
 from = "/projets/2024-ile-de-france-tiers-lieux/index.html"
 to = "/projets/2023-ile-de-france-tiers-lieux/"
+
+[[redirects]]
+from = "/projets/2016-guide-conso-collab/index.html"
+to = "/projets/2015-guide-conso-collab/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/accra/index.html"
@@ -1361,6 +1385,10 @@ to = "/personnes/victor-wright/"
 [[redirects]]
 from = "/reseau/organisations/cy-cergy-paris-universite/index.html"
 to = "/a-propos/reseau/cy-cergy-paris-universite/"
+
+[[redirects]]
+from = "/projets/2016-mes-infos/index.html"
+to = "/projets/2017-mes-infos/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/ensaama-olivier-de-serres/index.html"
@@ -1699,6 +1727,10 @@ from = "/reseau/organisations/codesign-lab-media-studies/index.html"
 to = "/a-propos/reseau/codesign-lab-media-studies/"
 
 [[redirects]]
+from = "/projets/2023-design-ecologique-parametres/index.html"
+to = "/projets/2024-design-ecologique-parametres/"
+
+[[redirects]]
 from = "/activites/recherches/reflexion/index.html"
 to = "/activites/recherche/reflexion/"
 
@@ -1777,6 +1809,10 @@ to = "/projets/studio/praticable/"
 [[redirects]]
 from = "/actualites/recherche/memoire/index.html"
 to = "/activites/recherche/memoire/"
+
+[[redirects]]
+from = "/projets/2022-faut-on-parle-outil-conditions-travail/index.html"
+to = "/projets/2023-faut-on-parle-outil-conditions-travail/"
 
 [[redirects]]
 from = "/reseau/organisations/prospero/index.html"
