@@ -1011,6 +1011,10 @@ from = "/reseau/personnes/morgane-chevalier/actualites/index.html"
 to = "/a-propos/reseau/personnes/morgane-chevalier/activites/"
 
 [[redirects]]
+from = "/projets/2025-demometre/index.html"
+to = "/projets/2023-demometre/"
+
+[[redirects]]
 from = "/a-propos/reseau/organisations/microsoft-france/index.html"
 to = "/a-propos/reseau/microsoft-france/"
 
@@ -1949,10 +1953,6 @@ to = "/a-propos/reseau/gaite-lyrique/"
 [[redirects]]
 from = "/activites/experiences-professionnelles/stage/index.html"
 to = "/activites/experience-professionnelle/stage/"
-
-[[redirects]]
-from = "/projets/2023-demometre/index.html"
-to = "/projets/2025-demometre/"
 
 [[redirects]]
 from = "/organisations/telescoop/index.html"
