@@ -723,10 +723,6 @@ from = "/a-propos/clients-partenaires/emilieu-studio/index.html"
 to = "/a-propos/reseau/emilieu-studio/"
 
 [[redirects]]
-from = "/projets/2017-beurk-design/index.html"
-to = "/projets/2020-beurk-design/"
-
-[[redirects]]
 from = "/a-propos/reseau/personnes/sarah-dulac/index.html"
 to = "/personnes/sarah-dulac/"
 
@@ -1339,10 +1335,6 @@ from = "/projets/2024-ile-de-france-tiers-lieux/index.html"
 to = "/projets/2023-ile-de-france-tiers-lieux/"
 
 [[redirects]]
-from = "/projets/2016-guide-conso-collab/index.html"
-to = "/projets/2015-guide-conso-collab/"
-
-[[redirects]]
 from = "/a-propos/clients-partenaires/accra/index.html"
 to = "/a-propos/reseau/accra/"
 
@@ -1791,6 +1783,10 @@ from = "/actualites/2013-06-01-dsaa-design-industriel/index.html"
 to = "/activites/2013-06-01-dsaa-design-industriel/"
 
 [[redirects]]
+from = "/projets/2015-guide-conso-collab/index.html"
+to = "/projets/2016-guide-conso-collab/"
+
+[[redirects]]
 from = "/a-propos/clients-partenaires/college-pablo-neruda/index.html"
 to = "/a-propos/reseau/college-pablo-neruda/"
 
@@ -1893,6 +1889,10 @@ to = "/activites/2023-07-11-web-vs-pdf/"
 [[redirects]]
 from = "/organisations/sacvl/index.html"
 to = "/a-propos/reseau/sacvl/"
+
+[[redirects]]
+from = "/projets/2020-beurk-design/index.html"
+to = "/projets/2017-beurk-design/"
 
 [[redirects]]
 from = "/organisations/liris/index.html"
