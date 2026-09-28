@@ -412,7 +412,7 @@ to = "/a-propos/reseau/telescoop/"
 
 [[redirects]]
 from = "/activites/2022-01-12-production-de-formes/index.html"
-to = "/activites/2021-12-07-production-de-formes/"
+to = "/activites/2022-01-07-production-de-formes/"
 
 [[redirects]]
 from = "/a-propos/reseau/personnes/fanny-le-brech/index.html"
@@ -493,6 +493,10 @@ to = "/personnes/thomas-thibault/"
 [[redirects]]
 from = "/projets/2022-outiller-la-mediation-numerique/index.html"
 to = "/projets/2021-outiller-la-mediation-numerique/"
+
+[[redirects]]
+from = "/activites/2021-10-07-production-de-formes/index.html"
+to = "/activites/2022-01-07-production-de-formes/"
 
 [[redirects]]
 from = "/a-propos/clients-partenaires/practishare/index.html"
@@ -787,6 +791,10 @@ from = "/actualites/exposition/index.html"
 to = "/activites/exposition/"
 
 [[redirects]]
+from = "/activites/2021-12-07-production-de-formes/index.html"
+to = "/activites/2022-01-07-production-de-formes/"
+
+[[redirects]]
 from = "/actualites/2013-06-01-cofondateur-president-designer-dinterface-et-de-produit/index.html"
 to = "/activites/2022-03-25-praticable-cofondateur-designer/"
 
@@ -901,10 +909,6 @@ to = "/projets/2014-smart-grids/"
 [[redirects]]
 from = "/a-propos/reseau/personnes/berenice-sellier/index.html"
 to = "/personnes/berenice-sellier/"
-
-[[redirects]]
-from = "/projets/2019-le-monde-nouveau/index.html"
-to = "/projets/2022-le-monde-nouveau/"
 
 [[redirects]]
 from = "/actualites/formation/niveau-5/index.html"
@@ -1289,6 +1293,10 @@ to = "/personnes/arnaud-levy/"
 [[redirects]]
 from = "/projets/2016-blockchain-vaisselle/index.html"
 to = "/projets/2017-blockchain-vaisselle/"
+
+[[redirects]]
+from = "/projets/2022-le-monde-nouveau/index.html"
+to = "/projets/2019-le-monde-nouveau/"
 
 [[redirects]]
 from = "/a-propos/reseau/organisations/anct/index.html"
