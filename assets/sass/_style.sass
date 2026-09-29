@@ -161,6 +161,9 @@ footer#document-footer
     .taxonomy-categories
       border-top: $border
       border-bottom: $border
+      @include media-breakpoint-down(desktop)
+        margin-top: var(--grid-gutter)
+        box-shadow: 0 calc(-1 * var(--grid-gutter)) 0 var(--dropdown-background)
       > ul
         @include grid(4, xl, $spacing-3)
         li a
