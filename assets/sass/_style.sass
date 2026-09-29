@@ -385,6 +385,23 @@ html
 
 // title
 
+.block.block-title,
+.block.block-title:not(:first-child)
+  margin-top: 0
+  margin-bottom: 0
+  @include in-page-with-sidebar
+    margin-top: var(--block-space-y)
+    margin-bottom: var(--block-space-y)
+
+.block-title + .block
+  margin-top: 0
+  @include in-page-with-sidebar
+    margin-top: var(--block-space-y)
+
+.document-content > .section-sidebar:not(.section-sidebar--with-meta)
+  @include media-breakpoint-down(desktop)
+    margin-top: 0
+
 .block-organizations,
 .block-pages,
 .block-posts,
