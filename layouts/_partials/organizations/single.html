@@ -10,6 +10,10 @@
 
 <div class="document-content">
 
+  {{/* Sidebar (données) avant la présentation : ordre mobile = ordre DOM.
+       Sans effet en desktop, où la sidebar est en position absolue. */}}
+  {{ partial "organizations/single/sidebar.html" . }}
+
   {{ with trim $presentation " \n\t\r" }}
     <div class="container">
       <div itemprop="articleBody" class="organization-presentation-container">
@@ -17,8 +21,6 @@
       </div>
     </div>
   {{ end }}
-
-  {{ partial "organizations/single/sidebar.html" . }}
 
   {{ partial "contents/list.html" (dict
     "context" .
