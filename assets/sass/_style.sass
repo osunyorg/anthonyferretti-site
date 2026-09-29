@@ -683,15 +683,16 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
 
 // organization
 
-.organizations__page .backlinks
-  & > .block,
-  & > *
-    &:first-child
-      border-top: $border
+.organizations__page
+  .document-content > .backlinks
+    margin-top: $block-space-y
     @include media-breakpoint-up(desktop)
-      margin-top: 0
-    &:last-child
-      padding-bottom: 0
+      margin-top: $block-space-y-desktop
+  .backlinks > *
+    border-top: $border
+    margin-top: 0
+  main:has(.backlinks > *)
+    padding-bottom: 0
 
 .organizations__page .organization-sidebar + .container
   border-top: $border
