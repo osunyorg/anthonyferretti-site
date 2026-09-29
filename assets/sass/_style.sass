@@ -693,6 +693,15 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
     &:last-child
       padding-bottom: 0
 
+.organizations__page .organization-sidebar + .container
+  border-top: $border
+  margin-top: 0
+  padding-top: $block-space-y
+  @include media-breakpoint-up(desktop)
+    padding-top: $block-space-y-desktop
+  @include media-breakpoint-down(desktop)
+    margin-top: $spacing-2
+
 .organizations__page .hero
   .organization-logo
     margin-top: $spacing-4
