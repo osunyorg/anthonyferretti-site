@@ -432,6 +432,8 @@ html
 .block-gallery--large figure
   @include media-breakpoint-down(desktop)
     margin-bottom: 0
+    & + figure
+      margin-top: var(--grid-gutter)
 
 // page
 
