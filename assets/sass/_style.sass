@@ -464,6 +464,12 @@ html
 
 // project
 
+@media (hover: none)
+  .projects--list .project .project-title a,
+  .category-item [class$="-title"] a
+    &::after
+      display: none
+
 .projects--grid
   @include media-breakpoint-up(desktop)
     grid-template-columns: repeat(3, 1fr)
