@@ -20,7 +20,9 @@ main .blocks + *
 // header
 
 header#document-header
+
   @include media-breakpoint-up(desktop)
+
     .primary-menu > .container
       justify-content: start
       .menu
@@ -35,7 +37,8 @@ header#document-header
         color: $color-text
         display: inline-block
         transition: color $menu-link-duration
-        &.active::before
+        &.active::before,
+        &.has-children-active::before
           content: ""
           position: absolute
           left: 0
