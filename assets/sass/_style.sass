@@ -29,26 +29,33 @@ header#document-header
         .menu-class-contact
           margin-left: auto !important
 
-    .menu .nav-level-1 > li
-      & > a
+    .menu .nav-level-1
+      > li > a
         position: relative
         color: $color-text
         display: inline-block
+        transition: color $menu-link-duration
         &.active::before
-          @include media-breakpoint-up(desktop)
-            content: ""
-            position: absolute
-            left: 0
-            bottom: calc(-#{$header-nav-padding-y-desktop} - #{$border-width})
-            height: $border-width
-            width: 100%
-            background-color: $color-text
-            z-index: 0
+          content: ""
+          position: absolute
+          left: 0
+          bottom: calc(-#{$header-nav-padding-y-desktop} - #{$border-width})
+          height: $border-width
+          width: 100%
+          background-color: $color-text
+          z-index: 11
+      &:has([aria-expanded="true"]) > li:not(:hover) > a:not([aria-expanded="true"])
+        color: $color-text-alt
+      @media (hover: hover)
+        &:has(> li:hover) > li:not(:hover) > a:not([aria-expanded="true"])
+          color: $color-text-alt
+
   @include media-breakpoint-down(desktop)
     &:not(.has-menu-opened header#document-header)
       border-bottom: $border
     .menu-secondary .nav-level-1 > li:first-child
       border-top: $border
+
   .dropdown-menu
     @include media-breakpoint-up(desktop)
       padding-top: $spacing-4
@@ -59,13 +66,9 @@ header#document-header
       & .nav-level-2 li:not(:first-child)
         margin-top: $spacing-3
 
-html.has-menu-opened header#document-header
-  .menu a
-    @include media-breakpoint-up(desktop)
-      &[aria-expanded="false"]
-        color: $color-text-alt
-      &[aria-expanded="true"]
-        color: $color-text
+  .dropdown-menu .dropdown-menu-title,
+  .dropdown-menu .nav-level-2 > li > a
+    text-decoration-line: none
 
 .search-button--primary .pf-trigger-btn
   @include media-breakpoint-down(desktop)
@@ -823,15 +826,20 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
 .block-projects .top .block-title a
   @include arrow-nowrap($space: false)
 
+// Arrow hover
 $grid-title-link: 'ul[class*="--grid"]:not(.organizations) > li > article:not(:has(.more)) [class$="-title"] a'
 
 @media (hover: hover)
-  #{$grid-title-link}
+  #{$grid-title-link},
+  header#document-header .dropdown-menu .dropdown-menu-title,
+  header#document-header .dropdown-menu .nav-level-2 > li > a
     @include icon(arrow-right-line, after, true)
     @include hover-translate-icon(after, $fade: true)
 
   .category-item [class$="-title"] a,
   .posts--list .post .post-title a,
   .projects--list .project-title a,
-  #{$grid-title-link}
+  #{$grid-title-link},
+  header#document-header .dropdown-menu .dropdown-menu-title,
+  header#document-header .dropdown-menu .nav-level-2 > li > a
     @include arrow-nowrap
