@@ -80,7 +80,7 @@ html.has-menu-opened header#document-header
 // search
 
 .pf-modal .pf-modal-results
-  padding-top: $spacing-5
+  padding-top: $spacing-4
   .pf-results > li + li
     border-top: $border
     margin-top: $spacing-4
@@ -525,6 +525,17 @@ html
         border-bottom: var(--border-width) solid var(--color-border)
       + li
         margin-top: $spacing-3
+  .project-title a
+    @media (hover: hover)
+      @include icon(arrow-right-line, after, true)
+      @include hover-translate-icon(after, $fade: true)
+      &::after
+        content: "\00a0#{map-get($icons, arrow-right-line)}"
+        display: inline
+        position: relative
+        left: 0
+      &:hover::after
+        left: pxToRem(10)
 
 .projects--list
   .project .project-title a:hover
