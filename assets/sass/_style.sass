@@ -78,12 +78,46 @@ html.has-menu-opened header#document-header
       margin: space(-5)
 
 // search
-  
+
 .pf-modal .pf-modal-results
+  padding-top: $spacing-5
+  .pf-results > li + li
+    border-top: $border
+    margin-top: $spacing-4
+    padding-top: $spacing-4
   .pf-result-image
     display: none
   .pf-result-content
     width: 100%
+  .pf-result-link
+    &:hover
+      color: $color-text
+      text-decoration-line: none
+    @media (hover: hover)
+      @include icon(arrow-right-line, after, true)
+      @include hover-translate-icon(after, $fade: true)
+
+.pf-modal .pf-checkbox-input
+  align-self: center
+  appearance: none
+  border: $border-width solid $color-text
+  border-radius: 0
+  display: inline-grid
+  flex-shrink: 0
+  font-size: inherit
+  height: 1em
+  place-content: center
+  width: 1em
+  &:checked
+    background-color: $color-text
+    @include icon(check-line, before)
+      color: $color-background
+  &:focus-visible
+    outline: ($border-width * 2) solid $color-text
+    outline-offset: $border-width * 2
+  // Mode contraste élevé : retour à la case native, seule à garantir un état coché visible
+  @media (forced-colors: active)
+    appearance: auto
 
 // logo
 
