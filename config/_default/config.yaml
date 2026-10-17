@@ -35,7 +35,7 @@ params:
   # SECTIONS
   home:
     head:
-      title: site
+      title: page # tab title = home page title
   organizations:
     index:
       taxonomies:
