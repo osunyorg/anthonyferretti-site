@@ -1,0 +1,13 @@
+{{/* Structured data (schema.org Person), home page only */}}
+{{ if .IsHome }}
+  {{ $person := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" site.Title
+    "url" .Permalink
+    "jobTitle" "Designer stratégique & numérique indépendant"
+    "address" (dict "@type" "PostalAddress" "addressLocality" "Bordeaux" "addressCountry" "FR")
+    "sameAs" (slice site.Params.contact_details.social_networks.linkedin.value)
+  }}
+  <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{ end }}
