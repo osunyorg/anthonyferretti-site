@@ -751,6 +751,10 @@ from = "/a-propos/reseau/personnes/anthony-ferretti/activites/index.html"
 to = "/personnes/anthony-ferretti/activites/"
 
 [[redirects]]
+from = "/cv/index.html"
+to = "/a-propos/curriculum-vitae/"
+
+[[redirects]]
 from = "/actualites/lieu/rouen/index.html"
 to = "/activites/lieu/rouen/"
 
