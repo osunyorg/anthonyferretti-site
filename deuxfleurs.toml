@@ -1667,6 +1667,10 @@ from = "/a-propos/clients-partenaires/gaite-lyrique/index.html"
 to = "/a-propos/reseau/gaite-lyrique/"
 
 [[redirects]]
+from = "/activites/2026-01-23-mon-premier-site-1/index.html"
+to = "/activites/2025-12-12-mon-premier-site-1/"
+
+[[redirects]]
 from = "/a-propos/reseau/personnes/antoine-choumoff/index.html"
 to = "/personnes/antoine-choumoff/"
 
