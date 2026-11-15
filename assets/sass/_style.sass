@@ -244,12 +244,9 @@ footer#document-footer
       h1 > span
         margin-bottom: $spacing-2
         font-weight: $h4-weight
-        @include media-breakpoint-up(desktop)
-          font-size: $body-size-desktop
-          line-height: $small-line-height-desktop
-        @include media-breakpoint-down(desktop)
-          font-size: $body-size
-          line-height: $small-line-height
+        // Same size as the hero lead
+        font-size: var(--lead-hero-size)
+        line-height: var(--lead-hero-line-height)
     .hero-actions
       @include media-breakpoint-up(desktop)
         margin-top: $spacing-4
