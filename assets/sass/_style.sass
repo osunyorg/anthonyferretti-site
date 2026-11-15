@@ -622,6 +622,11 @@ body.full-width .projects--list
   flex-direction: column-reverse
   gap: $spacing-2
 
+// Balanced lines to avoid orphan words in list titles
+.projects--list .project-title,
+.posts--list .post-title
+  text-wrap: balance
+
 .posts--list
   .post .post-title a
     @include stretched-link(before)
@@ -757,9 +762,9 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
         gap: $grid-gutter-xxl
         .hero-text
           width: $content-width
-    @include media-breakpoint-down(desktop)
-      .hero-text
-        gap: 0
+    // Theme flex gap adds up to .hero-actions margin
+    .hero-text
+      gap: 0
 
 // person
 
