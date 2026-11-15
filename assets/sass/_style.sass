@@ -246,10 +246,10 @@ footer#document-footer
         font-weight: $h4-weight
         @include media-breakpoint-up(desktop)
           font-size: $body-size-desktop
-          line-height: $h5-line-height-desktop
+          line-height: $small-line-height-desktop
         @include media-breakpoint-down(desktop)
           font-size: $body-size
-          line-height: $h5-line-height
+          line-height: $small-line-height
     .hero-actions
       @include media-breakpoint-up(desktop)
         margin-top: $spacing-4
@@ -562,13 +562,12 @@ body.full-width .projects--list
         font-size: $h3-size-desktop
         line-height: $h3-line-height-desktop
     & .project-subtitle
-      margin-top: $spacing-2
       @include media-breakpoint-down(desktop)
         font-size: $body-size
-        line-height: $h3-line-height
+        line-height: $small-line-height
       @include media-breakpoint-up(desktop)
         font-size: $body-size-desktop
-        line-height: $h3-line-height-desktop
+        line-height: $small-line-height-desktop
   article [class$="-content"]
     @include media-breakpoint-up(desktop)
       flex: none
@@ -592,9 +591,11 @@ body.full-width .projects--list
 
 .project-summary
   margin-top: $spacing-2
-  .rich-text > p
-    line-height: $body-line-height
 
+.project-summary .rich-text > p,
+.posts--list .post [itemprop="abstract"] p
+  line-height: $summary-line-height
+  
 // post
 
 .posts--list > li
@@ -608,13 +609,18 @@ body.full-width .projects--list
 
 .post
   .post-subtitle
-    margin-top: $spacing-2
     @include media-breakpoint-down(desktop)
       font-size: $body-size
-      line-height: $h3-line-height
+      line-height: $small-line-height
     @include media-breakpoint-up(desktop)
       font-size: $body-size-desktop
-      line-height: $h3-line-height-desktop
+      line-height: $small-line-height-desktop
+
+.projects--list .project hgroup,
+.posts--list .post hgroup
+  display: flex
+  flex-direction: column-reverse
+  gap: $spacing-2
 
 .posts--list
   .post .post-title a
