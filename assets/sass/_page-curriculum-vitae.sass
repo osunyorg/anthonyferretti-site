@@ -28,6 +28,12 @@
     .post-content
       display: flex
       flex-direction: column
+      gap: $spacing-2
+      // Spacing handled by gap only, so it is identical between all elements
+      > *,
+      > hgroup > *
+        margin-top: 0
+        margin-bottom: 0
     hgroup
       display: contents
     .project-subtitle,
@@ -35,7 +41,6 @@
       @include meta
       color: $color-text-alt
       order: 1
-      margin-top: $spacing-2
     .project-meta,
     .post-categories,
     .post-meta
