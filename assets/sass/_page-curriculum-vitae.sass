@@ -21,7 +21,7 @@
     font-size: $small-size-desktop
     line-height: $small-line-height
 
-  // Subtitle below the summary, styled as categories and date (DOM order unchanged)
+  // Subtitle below the title (other lists display it above), identical spacing between elements
   .projects--list .project,
   .posts--list .post
     .project-description,
@@ -36,12 +36,26 @@
         margin-bottom: 0
     hgroup
       display: contents
+    // Theme top margin on categories, inside the date row, adds space above the row
+    .project-meta > *
+      margin-top: 0
+    // Subtitle at the same size as the summary and the date
     .project-subtitle,
     .post-subtitle
-      @include meta
-      color: $color-text-alt
-      order: 1
-    .project-meta,
-    .post-categories,
+      font-size: $small-size-desktop
+      line-height: $small-line-height
+  // Posts: date and categories on the same row, date first, as for projects
+  .posts--list .post .post-content
+    flex-flow: row wrap
+    align-items: baseline
+    column-gap: $spacing-2
+    > :not(.post-meta, .post-categories),
+    > hgroup > *
+      flex-basis: 100%
     .post-meta
+      order: 1
+    .post-categories
       order: 2
+      // Takes the remaining width and wraps its items, instead of going under the date
+      flex: 1
+      min-width: 0
