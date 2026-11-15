@@ -1,0 +1,8 @@
+{{/* Override of the theme partial: adds a search result title without the subtitle (the theme places it inside the h1), and the subtitle as separate metadata. Remove when Osuny handles it upstream. */}}
+{{ if site.Params.search.active }}
+  <meta property="osuny:type" data-pagefind-filter="type[content]" content="{{ partial "commons/search/helpers/GetFilterLabelByType" . }}">
+  <meta data-pagefind-meta="title[content]" content="{{ or .Params.header_text .Title | plainify }}">
+  {{ with .Params.subtitle }}
+    <meta data-pagefind-meta="subtitle[content]" content="{{ . | plainify }}">
+  {{ end }}
+{{ end }}
