@@ -1,13 +1,11 @@
 // CURRICULUM VITAE
 
 .page-curriculum-vitae
-  .post-title,
-  .post-subtitle
+  .post-title
     font-size: $body-size-desktop
   & .project
     .project-content
-      .project-title,
-      .project-subtitle
+      .project-title
         font-size: $body-size-desktop
       .project-categories
         margin-bottom: 0
@@ -22,3 +20,23 @@
   .projects--list .project-meta
     font-size: $small-size-desktop
     line-height: $small-line-height
+
+  // Subtitle below the summary, styled as categories and date (DOM order unchanged)
+  .projects--list .project,
+  .posts--list .post
+    .project-description,
+    .post-content
+      display: flex
+      flex-direction: column
+    hgroup
+      display: contents
+    .project-subtitle,
+    .post-subtitle
+      @include meta
+      color: $color-text-alt
+      order: 1
+      margin-top: $spacing-2
+    .project-meta,
+    .post-categories,
+    .post-meta
+      order: 2
