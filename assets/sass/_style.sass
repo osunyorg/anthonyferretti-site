@@ -236,13 +236,14 @@ footer#document-footer
         padding-bottom: 0
       @include media-breakpoint-down(desktop)
         margin-bottom: $spacing-4
+      h1
+        text-wrap: balance
       h1:has(> span)
         display: flex
         flex-direction: column-reverse
       h1 > span
         margin-bottom: $spacing-2
         font-weight: $h4-weight
-        text-wrap: balance
         @include media-breakpoint-up(desktop)
           font-size: $body-size-desktop
           line-height: $h5-line-height-desktop
