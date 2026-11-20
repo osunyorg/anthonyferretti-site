@@ -591,7 +591,20 @@ body.full-width .projects--list
 .project-summary .rich-text > p,
 .posts--list .post [itemprop="abstract"] p
   line-height: $summary-line-height
-  
+
+// Clamp list and card summaries to a fixed number of lines
+.project-summary,
+.post [itemprop="abstract"]
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: $summary-max-lines
+  line-clamp: $summary-max-lines
+  overflow: hidden
+  // Expand when a link inside receives keyboard focus (RGAA 10.7)
+  &:focus-within
+    display: block
+    overflow: visible
+
 // post
 
 .posts--list > li
