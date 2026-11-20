@@ -847,6 +847,8 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
   &::after
     @if $space
       content: "\00a0#{map-get($icons, arrow-right-line)}"
+      // Hide decorative arrow from screen readers (RGAA 10.2)
+      content: "\00a0#{map-get($icons, arrow-right-line)}" #{/ ""}
     display: inline
     position: relative
     left: 0
@@ -860,7 +862,7 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
   @include arrow-nowrap
 
 .block-projects .top .block-title a
-  @include arrow-nowrap($space: false)
+  @include arrow-nowrap
 
 // Arrow hover
 $grid-title-link: 'ul[class*="--grid"]:not(.organizations) > li > article:not(:has(.more)) [class$="-title"] a'
