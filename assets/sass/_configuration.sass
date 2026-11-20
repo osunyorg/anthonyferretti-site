@@ -117,10 +117,16 @@ $border-width: 1px
 $border: $border-width solid $color-border
 $content-width: calc((var(--column-width) * 7) + (var(--grid-gutter) * (7 - 1))) // custom
 
+// icons
+// Replace the external link icon with Remix Icon arrow-right-up-line (custom font)
+$icons-custom-font-family: "CustomIcons"
+$icons-custom: ("links-line": "\e900")
+
 // link
+$link-color: currentColor //custom
 $link-underline-offset: 21.25%
 $link-underline-thickness: $border-width
-$link-unhover-decoration-color-alpha: 0.3
+$link-unhover-decoration-color-alpha: 0.5
 
 // button
 $btn-border-radius: 0

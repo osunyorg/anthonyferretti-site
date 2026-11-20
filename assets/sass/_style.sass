@@ -10,6 +10,25 @@ b, strong
 .rich-text ul
   list-style-type: square
 
+// link
+
+// External link icon: muted color, no extra gap (the space before .sr-only is kept as the gap)
+a[target="_blank"]:not(.icon):where(:not(.btn))::after
+  content: map-get($icons-custom, links-line)
+  color: var(--color-text-alt)
+
+// Links without the .sr-only suffix get a non-breaking space taken from the body font
+a[target="_blank"]:not(.icon):where(:not(.btn):not(:has(.sr-only)))::after
+  content: "\00a0#{map-get($icons-custom, links-line)}"
+  font-family: $icons-custom-font-family, $body-font-family
+
+// External link icon turns to link color on hover, like the underline
+a[target="_blank"]:not(.icon):where(:not(.btn))
+  &::after
+    transition: color $color-duration ease
+  &:hover::after
+    color: inherit
+
 // COMPONENTS
 
 // layout
@@ -650,6 +669,8 @@ body.full-width .projects--list
 // cta
 
 .block-call_to_action
+  // Fix theme custom property (Sass function not interpolated), match link underline alpha
+  --cta-color-alpha: #{alphaColor(var(--cta-color), $link-unhover-decoration-color-alpha)}
   @include media-breakpoint-up(desktop)
     @include in-page-without-sidebar
       .call_to_action--without-image:not(.call_to_action--without-text) > div .actions
