@@ -111,6 +111,11 @@ header#document-header
       padding-inline: var(--grid-gutter)
       &:first-child
         border-top: $border
+      // Separator within margins
+      &:not(:last-child)
+        border-bottom-color: transparent
+        background: linear-gradient(var(--color-border), var(--color-border)) no-repeat center bottom / calc(100% - 2 * var(--grid-gutter)) $border-width
+        background-origin: border-box
     // Black line within margins: open submenu, else active page
     .menu .nav-level-1:not(:has(> li > [aria-expanded="true"])) > li:has(> a.active, > a.has-children-active),
     .menu .nav-level-1 > li:has(> [aria-expanded="true"])
@@ -257,6 +262,15 @@ main :is(.posts, .projects) li article [class$="-categories"] a
     margin-top: 0 !important
     padding-bottom: 0
     border-bottom: 0
+    // Full-width closing line, opaque to cover the last separator
+    &::after
+      content: ""
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      height: $border-width
+      background: linear-gradient(var(--color-border), var(--color-border)), var(--color-background)
 
 .taxonomies-list
   --dropdown-background: var(--color-background)
@@ -328,6 +342,10 @@ main :is(.posts, .projects) li article [class$="-categories"] a
       width: auto
       align-self: stretch
       border-bottom: $border
+      // Separator within margins
+      border-bottom-color: transparent
+      background: linear-gradient(var(--color-border), var(--color-border)) no-repeat center bottom / calc(100% - 2 * var(--grid-gutter)) $border-width
+      background-origin: border-box
       > button
         margin-block: calc(-1 * #{$spacing-2})
       .taxonomy-categories
@@ -336,6 +354,7 @@ main :is(.posts, .projects) li article [class$="-categories"] a
         right: 0
         margin-top: 0
         box-shadow: none
+        border-top-color: transparent
 
 // hero
 
@@ -823,6 +842,17 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
 
 // post
 
+// List pages: same 48px rhythm for projects and posts
+.document-content > .container:has(.projects--list, .posts--list)
+  margin-top: $spacing-4
+  .projects--list > li,
+  .posts--list > li
+    padding-top: 0
+    padding-bottom: $spacing-4
+    margin-top: 0
+    + li
+      padding-top: $spacing-4
+
 .posts_categories__term,
 .posts__section
   & .posts--list
@@ -854,13 +884,6 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
     display: none
 
 .projects__section
-  & .projects--list
-    > li
-      padding-bottom: $spacing-4
-      padding-top: 0
-      + li
-        padding-top: $spacing-4
-        margin-top: 0
   .project-categories
     margin-bottom: 0
 
