@@ -102,9 +102,23 @@ header#document-header
         > a:not([aria-expanded="true"]),
         &.nav-search
           color: $color-text-alt
-    // Active page: black separator, hidden while a submenu is open
-    .menu .nav-level-1:not(:has(> li > [aria-expanded="true"])) > li:has(> a.active, > a.has-children-active)
-      border-bottom-color: $color-text
+    // Full-width separators, content stays aligned
+    .menu
+      margin-inline: var(--grid-gutter-negative)
+    .menu .nav-level-1 > li
+      position: relative
+      padding-inline: var(--grid-gutter)
+      &:first-child
+        border-top: $border
+    // Active page: black line within margins, hidden while a submenu is open
+    .menu .nav-level-1:not(:has(> li > [aria-expanded="true"])) > li:has(> a.active, > a.has-children-active)::after
+      content: ""
+      position: absolute
+      left: var(--grid-gutter)
+      right: var(--grid-gutter)
+      bottom: calc(-1 * #{$border-width})
+      height: $border-width
+      background-color: $color-text
 
   .dropdown-menu
     @include media-breakpoint-up(desktop)
