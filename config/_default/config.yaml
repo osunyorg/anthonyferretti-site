@@ -60,6 +60,10 @@ params:
     date_format: "02/01/2006"
     index:
       layout: list # grid | list
+    single:
+      meta:
+        options:
+          updated_at: false
   projects:
     default_image: true
     date_format: "2006"

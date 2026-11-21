@@ -1,5 +1,6 @@
 commons:
   credit: Un site éco-conçu avec <a href="https://www.osuny.org/" title="Osuny - lien externe" target="_blank" rel="noreferrer">Osuny</a>
+  published_at: Date
 blocks:
   posts:
     title: Activités

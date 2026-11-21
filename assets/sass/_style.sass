@@ -398,7 +398,8 @@ html
   & .project-infos a
     color: $color-text
 
-.projects__page:not(.full-width) .project-sidebar .project-infos
+.projects__page:not(.full-width) .project-sidebar .project-infos,
+.posts__page:not(.full-width) .post-sidebar .post-infos
   & > li.authors ul,
   & > li.terms ul,
   & .taxonomies-single.with-label > li.authors ul,
@@ -883,8 +884,6 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
 .block-projects .top .block-title a
   @include arrow-nowrap
 
-// Arrow hover
-  
 $grid-title-link: 'ul[class*="--grid"]:not(.organizations) > li > article:not(:has(.more)) [class$="-title"] a'
 
 @media (hover: hover)
