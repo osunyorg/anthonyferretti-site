@@ -255,6 +255,10 @@ main :is(.posts, .projects) li article [class$="-categories"] a
     margin-top: 0 !important
   @include media-breakpoint-down(desktop)
     padding-bottom: $grid-gutter
+  @include media-breakpoint-down(md)
+    margin-top: 0 !important
+    padding-bottom: 0
+    border-bottom: 0
 
 .taxonomies-list
   --dropdown-background: var(--color-background)
@@ -287,10 +291,10 @@ main :is(.posts, .projects) li article [class$="-categories"] a
       @include media-breakpoint-down(desktop)
         bottom: calc(-2 * (#{$spacing-2} + var(--grid-gutter)) - #{$border-width})
       @include media-breakpoint-down(md)
-        left: 0
-        right: 0
+        left: var(--grid-gutter)
+        right: var(--grid-gutter)
         width: auto
-        bottom: calc(-1 * var(--grid-gutter) - #{$border-width})
+        bottom: calc(-1 * #{$border-width})
 
   .dropdown
     > button
@@ -314,6 +318,31 @@ main :is(.posts, .projects) li article [class$="-categories"] a
           @include hover-translate-icon
           &:hover
             color: var(--color-text)
+
+  @include media-breakpoint-down(md)
+    // Clear breadcrumb bottom line
+    margin-block: 0
+    padding-top: $border-width
+    .dropdown
+      // Same height as breadcrumb, full-width separators
+      box-sizing: content-box
+      height: $spacing-5
+      display: flex
+      align-items: center
+      margin-top: 0
+      margin-inline: var(--grid-gutter-negative)
+      padding-inline: var(--grid-gutter)
+      width: auto
+      align-self: stretch
+      border-bottom: $border
+      > button
+        margin-block: calc(-1 * #{$spacing-2})
+      .taxonomy-categories
+        top: 100%
+        left: 0
+        right: 0
+        margin-top: 0
+        box-shadow: none
 
 // hero
 
