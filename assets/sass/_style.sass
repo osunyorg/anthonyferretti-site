@@ -26,6 +26,15 @@ a[target="_blank"]:not(.icon):where(:not(.btn))
   &:hover::after
     color: inherit
 
+// Muted button arrow
+a.btn[target="_blank"]:not(.icon)
+  &::after
+    color: #{alphaColor(currentColor, alpha($color-text-alt) / alpha($color-text))}
+    transition: color $button-duration ease
+  &:hover::after,
+  &:focus-visible::after
+    color: inherit
+
 // wrap
   
 .hero hgroup.has-lead > p,
