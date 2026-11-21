@@ -233,9 +233,24 @@ main :is(.posts, .projects) li article [class$="-categories"] a
     &--dropdown
       margin: 0
 
-  &:has(> .dropdown > button[aria-expanded="true"])
-    .dropdown > button[aria-expanded="false"]
+  @include media-breakpoint-up(desktop)
+    // Same states as header menu
+    &:has(> .dropdown > button[aria-expanded="true"]) > .dropdown > button:not(:hover):not([aria-expanded="true"])
       color: $color-text-alt
+    @media (hover: hover)
+      &:has(> .dropdown > button:hover) > .dropdown > button:not(:hover):not([aria-expanded="true"])
+        color: $color-text-alt
+    .dropdown > button
+      position: relative
+      &[aria-expanded="true"]::before
+        content: ""
+        position: absolute
+        left: 0
+        bottom: calc(#{$spacing-2} + 0.5em - #{$spacing-5} / 2 - 2 * #{$border-width})
+        height: $border-width
+        width: 100%
+        background-color: $color-text
+        z-index: $zindex-dropdown + 1
 
   .dropdown
     > button
