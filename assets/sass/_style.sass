@@ -12,17 +12,14 @@ b, strong
 
 // link
 
-// External link icon: muted color, no extra gap (the space before .sr-only is kept as the gap)
 a[target="_blank"]:not(.icon):where(:not(.btn))::after
   content: map-get($icons-custom, links-line)
   color: var(--color-text-alt)
 
-// Links without the .sr-only suffix get a non-breaking space taken from the body font
 a[target="_blank"]:not(.icon):where(:not(.btn):not(:has(.sr-only)))::after
   content: "\00a0#{map-get($icons-custom, links-line)}"
   font-family: $icons-custom-font-family, $body-font-family
 
-// External link icon turns to link color on hover, like the underline
 a[target="_blank"]:not(.icon):where(:not(.btn))
   &::after
     transition: color $color-duration ease
@@ -140,7 +137,6 @@ header#document-header
   &:focus-visible
     outline: ($border-width * 2) solid $color-text
     outline-offset: $border-width * 2
-  // Mode contraste élevé : retour à la case native, seule à garantir un état coché visible
   @media (forced-colors: active)
     appearance: auto
 
@@ -153,6 +149,7 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
     font-size: $body-size-desktop
 
 //breadcrumb
+
 .breadcrumb-container
   &::after
     content: ''
@@ -165,6 +162,10 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
   .breadcrumb
     & li.active
       color: $color-text-alt
+
+.breadcrumb-nav li a
+  @include media-breakpoint-down(desktop)
+    text-decoration-color: transparent
 
 // footer
 
@@ -190,6 +191,13 @@ footer#document-footer
     @include icon(arrow-right-line, after, true)
     @include hover-translate-icon(after, $fade: true)
 
+main :is(.posts, .projects) li article [class$="-categories"] a
+  text-decoration-color: #{alphaColor(var(--color-text), $link-unhover-decoration-color-alpha)}
+  transition: $link-transition, color $color-duration ease
+  &:hover
+    color: var(--color-text)
+    text-decoration-color: var(--color-text)
+
 // taxonomies
 
 .section-taxonomies-container
@@ -201,7 +209,6 @@ footer#document-footer
     padding-bottom: $grid-gutter
 
 .taxonomies-list
-  // Le thème pointe cette variable sur --color-background-alt (gris)
   --dropdown-background: var(--color-background)
 
   @include media-breakpoint-up(desktop)
@@ -210,7 +217,6 @@ footer#document-footer
     &--dropdown
       margin: 0
 
-  // Un panneau ouvert : les autres boutons passent en retrait
   &:has(> .dropdown > button[aria-expanded="true"])
     .dropdown > button[aria-expanded="false"]
       color: $color-text-alt
@@ -263,9 +269,8 @@ footer#document-footer
       h1 > span
         margin-bottom: $spacing-2
         font-weight: $h4-weight
-        // Same size as the hero lead
         font-size: var(--lead-hero-size)
-        line-height: var(--lead-hero-line-height)
+        line-height: var(--h4-line-height)
     .hero-actions
       @include media-breakpoint-up(desktop)
         margin-top: $spacing-4
@@ -285,7 +290,6 @@ footer#document-footer
     figure
       margin-bottom: $block-space-y
 
-// Smaller hero lead on projects and posts pages
 .projects__page .hero,
 .posts__page .hero
   --lead-hero-size: var(--h4-size)
@@ -611,7 +615,6 @@ body.full-width .projects--list
 .posts--list .post [itemprop="abstract"] p
   line-height: $summary-line-height
 
-// Clamp list and card summaries to a fixed number of lines
 .project-summary,
 .post [itemprop="abstract"]
   display: -webkit-box
@@ -619,7 +622,6 @@ body.full-width .projects--list
   -webkit-line-clamp: $summary-max-lines
   line-clamp: $summary-max-lines
   overflow: hidden
-  // Expand when a link inside receives keyboard focus (RGAA 10.7)
   &:focus-within
     display: block
     overflow: visible
@@ -650,7 +652,6 @@ body.full-width .projects--list
   flex-direction: column-reverse
   gap: $spacing-2
 
-// Balanced lines to avoid orphan words in list titles and subtitles
 .projects--list .project-title,
 .projects--list .project-subtitle,
 .posts--list .post-title,
@@ -669,7 +670,6 @@ body.full-width .projects--list
 // cta
 
 .block-call_to_action
-  // Fix theme custom property (Sass function not interpolated), match link underline alpha
   --cta-color-alpha: #{alphaColor(var(--cta-color), $link-unhover-decoration-color-alpha)}
   @include media-breakpoint-up(desktop)
     @include in-page-without-sidebar
@@ -794,7 +794,6 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
         gap: $grid-gutter-xxl
         .hero-text
           width: $content-width
-    // Theme flex gap adds up to .hero-actions margin
     .hero-text
       gap: 0
 
@@ -868,7 +867,6 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
   &::after
     @if $space
       content: "\00a0#{map-get($icons, arrow-right-line)}"
-      // Hide decorative arrow from screen readers (RGAA 10.2)
       content: "\00a0#{map-get($icons, arrow-right-line)}" #{/ ""}
     display: inline
     position: relative
@@ -886,6 +884,7 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
   @include arrow-nowrap
 
 // Arrow hover
+  
 $grid-title-link: 'ul[class*="--grid"]:not(.organizations) > li > article:not(:has(.more)) [class$="-title"] a'
 
 @media (hover: hover)
