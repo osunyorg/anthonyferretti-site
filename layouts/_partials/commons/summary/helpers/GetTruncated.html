@@ -1,0 +1,15 @@
+{{ $length := index site.Params .kind "index" "truncate_description" }}
+
+{{/* Override: list items are fully clickable (stretched link), so inner links are unreachable with a mouse.
+     Keep their text only, and drop the screen-reader "(lien externe)" suffix that belongs to the link. */}}
+{{ $text := .summary
+  | replaceRE `\s*<span class="sr-only">[^<]*</span>(\s*</a>)` "$1"
+  | replaceRE `</?a\b[^>]*>` ""
+}}
+
+{{ $summary := partial "helpers/text/Truncate" (dict
+  "text" $text
+  "length" $length
+) }}
+
+{{ return $summary }}
