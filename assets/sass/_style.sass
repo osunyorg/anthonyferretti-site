@@ -70,7 +70,8 @@ header#document-header
         display: inline-block
         transition: color $menu-link-duration
         &.active::before,
-        &.has-children-active::before
+        &.has-children-active::before,
+        &[aria-expanded="true"]::before
           content: ""
           position: absolute
           left: 0
@@ -79,6 +80,9 @@ header#document-header
           width: 100%
           background-color: $color-text
           z-index: 11
+      // Open menu takes the indicator
+      &:has([aria-expanded="true"]) > li > a:not([aria-expanded="true"])::before
+        content: none
       &:has([aria-expanded="true"]) > li:not(:hover) > a:not([aria-expanded="true"])
         color: $color-text-alt
       @media (hover: hover)
@@ -233,24 +237,33 @@ main :is(.posts, .projects) li article [class$="-categories"] a
     &--dropdown
       margin: 0
 
-  @include media-breakpoint-up(desktop)
-    // Same states as header menu
-    &:has(> .dropdown > button[aria-expanded="true"]) > .dropdown > button:not(:hover):not([aria-expanded="true"])
+  // Same states as header menu
+  &:has(> .dropdown > button[aria-expanded="true"]) > .dropdown > button:not(:hover):not([aria-expanded="true"])
+    color: $color-text-alt
+  @media (hover: hover)
+    &:has(> .dropdown > button:hover) > .dropdown > button:not(:hover):not([aria-expanded="true"])
       color: $color-text-alt
-    @media (hover: hover)
-      &:has(> .dropdown > button:hover) > .dropdown > button:not(:hover):not([aria-expanded="true"])
-        color: $color-text-alt
-    .dropdown > button
-      position: relative
-      &[aria-expanded="true"]::before
-        content: ""
-        position: absolute
-        left: 0
+  .dropdown > button
+    position: relative
+    @include media-breakpoint-down(md)
+      position: static
+    &[aria-expanded="true"]::before
+      content: ""
+      position: absolute
+      left: 0
+      height: $border-width
+      width: 100%
+      background-color: $color-text
+      z-index: $zindex-dropdown + 1
+      @include media-breakpoint-up(desktop)
         bottom: calc(#{$spacing-2} + 0.5em - #{$spacing-5} / 2 - 2 * #{$border-width})
-        height: $border-width
-        width: 100%
-        background-color: $color-text
-        z-index: $zindex-dropdown + 1
+      @include media-breakpoint-down(desktop)
+        bottom: calc(-2 * (#{$spacing-2} + var(--grid-gutter)) - #{$border-width})
+      @include media-breakpoint-down(md)
+        left: var(--grid-gutter-negative)
+        right: var(--grid-gutter-negative)
+        width: auto
+        bottom: calc(-1 * var(--grid-gutter) - #{$border-width})
 
   .dropdown
     > button
