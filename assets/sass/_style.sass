@@ -26,7 +26,8 @@ a[target="_blank"]:not(.icon):where(:not(.btn))
   &:hover::after
     color: inherit
 
-// Muted button arrow
+// button
+
 a.btn[target="_blank"]:not(.icon)
   &::after
     color: #{alphaColor(currentColor, alpha($color-text-alt) / alpha($color-text))}
@@ -80,7 +81,6 @@ header#document-header
           width: 100%
           background-color: $color-text
           z-index: 11
-      // Open menu takes the indicator
       &:has([aria-expanded="true"]) > li > a:not([aria-expanded="true"])::before
         content: none
       &:has([aria-expanded="true"]) > li:not(:hover) > a:not([aria-expanded="true"])
@@ -94,6 +94,14 @@ header#document-header
       border-bottom: $border
     .menu-secondary .nav-level-1 > li:first-child
       border-top: $border
+    // Open submenu: other items muted
+    .menu .nav-level-1
+      > li > a
+        transition: color $menu-link-duration
+      &:has(> li > [aria-expanded="true"]) > li
+        > a:not([aria-expanded="true"]),
+        &.nav-search
+          color: $color-text-alt
 
   .dropdown-menu
     @include media-breakpoint-up(desktop)
@@ -237,7 +245,6 @@ main :is(.posts, .projects) li article [class$="-categories"] a
     &--dropdown
       margin: 0
 
-  // Same states as header menu
   &:has(> .dropdown > button[aria-expanded="true"]) > .dropdown > button:not(:hover):not([aria-expanded="true"])
     color: $color-text-alt
   @media (hover: hover)
