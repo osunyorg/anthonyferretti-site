@@ -1,0 +1,29 @@
+{{ $meta_position := partial "commons/single/meta/helpers/GetPosition" .context }}
+
+<div class="content">
+  <div class="hero-text">
+    {{ partial "header/hero/content/text.html" .
+      | replaceRE ` (<span class="sr-only">\(lien externe\)</span></a>)` "&nbsp;$1"
+      | replaceRE `(</a>)(?:\x{00a0}|&nbsp;)([^»:;?!%])` "$1 $2"
+      | replaceRE `([^«\s])(?:\x{00a0}|&nbsp;)(<a )` "$1 $2"
+      | safeHTML
+    }}
+    {{ if (eq $meta_position "hero") }}
+      {{ .meta }}
+    {{ end }}
+    {{ partial "header/hero/content/actions.html" . }}
+  </div>
+  {{ if .hero_content_complement }}
+    {{ .hero_content_complement }}
+  {{ end }}
+
+  {{ partial "header/hero/content/image.html" (dict
+    "image" .image
+    "sizes" .sizes
+    "context" .context
+  ) }}
+
+  {{ if .hero_after_image_complement }}
+    {{ .hero_after_image_complement }}
+  {{ end }}
+</div>

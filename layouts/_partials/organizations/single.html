@@ -17,7 +17,12 @@
   {{ with trim $presentation " \n\t\r" }}
     <div class="container">
       <div itemprop="articleBody" class="organization-presentation-container">
-        {{ . | safeHTML }}
+        {{ .
+          | replaceRE ` (<span class="sr-only">\(lien externe\)</span></a>)` "&nbsp;$1"
+          | replaceRE `(</a>)(?:\x{00a0}|&nbsp;)([^»:;?!%])` "$1 $2"
+          | replaceRE `([^«\s])(?:\x{00a0}|&nbsp;)(<a )` "$1 $2"
+          | safeHTML
+        }}
       </div>
     </div>
   {{ end }}
