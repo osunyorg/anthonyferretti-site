@@ -299,6 +299,14 @@ main :is(.posts, .projects) li article [class$="-categories"] a
     align-items: center
     &--dropdown
       margin: 0
+    .dropdown
+      display: flex
+      > button
+        height: $spacing-5
+        margin-block: 0
+        padding-block: 0
+        &[aria-expanded="true"]
+          background: none
 
   &:has(> .dropdown > button[aria-expanded="true"]) > .dropdown > button:not(:hover):not([aria-expanded="true"])
     color: $color-text-alt
@@ -318,7 +326,7 @@ main :is(.posts, .projects) li article [class$="-categories"] a
       background-color: $color-text
       z-index: $zindex-dropdown + 1
       @include media-breakpoint-up(md)
-        bottom: calc(#{$spacing-2} + 0.5em - #{$spacing-5} / 2 - 2 * #{$border-width})
+        bottom: 0
       @include media-breakpoint-down(md)
         left: var(--grid-gutter)
         right: var(--grid-gutter)
