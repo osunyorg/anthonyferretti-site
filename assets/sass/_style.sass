@@ -76,6 +76,30 @@ main .blocks + *
 
 // header
 
+@property --panel-opacity
+  syntax: "<number>"
+  inherits: true
+  initial-value: 1
+
+@keyframes panel-open
+  from
+    --panel-opacity: 0
+
+@mixin panel-closed
+  display: block
+  visibility: hidden
+  opacity: 0
+  pointer-events: none
+  scale: 0
+  transition: opacity $header-dropdown-transition, visibility 0s $header-dropdown-transition, scale 0s $header-dropdown-transition
+
+@mixin panel-opened
+  visibility: visible
+  opacity: var(--panel-opacity)
+  pointer-events: auto
+  scale: 1
+  transition: none
+
 header#document-header
 
   @include media-breakpoint-up(desktop)
@@ -153,14 +177,32 @@ header#document-header
       padding-top: $spacing-4
       border-top: $border
       position: absolute
-      z-index: 10
+      z-index: 9
       animation: none
+      box-shadow: 0 0 0 100vmax $body-overlay-color
+      clip-path: inset(0 -100vmax -100vmax)
+      @include panel-closed
       & .nav-level-2 li:not(:first-child)
         margin-top: $spacing-3
+
+  .nav-level-1
+    @include media-breakpoint-up(desktop)
+      [aria-expanded="true"] + .dropdown-menu
+        z-index: 10
+        @include panel-opened
+      &:has([aria-expanded="true"])
+        [aria-expanded="false"] + .dropdown-menu
+          box-shadow: none
+        @media (prefers-reduced-motion: no-preference)
+          animation: panel-open $header-dropdown-transition
 
   .dropdown-menu .dropdown-menu-title,
   .dropdown-menu .nav-level-2 > li > a
     text-decoration-line: none
+
+html.has-menu-opened:not(.has-modal-opened, .has-offcanvas-opened) body::after
+  @include media-breakpoint-up(desktop)
+    opacity: 0
 
 .search-button--primary .pf-trigger-btn
   @include media-breakpoint-down(desktop)
@@ -294,6 +336,10 @@ main :is(.posts, .projects) li article [class$="-categories"] a
 .taxonomies-list
   --dropdown-background: var(--color-background)
 
+  &:has(> .dropdown > button[aria-expanded="true"])
+    @media (prefers-reduced-motion: no-preference)
+      animation: panel-open $header-dropdown-transition
+
   @include media-breakpoint-up(md)
     height: $spacing-5
     align-items: center
@@ -346,12 +392,18 @@ main :is(.posts, .projects) li article [class$="-categories"] a
     .taxonomy-categories
       border-top: $border
       border-bottom: $border
+      z-index: $zindex-dropdown - 1
+      @include panel-closed
       > ul
         @include grid(4, xl, $spacing-3)
         li a
           @include hover-translate-icon
           &:hover
             color: var(--color-text)
+
+    > button[aria-expanded="true"] + .taxonomy-categories
+      z-index: $zindex-dropdown
+      @include panel-opened
 
   @include media-breakpoint-down(md)
     margin-block: 0
