@@ -496,6 +496,50 @@ html
       &.active
         color: $color-text
 
+// notes
+
+.note
+  vertical-align: middle
+  .note__call
+    @include small
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: space(8)
+    min-width: 0
+    height: space(8)
+    padding: 0
+    line-height: 1
+    background: var(--color-background)
+    color: var(--color-text-alt)
+    border: $border
+    border-radius: 0
+    transition: border-color $color-duration, color $color-duration
+    &:hover
+      background: var(--color-background)
+      color: var(--color-text)
+      border-color: var(--color-text)
+  .note__content
+    @include small
+    background: var(--color-background)
+    color: var(--color-text)
+    border: $border-width solid var(--color-text)
+    border-radius: 0
+    padding: space(4) $spacing-3
+    margin-top: calc(-1 * #{$border-width})
+    @include media-breakpoint-down(desktop)
+      left: var(--grid-gutter)
+      right: var(--grid-gutter)
+      width: auto
+    a
+      color: var(--color-text)
+      text-decoration-color: #{alphaColor(var(--color-text), $link-unhover-decoration-color-alpha)}
+  &--active .note__call
+    background: var(--color-background)
+    color: var(--color-text)
+    border-color: var(--color-text)
+    border-radius: 0
+
 // infos
 
 .section-sidebar .post-sidebar,
