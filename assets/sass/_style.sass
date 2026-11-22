@@ -293,6 +293,9 @@ footer#document-footer
         padding-top: $spacing-4
   .footer-credit
     color: $color-text-alt
+  .footer-site,
+  .contacts-details address
+    line-height: var(--meta-line-height)
 
 // player video
 
@@ -509,6 +512,7 @@ main :is(.posts, .projects) li article [class$="-categories"] a
 .siblings-navigation ul li
   a
     font-size: $body-size-desktop
+    line-height: var(--meta-line-height)
     color: $color-text
   span
     color: $color-text-alt
@@ -668,7 +672,7 @@ html
 .organizations.with-summaries .organization .organization-content
   .organization-title
     font-weight: 500
-    line-height: $small-line-height-desktop
+    line-height: $meta-line-height
   .organization-summary
     margin-top: $spacing-1
 
@@ -824,10 +828,10 @@ body.full-width .projects--list
     & .project-subtitle
       @include media-breakpoint-down(desktop)
         font-size: $body-size
-        line-height: $small-line-height
+        line-height: $meta-line-height
       @include media-breakpoint-up(desktop)
         font-size: $body-size-desktop
-        line-height: $small-line-height-desktop
+        line-height: $meta-line-height
   article [class$="-content"]
     @include media-breakpoint-up(desktop)
       flex: none
@@ -873,7 +877,7 @@ body:where(:not(.full-width, .page-curriculum-vitae)) main
     @include h4
   .projects--list .project .project-subtitle
     font-size: var(--body-size)
-    line-height: $small-line-height
+    line-height: $meta-line-height
 
 // post
 
@@ -890,10 +894,10 @@ body:where(:not(.full-width, .page-curriculum-vitae)) main
   .post-subtitle
     @include media-breakpoint-down(desktop)
       font-size: $body-size
-      line-height: $small-line-height
+      line-height: $meta-line-height
     @include media-breakpoint-up(desktop)
       font-size: $body-size-desktop
-      line-height: $small-line-height-desktop
+      line-height: $meta-line-height
 
 .projects--list .project hgroup,
 .projects--large .project hgroup,
@@ -932,10 +936,10 @@ body:where(:not(.full-width, .page-curriculum-vitae)) main
 .projects--large .project .project-content .project-subtitle,
 .posts--large .post .post-subtitle
   font-size: var(--body-size)
-  line-height: $small-line-height
+  line-height: $meta-line-height
   @include in-page-with-or-without-sidebar
     font-size: var(--body-size)
-    line-height: $small-line-height
+    line-height: $meta-line-height
 
 .posts--list .post .post-title a,
 .posts--large .post .post-title a,
