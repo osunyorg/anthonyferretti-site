@@ -9,6 +9,34 @@ b, strong
 
 .rich-text ul
   list-style-type: square
+  // Same indent as timeline text
+  padding-left: $spacing-3
+  // Native marker kept for semantics, drawn square at timeline bullet size
+  > li
+    position: relative
+    &::marker
+      color: transparent
+    &::before
+      content: ""
+      position: absolute
+      left: calc(-1 * #{$spacing-3})
+      top: calc(0.5lh - #{$bullet-size} / 2)
+      width: $bullet-size
+      height: $bullet-size
+      background: var(--color-text)
+
+.rich-text ol
+  // Same indent as bulleted lists, number hangs in the indent
+  padding-left: $spacing-3
+  > li
+    position: relative
+    &::before
+      position: absolute
+      left: calc(-1 * #{$spacing-3})
+
+.rich-text :is(ul, ol) :is(ul, ol)
+  // Nested lists: same indent at every level
+  padding-left: $spacing-3
 
 // link
 
@@ -879,9 +907,28 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
   &::before
     border-radius: 0%
     margin-top: 0.7em
+    background: var(--color-text)
   &::after
     margin-top: $spacing-3
     margin-bottom: $spacing-1
+    background: var(--color-border)
+
+.block-timeline--horizontal .timeline-event .line
+  background: var(--color-border)
+  &::before
+    background: var(--color-text)
+    border-radius: 0
+
+// Center bullets on the line whatever their size
+.block-timeline--vertical .timeline-event::before
+  @include in-page-without-sidebar
+    transform: translateX(calc((#{$block-timeline-bullet-width} - #{$block-timeline-border-width}) / -2))
+
+.block-timeline--horizontal .timeline-event .line::before
+  margin-left: calc((#{$block-timeline-bullet-width} - #{$block-timeline-border-width}) / -2)
+  top: calc((#{$block-timeline-bullet-width} - #{$block-timeline-border-width}) / -2)
+  height: $block-timeline-bullet-width
+  width: $block-timeline-bullet-width
 
 // SECTIONS
 
