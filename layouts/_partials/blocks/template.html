@@ -1,0 +1,9 @@
+{{ $path := partial "blocks/helpers/GetPath" .block }}
+{{ if $path }}
+  {{ $html := partial $path (dict
+    "block" .block
+    "context" .context
+    "html_id" .html_id
+  ) }}
+  {{ $html | replaceRE ` (<span class="sr-only">\(lien externe\)</span></a>)` "&nbsp;$1" | safeHTML }}
+{{ end }}
