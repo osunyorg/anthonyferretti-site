@@ -499,17 +499,16 @@ html
 // notes
 
 .note
-  vertical-align: middle
+  vertical-align: baseline
   .note__call
     @include small
-    display: inline-flex
-    align-items: center
-    justify-content: center
+    display: block
+    text-align: center
     width: space(8)
     min-width: 0
     height: space(8)
     padding: 0
-    line-height: 1
+    line-height: calc(#{space(8)} - 2 * #{$border-width})
     background: var(--color-background)
     color: var(--color-text-alt)
     border: $border
