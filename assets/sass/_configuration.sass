@@ -130,10 +130,9 @@ $link-unhover-decoration-color-alpha: 0.5
 // button
 $btn-border-radius: 0
 $btn-border: $border
+$btn-hover-border: $border-width solid var(--color-text)
 $btn-padding: pxToRem(12) pxToRem(24)
 $btn-padding-desktop: pxToRem(16) pxToRem(32)
-$btn-hover-color: $color-background
-$btn-hover-background: $color-text
 
 // header
 $header-background: $color-background
@@ -170,12 +169,25 @@ $block-space-y-with-sidebar: pxToRem(64)
 // cta
 $block-call-to-action-accent-background: $color-background
 $block-call-to-action-accent-color: $color-text
-$block-call-to-action-accent-button-background: $color-text
-$block-call-to-action-accent-button-color: $block-call-to-action-accent-background
+// Outline buttons, same as generic buttons
+$block-call-to-action-button-background: transparent
+$block-call-to-action-button-color: var(--color-text)
+$block-call-to-action-button-border: $btn-border
+$block-call-to-action-button-hover-background: transparent
+$block-call-to-action-button-hover-color: var(--color-text)
+$block-call-to-action-button-hover-border: $btn-hover-border
+$block-call-to-action-accent-button-background: transparent
+$block-call-to-action-accent-button-color: var(--color-text)
 $block-call-to-action-accent-button-border: $btn-border
-$block-call-to-action-accent-button-hover-background: $color-background-alt
-$block-call-to-action-accent-button-hover-color: $color-text
-$block-call-to-action-accent-button-hover-border: $btn-border
+$block-call-to-action-accent-button-hover-background: transparent
+$block-call-to-action-accent-button-hover-color: var(--color-text)
+$block-call-to-action-accent-button-hover-border: $btn-hover-border
+$block-call-to-action-alt-button-background: transparent
+$block-call-to-action-alt-button-color: var(--color-text)
+$block-call-to-action-alt-button-border: $btn-border
+$block-call-to-action-alt-button-hover-background: transparent
+$block-call-to-action-alt-button-hover-color: var(--color-text)
+$block-call-to-action-alt-button-hover-border: $btn-hover-border
 
 // image
 $block-image-max-height-with-sidebar: none
