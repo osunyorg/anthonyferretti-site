@@ -9,9 +9,7 @@ b, strong
 
 .rich-text ul
   list-style-type: square
-  // Same indent as timeline text
   padding-left: $spacing-3
-  // Native marker kept for semantics, drawn square at timeline bullet size
   > li
     position: relative
     &::marker
@@ -26,7 +24,6 @@ b, strong
       background: var(--color-text)
 
 .rich-text ol
-  // Same indent as bulleted lists, number hangs in the indent
   padding-left: $spacing-3
   > li
     position: relative
@@ -35,7 +32,6 @@ b, strong
       left: calc(-1 * #{$spacing-3})
 
 .rich-text :is(ul, ol) :is(ul, ol)
-  // Nested lists: same indent at every level
   padding-left: $spacing-3
 
 // link
@@ -122,7 +118,6 @@ header#document-header
       border-bottom: $border
     .menu-secondary .nav-level-1 > li:first-child
       border-top: $border
-    // Open submenu: other items muted
     .menu .nav-level-1
       > li > a
         transition: color $menu-link-duration
@@ -130,7 +125,6 @@ header#document-header
         > a:not([aria-expanded="true"]),
         &.nav-search
           color: $color-text-alt
-    // Full-width separators, content stays aligned
     .menu
       margin-top: $header-nav-padding-y
       margin-inline: var(--grid-gutter-negative)
@@ -139,12 +133,10 @@ header#document-header
       padding-inline: var(--grid-gutter)
       &:first-child
         border-top: $border
-      // Separator within margins
       &:not(:last-child)
         border-bottom-color: transparent
         background: linear-gradient(var(--color-border), var(--color-border)) no-repeat center bottom / calc(100% - 2 * var(--grid-gutter)) $border-width
         background-origin: border-box
-    // Black line within margins: open submenu, else active page
     .menu .nav-level-1:not(:has(> li > [aria-expanded="true"])) > li:has(> a.active, > a.has-children-active),
     .menu .nav-level-1 > li:has(> [aria-expanded="true"])
       &::after
@@ -290,7 +282,6 @@ main :is(.posts, .projects) li article [class$="-categories"] a
     margin-top: 0 !important
     padding-bottom: 0
     border-bottom: 0
-    // Full-width closing line, opaque to cover the last separator
     &::after
       content: ""
       position: absolute
@@ -355,11 +346,9 @@ main :is(.posts, .projects) li article [class$="-categories"] a
             color: var(--color-text)
 
   @include media-breakpoint-down(md)
-    // Clear breadcrumb bottom line
     margin-block: 0
     padding-top: $border-width
     .dropdown
-      // Same height as breadcrumb, full-width separators
       box-sizing: content-box
       height: $spacing-5
       display: flex
@@ -370,7 +359,6 @@ main :is(.posts, .projects) li article [class$="-categories"] a
       width: auto
       align-self: stretch
       border-bottom: $border
-      // Separator within margins
       border-bottom-color: transparent
       background: linear-gradient(var(--color-border), var(--color-border)) no-repeat center bottom / calc(100% - 2 * var(--grid-gutter)) $border-width
       background-origin: border-box
@@ -554,7 +542,6 @@ html
     border-radius: 0
     padding: space(4) $spacing-3
     margin-top: calc(-1 * #{$border-width})
-    // Fade on open and close
     opacity: 0
     transition: opacity $default-duration ease, display $default-duration allow-discrete
     @include media-breakpoint-down(desktop)
@@ -572,7 +559,6 @@ html
     background: var(--color-background)
     color: var(--color-text-alt)
     border-color: var(--color-border)
-    // Content top border replaces it, avoids a darker double line
     border-bottom-color: transparent
     border-radius: 0
 
@@ -717,7 +703,6 @@ html
       .top .description p
         font-size: $quote-size-desktop-long
         line-height: $quote-line-height-desktop
-  // Title-only links: the arrow already signals a link
   &--list .pages.title-only li > a
     text-decoration-line: none
   &--grid
@@ -822,7 +807,6 @@ body.full-width .projects--list
     display: block
     overflow: visible
 
-// Lists in pages with sidebar (CV excluded): h4 titles like features, body size subtitles
 body:where(:not(.full-width, .page-curriculum-vitae)) main
   .projects--list .project .project-title,
   .posts--list .post .post-title
@@ -913,6 +897,10 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
   .person-name
     font-weight: 500
 
+.persons--list .person.with-avatar
+  @include media-breakpoint-up(desktop)
+    align-items: center
+
 // timeline
 
 .block-timeline .timeline-event
@@ -931,7 +919,6 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
     background: var(--color-text)
     border-radius: 0
 
-// Center bullets on the line whatever their size
 .block-timeline--vertical .timeline-event::before
   @include in-page-without-sidebar
     transform: translateX(calc((#{$block-timeline-bullet-width} - #{$block-timeline-border-width}) / -2))
@@ -953,7 +940,6 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
 
 // post
 
-// List pages: same 48px rhythm for projects and posts
 .document-content > .container:has(.projects--list, .posts--list)
   margin-top: $spacing-4
   .projects--list > li,
