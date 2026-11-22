@@ -933,6 +933,45 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
   height: $block-timeline-bullet-width
   width: $block-timeline-bullet-width
 
+// testimonials
+
+.block-testimonials--carousel
+  .testimonial
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      left: calc(var(--grid-gutter) / -2)
+      width: $border-width
+      background: var(--color-border)
+    @include media-breakpoint-down(desktop)
+      padding-left: $spacing-3
+      &::before
+        left: 0
+  blockquote p
+    @include media-breakpoint-up(desktop)
+      font-size: $block-testimonials-xl-font-size
+      line-height: $block-testimonials-xl-line-height
+  blockquote.is-long p
+    font-size: $h5-size
+    line-height: $block-testimonials-xl-line-height-long-text
+    @include media-breakpoint-up(desktop)
+      font-size: $block-testimonials-xl-font-size-long-text
+  figcaption
+    margin-top: space(5)
+    @include media-breakpoint-up(desktop)
+      margin-top: space(8)
+    .meta
+      color: var(--color-text-alt)
+  .avatar
+    width: $spacing-5
+    min-width: $spacing-5
+    margin-right: space(5)
+    @include media-breakpoint-up(desktop)
+      margin-right: space(8)
+
 // SECTIONS
 
 // page
