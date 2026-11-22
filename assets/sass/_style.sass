@@ -819,6 +819,15 @@ body.full-width .projects--list
     display: block
     overflow: visible
 
+// Lists in pages with sidebar (CV excluded): h4 titles like features, body size subtitles
+body:where(:not(.full-width, .page-curriculum-vitae)) main
+  .projects--list .project .project-title,
+  .posts--list .post .post-title
+    @include h4
+  .projects--list .project .project-subtitle
+    font-size: var(--body-size)
+    line-height: $small-line-height
+
 // post
 
 .posts--list > li
