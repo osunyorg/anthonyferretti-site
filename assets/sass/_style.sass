@@ -717,6 +717,9 @@ html
       .top .description p
         font-size: $quote-size-desktop-long
         line-height: $quote-line-height-desktop
+  // Title-only links: the arrow already signals a link
+  &--list .pages.title-only li > a
+    text-decoration-line: none
   &--grid
     @include media-breakpoint-down(desktop)
       article:not(:last-child)
