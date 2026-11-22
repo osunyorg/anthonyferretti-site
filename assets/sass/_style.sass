@@ -513,19 +513,22 @@ html
     color: var(--color-text-alt)
     border: $border
     border-radius: 0
-    transition: border-color $color-duration, color $color-duration
-    &:hover
+    transition: color $color-duration
+    &:hover,
+    &:focus-visible
       background: var(--color-background)
       color: var(--color-text)
-      border-color: var(--color-text)
   .note__content
     @include small
     background: var(--color-background)
     color: var(--color-text)
-    border: $border-width solid var(--color-text)
+    border: $border
     border-radius: 0
     padding: space(4) $spacing-3
     margin-top: calc(-1 * #{$border-width})
+    // Fade on open and close
+    opacity: 0
+    transition: opacity $default-duration ease, display $default-duration allow-discrete
     @include media-breakpoint-down(desktop)
       left: var(--grid-gutter)
       right: var(--grid-gutter)
@@ -533,10 +536,16 @@ html
     a
       color: var(--color-text)
       text-decoration-color: #{alphaColor(var(--color-text), $link-unhover-decoration-color-alpha)}
+  &--active .note__content
+    opacity: 1
+    @starting-style
+      opacity: 0
   &--active .note__call
     background: var(--color-background)
-    color: var(--color-text)
-    border-color: var(--color-text)
+    color: var(--color-text-alt)
+    border-color: var(--color-border)
+    // Content top border replaces it, avoids a darker double line
+    border-bottom-color: transparent
     border-radius: 0
 
 // infos
