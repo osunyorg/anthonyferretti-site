@@ -899,7 +899,11 @@ main .blocks .block:first-child:is(#{$backgrounded_blocks})
 
 .persons--list .person.with-avatar
   @include media-breakpoint-up(desktop)
-    align-items: center
+    align-items: flex-start
+    .description
+      font-size: var(--body-size)
+      line-height: var(--body-line-height)
+      margin-top: calc((#{space(10)} - 1lh) / 2)
 
 // timeline
 
