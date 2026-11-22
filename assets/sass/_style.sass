@@ -274,6 +274,8 @@ footer#document-footer .logo .logo-text, header#document-header .logo .logo-text
     right: 0
     height: $border-width
     background: $color-border
+    @include media-breakpoint-up(md)
+      margin-top: calc(-1 * #{$border-width})
   .breadcrumb
     & li.active
       color: $color-text-alt
