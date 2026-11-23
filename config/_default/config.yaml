@@ -33,6 +33,9 @@ params:
   share_links:
     enabled: false
   # SECTIONS
+  files:
+    sitemap:
+      ignore: true
   home:
     head:
       title: page # tab title = home page title
