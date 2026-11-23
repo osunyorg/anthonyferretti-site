@@ -785,6 +785,13 @@ html
 .contacts-details ul li > span
   color: $color-text-alt
 
+.block-contact .contact-content .informations > p:first-of-type:has(+ p)
+  @include meta
+  color: $color-text-alt
+  margin-top: $spacing-3
+  + p
+    margin-top: 0
+
 // single meta
 
 .single-meta li a
